@@ -1,0 +1,140 @@
+/*노멀라이즈*/
+body,ul,li,h1{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/*라이브러리*/
+body{
+    background-color:#fdcbd4;
+}
+.con{
+    margin-left:auto;
+    margin-right:auto;
+}
+.flex{
+    display: flex;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+.block{
+    display:block;
+}
+.flex-1-0-0{
+    flex : 1 0 0;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.border-red {
+    border:3px solid red;
+}
+
+/*커스텀*/
+.con{
+    max-width:1100px;
+}
+.top-bar > .title-bar > a{
+    padding:20px;
+    font-size:40px;
+    font-weight: bold;
+}
+.top-bar > .menu-bar > .menu-box-1 > ul > li > a{
+    padding:20px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+}
+.top-bar > .menu-bar > .menu-box-1 > ul > li{
+    position:relative;
+}
+.top-bar > .menu-bar > .menu-box-1 > ul ul{
+    display:none;
+    position: absolute;
+    left:0;
+    top:100%;
+    width:100%;
+}
+
+.top-bar > .left-side-icon{
+    position:absolute;
+    left:0;
+    margin-top:35px;
+    margin-left:25px;
+    cursor: pointer;
+    border:2px solid red;
+    width: 50px;
+    height: 50px;
+}
+
+.top-bar > .left-side-icon > div{
+    background-color:black;
+    width: 100%;
+    height: 20%;
+    transition:top .5s, transform .5s;
+    top:0;
+    left:0;
+    position: absolute;
+}
+.top-bar > .left-side-icon > div:nth-child(2){
+    top: 40%;
+}
+.top-bar > .left-side-icon.active > div:nth-child(2){
+    opacity: 0;
+}
+.top-bar > .left-side-icon > div:nth-child(3){
+    top:80%;
+}
+.top-bar > .left-side-icon.active > div:nth-child(1){
+    top:40%;
+    transition:top .1;
+    transform: rotate(45deg);
+}
+.top-bar > .left-side-icon.active > div:nth-child(3){
+    top:40%;
+    transition:top .1;
+    transform: rotate(-45deg);
+}
+.top-bar > .left-side-icon.active > div:not(:last-child){
+    margin-bottom:6px;
+    transition:top .5;
+}
+
+.left-side-bar{
+    position: absolute;
+    left:-350px;
+    top:0;
+    bottom:0;    
+    background-color: #224bb4;
+}
+
+.left-side-bar.active {
+    left:0;
+}
+
+.left-side-bar > .menu-box-2{
+    
+}
+.left-side-bar > .menu-box-2 > ul > li{
+    margin-bottom:10px;
+}
+.left-side-bar > .menu-box-2 > ul ul{
+    display:none;
+}
+.left-side-bar > .menu-box-2 > ul > li:hover > ul{
+    display:block;
+}
+.left-side-bar > .menu-box-2 > ul > li > a{
+    color:white;
+    font-size:3rem;
+}

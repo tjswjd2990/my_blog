@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>블로그</title>
-    <link rel="stylesheet" href="/resource/common.css">
-</head>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="/resource/common.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/resource/common.js"></script>
+
+    <title>김민정 블로그</title>
+</head>
 <body>
-    <div class="top-bar con flex">
-        <div class="title-bar">
-            <a href="#" class="block">Minlog</a>
-        </div>
-        <div class="menu-bar flex flex-grow-1">
-            <nav class="menu-box-1 flex flex-grow-1">
-                <ul class="flex flex-grow-1 align-items-center">
-                    <li class="flex flex-1-0-0"><a href="#" class="flex-1-0-0 block flex justify-content-center">HOME</a></li>
-                    <li class="flex flex-1-0-0"><a href="#" class="flex-1-0-0 block flex justify-content-center">ARTICLES</a></li>
-                    <li class="flex flex-1-0-0"><a href="#" class="flex-1-0-0 block flex justify-content-center">ABOUT ME</a></li>
-                    <li class="flex flex-1-0-0"><a href="#" class="flex-1-0-0 block flex justify-content-center">SNS</a>
-                    <ul>
-                        <li>GITHUB</li>
-                        <li>INSTAGRAM</li>
-                    </ul>
-                </li>
+    <div class="top-bar visible-on-md-up">
+        <div class="con height-100p flex flex-jc-sb">
+            <a href="#" class="logo">
+                Minlog
+            </a>
+
+            <nav class="menu-box-1 flex">
+                <ul class="flex">
+                    <li class="flex"><a href="#" class="flex flex-ai-c">Home</a></li>
+                    <li class="flex"><a href="#" class="flex flex-ai-c">ARTICLES</a></li>
+                    <li class="flex"><a href="#" class="flex flex-ai-c">ABOUT ME</a></li>
+                    <li class="flex"><a href="#" class="flex flex-ai-c">SNS</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <div class="btn-bar">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
     </div>
+
+    <div class="mobile-top-bar visible-on-sm-down flex flex-ai-c">
+        <a href="#" onclick="return false;" class="btn-toggle-mobile-side-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+    </div>
+
+    <div class="mobile-side-bar-bg"></div>
+    <div class="mobile-side-bar"></div>
