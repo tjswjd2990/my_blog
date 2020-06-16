@@ -367,11 +367,39 @@ body {
     letter-spacing: -0.1rem;
 }
 
+.top-bar .menu-box-1 > ul ul{
+  display:none;
+  right:0;
+  top:100%;
+  position: absolute;
+  width: 120px;
+  background-color:#224bb4;  
+}
+
+.top-bar .menu-box-1 ul > li{
+  position: relative;
+}
+
 .top-bar .menu-box-1 > ul > li > a {
     font-size:1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     padding:0 30px;
+}
+
+.top-bar .menu-box-1 > ul ul > li{
+  height: 40px;
+  text-align: center;
+}
+
+.top-bar .menu-box-1 > ul ul > li > a{
+  font-weight: normal;
+  font-size:18px;
+  margin-left:10px;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > ul{
+  display:block;
 }
 
 .top-bar .menu-box-1 > ul > li:last-child > a {
@@ -415,4 +443,45 @@ body {
 
 .mobile-side-bar.active {
     left:0;
+}
+
+.mobile-side-bar > .menu-box-1 > ul > li > a:not(:only-child)::after{
+    content:"[+]";
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:25px;
+}
+.mobile-side-bar > .menu-box-1 > ul > li.active > a:not(:only-child)::after {
+    content:"[-]";
+}
+
+.mobile-side-bar > .menu-box-1 > ul ul{
+  display: none;
+  margin-left:20px;
+}
+.mobile-side-bar > .menu-box-1 > ul{
+  margin:15px;
+}
+
+.mobile-side-bar > .menu-box-1 ul > li > a{
+  color:white;
+  display:block;
+  position: relative;
+}
+.mobile-side-bar > .menu-box-1 > ul > li > a{
+  font-size:1.8rem;
+}
+.mobile-side-bar > .menu-box-1 > ul > li.active > a{
+  font-size: 2.5rem;
+}
+.mobile-side-bar > .menu-box-1 > ul > li.active > ul{
+  display:block;
+}
+
+@media ( max-width:799px ) {
+  html.mobile-side-bar-actived, html.mobile-side-bar-actived > body {
+    overflow-y: hidden;
+  }
 }

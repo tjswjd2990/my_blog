@@ -25,7 +25,14 @@
                     <li class="flex"><a href="#" class="flex flex-ai-c">Home</a></li>
                     <li class="flex"><a href="#" class="flex flex-ai-c">ARTICLES</a></li>
                     <li class="flex"><a href="#" class="flex flex-ai-c">ABOUT ME</a></li>
-                    <li class="flex"><a href="#" class="flex flex-ai-c">SNS</a></li>
+                    <li class="flex"><a href="#" class="flex flex-ai-c">SNS</a>
+                    <ul>
+                        <li class="flex"><a href="https://github.com/tjswjd2990" target="_blank" class="flex flex-ai-c">Github</a></li>
+                        <li class="flex"><a href="https://www.instagram.com/am_jei_/" target="_blank" class="flex flex-ai-c">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCANwkCXCfogf2_veRAv3V3g?view_as=subscriber" target="_blank" class="flex flex-ai-c">Youtube</a></li>
+                        <li><a href="https://am-jei.tistory.com/" target="_blank" class="flex flex-ai-c">Tistory</a></li>
+                    </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +44,25 @@
             <div></div>
             <div></div>
         </a>
+
     </div>
 
-    <div class="mobile-side-bar-bg"></div>
-    <div class="mobile-side-bar"></div>
+    <div class="mobile-side-bar-bg visible-on-sm-down"></div>
+    <div class="mobile-side-bar visible-on-sm-down">
+        <nav class="menu-box-1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li>
+                    <a href="#">SNS</a>
+                    <ul>
+                        <li><a href="https://github.com/tjswjd2990" target="_blank">Github</a></li>
+                        <li><a href="https://www.instagram.com/am_jei_/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCANwkCXCfogf2_veRAv3V3g?view_as=subscriber" target="_blank">Youtube</a></li>
+                        <li><a href="https://am-jei.tistory.com/" target="_blank">Tistory</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
