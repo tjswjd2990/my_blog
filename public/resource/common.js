@@ -15,6 +15,14 @@ function MobileSideBar__toggle() {
     }
 }
 
+function slider() {
+    var clickedBTn = $(this);
+    var current = $(this).find();
+}
+
+
+
+
 function MobileSideBar__init() {
     $('.btn-toggle-mobile-side-bar, .mobile-side-bar-bg').click(MobileSideBar__toggle);
 
@@ -28,11 +36,12 @@ function MobileSideBar__init() {
 
         $(this).siblings('.active').removeClass('active');
     });
+    $('top-bn-slider > slide-btn > div').click(slider);
 }
 
 $(function() {
     MobileSideBar__init();
-})
+});
 
 
 //siblings는 형제자매!
