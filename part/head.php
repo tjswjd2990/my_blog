@@ -51,7 +51,7 @@
                 <ul class="flex">
                     <li class="flex"><a href="/" class="flex flex-ai-c">HOME</a></li>
                     <li class="flex"><a href="/articles.php" class="flex flex-ai-c">ARTICLES</a></li>
-                    <li class="flex"><a href="/aboutMe.php" class="flex flex-ai-c">ABOUT ME</a></li>
+                    <li class="flex"><a href="/aboutMe.php" class="flex flex-ai-c">LIKE IT</a></li>
                     <li class="flex"><a href="#" onclick="return false;" class="flex flex-ai-c">SNS</a>
                         <ul>
                             <li><a href="https://github.com/tjswjd2990" target="_blank"
@@ -101,19 +101,13 @@
     <div class="top-bn-slider slider">
         <div class="slides">
             <div class="active"
-                style="background-size:contain; background-color: #5c6c9d; background-image: url(/resource/images/main1.jpeg);">
+                style="background-size:cover; background-image: url(/resource/images/lamb-1.jpg);">
             </div>
             <div
-                style="background-size:contain; background-color: #654a43; background-image: url(/resource/images/main2.jpeg);">
+                style="background-size:cover; background-image: url(/resource/images/lamb-2.jpg);">
             </div>
             <div
-                style="background-size:contain; background-image: url(/resource/images/main3.png); background-color: #2b241a;">
-            </div>
-            <div
-                style="background-size:contain; background-image: url(/resource/images/main4.jpeg); background-color: #29160f;">
-            </div>
-            <div
-                style="background-size:contain; background-image: url(/resource/images/main5.jpeg); background-color: #b77567;">
+                style="background-size:cover; background-image: url(/resource/images/lambs.jpg);">
             </div>
         </div>
         <div class="side-bars">
