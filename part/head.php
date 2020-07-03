@@ -50,20 +50,9 @@
             <nav class="menu-box-1 flex">
                 <ul class="flex">
                     <li class="flex"><a href="/" class="flex flex-ai-c">HOME</a></li>
-                    <li class="flex"><a href="/articles.php" class="flex flex-ai-c">ARTICLES</a></li>
-                    <li class="flex"><a href="/aboutMe.php" class="flex flex-ai-c">LIKE IT</a></li>
-                    <li class="flex"><a href="#" onclick="return false;" class="flex flex-ai-c">SNS</a>
-                        <ul>
-                            <li><a href="https://github.com/tjswjd2990" target="_blank"
-                                    class="flex flex-ai-c">Github</a></li>
-                            <li><a href="https://www.instagram.com/am_jei_/" target="_blank"
-                                    class="flex flex-ai-c">Instagram</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCANwkCXCfogf2_veRAv3V3g?view_as=subscriber"
-                                    target="_blank" class="flex flex-ai-c">Youtube</a></li>
-                            <li><a href="https://am-jei.tistory.com/" target="_blank" class="flex flex-ai-c">Tistory</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li class="flex"><a href="/PORTFOLIO.php" class="flex flex-ai-c">PORTFOLIO</a></li>
+                    <li class="flex"><a href="/MY_BLOG.php" class="flex flex-ai-c">MY BLOG</a></li>
+                    <li class="flex"><a href="/CONTACT" class="flex flex-ai-c">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,23 +70,18 @@
     <div class="mobile-side-bar visible-on-sm-down">
         <nav class="menu-box-1">
             <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/articles.php">ARTICLES</a></li>
-                <li><a href="/aboutMe.php">ABOUT ME</a></li>
-                <li>
-                    <a href="#" onclick="return false;">SNS</a>
-                    <ul>
-                        <li><a href="https://github.com/tjswjd2990" target="_blank">Github</a></li>
-                        <li><a href="https://www.instagram.com/am_jei_/" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCANwkCXCfogf2_veRAv3V3g?view_as=subscriber"
-                                target="_blank">Youtube</a></li>
-                        <li><a href="https://am-jei.tistory.com/" target="_blank">Tistory</a></li>
-                    </ul>
-                </li>
+                <li class="flex"><a href="/" class="flex flex-ai-c">HOME</a></li>
+                <li class="flex"><a href="/PORTFOLIO.php" class="flex flex-ai-c">PORTFOLIO</a></li>
+                <li class="flex"><a href="/MY_BLOG.php" class="flex flex-ai-c">MY BLOG</a></li>
+                <li class="flex"><a href="/CONTACT" class="flex flex-ai-c">CONTACT</a></li>
             </ul>
         </nav>
     </div>
 
+
+
+<!--이미지 슬라이더 시작-->
+<!--
     <div class="top-bn-slider slider">
         <div class="slides">
             <div class="active"
@@ -115,3 +99,5 @@
             <div><span><i class="fas fa-angle-right"></i></span></div>
         </div>
     </div>
+-->
+<!--이미지 슬라이더 끝-->
