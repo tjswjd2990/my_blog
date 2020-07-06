@@ -1,5 +1,6 @@
 /* 폰트적용 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 html {
   font-family: "Noto Sans KR", sans-serif;
@@ -372,6 +373,7 @@ label[for] {
 /*탑바*/
 
 .top-bar {
+  font-family: "Kalam", "Noto Sans KR", cursive, sans-serif;
   background-color: white;
   color: black;
 }
@@ -408,7 +410,7 @@ label[for] {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 40px;
-  color:#73665b
+  color:#black;
 }
 
 .top-bar .menu-box-1 ul>li:hover>a {
@@ -594,6 +596,67 @@ label[for] {
   font-size: 2rem;
   color:white;
 }
+
+/*메인이미지 시작*/
+.main{
+  margin-top:20px;
+}
+.main > .mnm-box{
+  position: relative;
+}
+.main > .mnm-box > .mnm{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  top:0;
+  left:0;
+}
+.main > .img-box > .mirror{
+  width:50%;
+  height: 70%;
+  margin-left:auto;
+  margin-right:0;
+}
+
+
+/*메인이미지 끝*/
+
+
+/*임시박스 시작*/
+.bbox{
+  border:3px solid red;
+  height: 100vh;
+}
+.bbox > .box1{
+  width: 50%;
+  height: 100%;
+  right:auto;
+  left:0;
+  background-color:green;
+}
+.bbox > .box2{
+  width:50%;
+  height: 100%;
+  right:0;
+  left:auto;
+  background-image: url(/resource/images/거울사진.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bbox{
+  position: relative;
+}
+.bbox > .sns-list{
+  position: absolute;
+  transform: rotate(90deg);
+}
+.bbox > .sns-list > a {
+  color: black;
+  font-size:30px;
+  padding:0 20px;
+}
+/*임시박스 끝*/
 
 /*풋바*/
 .foot-bar{
