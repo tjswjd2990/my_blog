@@ -1,6 +1,9 @@
 /* 폰트적용 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 html {
   font-family: "Noto Sans KR", sans-serif;
@@ -373,7 +376,7 @@ label[for] {
 /*탑바*/
 
 .top-bar {
-  font-family: "Kalam", "Noto Sans KR", cursive, sans-serif;
+  font-family: 'Prata', serif;
   background-color: white;
   color: black;
 }
@@ -410,7 +413,6 @@ label[for] {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 40px;
-  color:#black;
 }
 
 .top-bar .menu-box-1 ul>li:hover>a {
@@ -571,7 +573,7 @@ label[for] {
 }
 
 .top-bn-slider .side-bars>div>span {
-  transition: transform .3s;
+  transform: transiton .3s;
 }
 
 .top-bn-slider .side-bars>div:first-child>span {
@@ -598,33 +600,7 @@ label[for] {
 }
 
 /*메인이미지 시작*/
-.main{
-  margin-top:20px;
-}
-.main > .mnm-box{
-  position: relative;
-}
-.main > .mnm-box > .mnm{
-  position: absolute;
-  width:100px;
-  height: 100px;
-  top:0;
-  left:0;
-}
-.main > .img-box > .mirror{
-  width:50%;
-  height: 70%;
-  margin-left:auto;
-  margin-right:0;
-}
-
-
-/*메인이미지 끝*/
-
-
-/*임시박스 시작*/
 .bbox{
-  border:3px solid red;
   height: 100vh;
 }
 .bbox > .box1{
@@ -632,7 +608,6 @@ label[for] {
   height: 100%;
   right:auto;
   left:0;
-  background-color:green;
 }
 .bbox > .box2{
   width:50%;
@@ -650,13 +625,28 @@ label[for] {
 .bbox > .sns-list{
   position: absolute;
   transform: rotate(90deg);
+  top: 48%;
+  left:365px;
 }
-.bbox > .sns-list > a {
+.bbox > .sns-list > li:hover > a{
+  font-size:36px;
+  left:-20px;
+}
+
+.bbox > .sns-list > li > a {
+  font-family: "Playfair Display", serif;
   color: black;
   font-size:30px;
   padding:0 20px;
 }
-/*임시박스 끝*/
+/*메인이미지 끝*/
+
+/*메인문구 시작*/
+.bbox > .box1{
+}
+
+/*메인문구 끝*/
+
 
 /*풋바*/
 .foot-bar{
