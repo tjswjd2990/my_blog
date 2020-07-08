@@ -346,6 +346,7 @@ body{
 
 /*로고*/
 .top-bar > .logo-bar > .logo{
+    position: fixed;
     width: 122px;
     height: 26px;
     background: url(https://tjswjd2990.github.io/img1/pf/etiqa/sp_ico.svg) 0 -739px no-repeat;
@@ -365,10 +366,30 @@ body{
     font-size:17px;
     position: relative;
 }
-.top-bar > .menu-box-1 > ul > li:hover > a::after{
+.top-bar > .menu-box-1 > ul > li > a::after{
+    position: absolute;
     content: "";
     background-color:white;
+    top:100%;
+    width:100px;
+    left:30px;
+    height: 3px;
+    display:none;
+    transition:0.3s;
 }
+/*
+
+width:104px
+
+width:118px;
+
+width:105px;
+
+width:104px;
+
+width:88px;
+
+*/
 
 
 /*2차메뉴*/
@@ -396,12 +417,12 @@ body{
 
 /*메뉴아이콘 시작*/
 .top-bar > .menu-icon > .icon {
-    position: relative;
-    margin-left:auto;
-    margin-right:120px;
+    position: fixed;
+    left:auto;
+    right:120px;
 }
 .top-bar > .menu-icon > .icon > div{
-    margin:100px 0 0 0;
+    margin:110px 0 0 0;
     position: absolute;
     top:0px;
     background-color:white;
@@ -421,3 +442,391 @@ body{
     transition: 0.4s;
 }
 /*메뉴아이콘 끝*/
+
+/*메인이미지1 시작*/
+.main-img1{
+  margin-top:105px;
+}
+.main-img1 > .img-box > .img{
+  width:1800px;
+  height: 400px;
+}
+/*메인이미지1 끝*/
+
+/*첫번째 문구 단락 시작*/
+.first-message{
+  margin-top:100px;
+  color:white;
+}
+.first-message > .first-message1{
+  font-size:18px;
+}
+.first-message > .first-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.first-message > .first-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.first-message > .first-message1 > a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.first-message > .first-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.first-message > .first-message3{
+  font-size:18px;
+  color:white;
+}
+
+.first-message > .first-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height:30px;
+  margin-top:-6px;
+  color:white;
+}
+/*첫번째 문구 단락 끝*/
+
+/*메인이미지2 시작*/
+.main-img2{
+  margin-top:105px;
+}
+
+/*이거 물어보기*/
+.main-img2 > .img-box > img{
+  min-width: 1800px;
+  min-height: 400px;
+  overflow: hidden;
+}
+/*메인이미지2 끝*/
+
+/*두번째 문구 단락 시작*/
+.second-message{
+  margin-top:100px;
+  color:white;
+}
+.second-message > .second-message1{
+  font-size:18px;
+}
+.second-message > .second-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.second-message > .second-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.second-message > .second-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.second-message > .second-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.second-message > .second-message3{
+  font-size:18px;
+  color:white;
+}
+
+.second-message > .second-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height:30px;
+  margin-top:-6px;
+  color:white;
+}
+
+
+/*두번째 문구 단락 끝*/
+
+/*첫번째 비디오 시작*/
+.main-video1{
+  margin-top:105px;
+}
+.main-video1 > .video-box > .video{
+  width:1800px;
+  height: 400px;
+}
+/*첫번째 비디오 끝*/
+
+/*세번째 문구 단락 시작*/
+.third-message{
+  margin-top:100px;
+  color:white;
+}
+.third-message > .third-message1{
+  font-size:18px;
+}
+.third-message > .third-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.third-message > .third-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.third-message > .third-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.third-message > .third-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.third-message > .third-message3{
+  font-size:18px;
+  color:white;
+}
+
+.third-message > .third-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height:30px;
+  margin-top:-6px;
+  color:white;
+}
+/*세번째 문구 단락 끝*/
+
+/*메인이미지3 시작*/
+.main-img3{
+  margin-top:105px;
+}
+/*이것도 물어보기2*/
+.main-img3 > .img-box > .img{
+  width:1800px;
+  height: 400px;
+}
+/*메인이미지3 끝*/
+
+/*네번째 문구 단락 시작*/
+.forth-message{
+  margin-top:100px;
+  color:white;
+}
+.forth-message > .forth-message1{
+  font-size:18px;
+}
+.forth-message > .forth-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.forth-message > .forth-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.forth-message > .forth-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.forth-message > .forth-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.forth-message > .forth-message3{
+  font-size:18px;
+  color:white;
+}
+.forth-message > .forth-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height:30px;
+  margin-top:-6px;
+  color:white;
+}
+/*네번째 문구 단락 끝*/
+
+/*두번째 동영상 시작*/
+.main-video2{
+  margin-top:105px;
+}
+.main-video2 > .video-box > .video{
+  width:1800px;
+  height: 400px;
+}
+/*두번째 동영상 끝*/
+
+/*다섯번째 문구 단락 시작*/
+.fifth-message{
+  margin-top:100px;
+  color:white;
+}
+.fifth-message > .fifth-message1{
+  font-size:18px;
+}
+.fifth-message > .fifth-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.fifth-message > .fifth-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.fifth-message > .fifth-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.fifth-message > .fifth-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.fifth-message > .fifth-message3{
+  font-size:18px;
+  color:white;
+}
+.fifth-message > .fifth-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height:30px;
+  margin-top:-6px;
+  color:white;
+}
+/*다섯번째 문구 단락 끝*/
+
+/*세번째 동영상 시작*/
+.main-video3{
+  margin-top:105px;
+}
+.main-video3 > .video-box > .video{
+  width:1800px;
+  height: 400px;
+}
+/*세번째 동영상 끝*/
+
+/*여섯번째 문구 단락 시작*/
+.sixth-message{
+  margin-top:100px;
+  color:white;
+}
+.sixth-message > .sixth-message1{
+  font-size:18px;
+}
+.sixth-message > .sixth-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.sixth-message > .sixth-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.sixth-message > .sixth-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.sixth-message > .sixth-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.sixth-message > .sixth-message3{
+  font-size:18px;
+  color:white;
+}
+.sixth-message > .sixth-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height: 30px;
+  margin-top:-6px;
+  color:white;
+}
+/*여섯번째 문구 단락 끝*/
+
+/*메인이미지4 시작*/
+.main-img4{
+  margin-top:105px;
+}
+.main-img4 > .img-box > .img{
+  width:1800px;
+  height: 400px;
+}
+/*메인이미지4 끝*/
+
+/*일곱번째 문구 단락 시작*/
+.seventh-message{
+  margin-top:100px;
+  color:white;
+}
+.seventh-message > .seventh-message1{
+  font-size:18px;
+}
+.seventh-message > .seventh-message1 > a > .shop-btn{
+  margin-top:30px;
+  width:150px;
+  height:50px;
+  background-color:white;
+  border: none;
+  border-radius:50px;
+}
+.seventh-message > .seventh-message1 > a > .shop-btn > .text{
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+}
+.seventh-message > .seventh-message1 >  a > .shop-btn:hover{
+  background-color:black;
+  cursor: pointer;
+}
+.seventh-message > .seventh-message1 > a:hover > .shop-btn:hover > .text{
+  color:white;
+}
+.seventh-message > .seventh-message3{
+  font-size:18px;
+  color:white;
+}
+.seventh-message > .seventh-message4{
+  font-size:16px;
+  margin-left:120px;
+  margin-right:35px;
+  line-height: 30px;
+  margin-top:-6px;
+  color:white;
+}
+/*일곱번째 문구 단락 끝*/
+
+/*이미지 나열 시작*/
+.img-list > img, .img-list > video{
+  width:861.5px;
+  height: 861.5px;
+  margin:10px;
+}
+/*이미지 나열 끝*/

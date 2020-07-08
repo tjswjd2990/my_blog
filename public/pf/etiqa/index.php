@@ -13,6 +13,7 @@
     <title>민정etiqa</title>
 </head>
 <body>
+<!--탑바 시작-->
     <div class="top-bar flex con-min-width con">
         <div class="logo-bar">
             <div class="logo"></div>
@@ -39,5 +40,210 @@
         </div>
         </a>
     </div>
+<!--탑바 끝-->
+
+<!--메인이미지1 시작-->
+<div class="main-img1 con flex flex-jc-c">
+    <div class="img-box">
+    <img src="https://tjswjd2990.github.io/img1/pf/etiqa/bg_sc10.png" alt="">
+    </div>
+</div>
+<!--메인이미지1 끝-->
+
+<!--첫번째 문구 단락 시작-->
+<div class="first-message con flex">
+    <div class="first-message1 shop">
+        <div>ETIQA INNER MASK<br>Daily Care, Inner Care</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="first-message2 flex flex-grow-1"></div>
+    <div class="first-message3">DAILY CARE,<br>INNER CARE</div>
+    <div class="first-message4">
+    현대인들의 일상 속 필수품이 되어버린 마스크.<br>
+    메이크업, 땀, 습기, 침 등의 이물질에 노출되는 마스크 내부<br>
+    또한 관리가 필요합니다. 에티카 이너 마스크는 얼굴에<br>
+    밀착되는 구조로 마스크와 함께 착용 시 효율을 높여줄 뿐만<br>
+    아니라 마스크의 내, 외부적 요인들로 인한 오염으로부터<br>
+    사용자를 보호해 줍니다. 매일매일 교체하는 이너 마스크로<br>
+    청결함은 높이고 마스크의 재사용 부담을 줄여보세요.
+    </div>
+</div>
+<!--첫번째 문구 단락 끝-->
+
+<!--메인이미지2 시작-->
+<div class="main-img2 con flex flex-jc-c">
+    <div class="img-box">
+    <img src="https://tjswjd2990.github.io/img1/pf/etiqa/bg_sc9.png" alt="">
+    </div>
+</div>
+<!--메인이미지2 끝-->
+
+<!--두번째 문구 단락 시작-->
+<div class="second-message con flex">
+    <div class="second-message1 shop">
+        <div>ETIQA PURE HAND<br>SANITIZER GEL</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+    </div>
+    <div class="second-message2 flex flex-grow-1"></div>
+    <div class="second-message3">청결, 건강을<br>지키는 생활습관</div>
+    <div class="second-message4">
+    순도 높은 에탄올의 99.9% 살균 효과,<br>
+    청량한 겔 제형으로 끈적임 없이 산뜻한 사용감.<br>
+    에티카 퓨어 핸드 손소독제 겔은 청결함에 기본이 되는<br>
+    살균 효과는 물론, 피부 보습과 진정까지 케어하여<br>
+    건강을 지키는 생활 습관의 시작을 도와줍니다.
+    </div>
+</div>
+<!--두번째 문구 단락 끝-->
+
+<!--첫번째 동영상 시작-->
+<div class="main-video1 con flex flex-jc-c">
+    <div class="video-box">
+    <video src="https://www.etiqa.co.kr/movie/mov_m3_wide.mp4" alt="">
+    </div>
+</div>
+<!--첫번째 동영상 끝-->
+
+<!--세번째 문구 단락 시작-->
+<div class="third-message con flex">
+    <div class="third-message1 shop">
+        <div>ETIQA STYLE MASK<br>BE CREATE, YOUR AREA</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="third-message2 flex flex-grow-1"></div>
+    <div class="third-message3">DAILY CARE,<br>INNER CARE</div>
+    <div class="third-message4">
+    현대인들의 일상 속 필수품이 되어버린 마스크.<br>
+    메이크업, 땀, 습기, 침 등의 이물질에 노출되는 마스크 내부<br>
+    또한 관리가 필요합니다. 에티카 이너 마스크는 얼굴에<br>
+    밀착되는 구조로 마스크와 함께 착용 시 효율을 높여줄 뿐만<br>
+    아니라 마스크의 내, 외부적 요인들로 인한 오염으로부터<br>
+    사용자를 보호해 줍니다. 매일매일 교체하는 이너 마스크로<br>
+    청결함은 높이고 마스크의 재사용 부담을 줄여보세요.
+    </div>
+</div>
+<!--세번째 문구 단락 끝-->
+
+<!--메인이미지3 시작-->
+<div class="main-img3 con flex flex-jc-c">
+    <div class="img-box">
+    <img src="https://tjswjd2990.github.io/img1/pf/etiqa/bg_sc8.png" alt="">
+    </div>
+</div>
+<!--메인이미지3 끝-->
+
+<!--네번째 문구 단락 시작-->
+<div class="forth-message con flex">
+    <div class="forth-message1 shop">
+        <div>ETIQA AIRWAY MASK<br>COTTON BASIC</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="forth-message2 flex flex-grow-1"></div>
+    <div class="forth-message3">순면, 나의 숨을 감싸다</div>
+    <div class="forth-message4">
+    로하스 인증 100% 순면 원단 안감에  OEKO-TEX 인증까지<br>
+    에티카 에어웨이 코튼 베이직 마스크는 호흡을 기본,<br>
+    민감한 피부까지 생각하는 순면 원단으로 보다<br>
+    세심한 솔루션을 제공합니다.
+    </div>
+</div>
+<!--네번째 문구 단락 끝-->
+
+<!--두번째 동영상 시작-->
+<div class="main-video2 con flex flex-jc-c">
+    <div class="video-box">
+    <video src="https://www.etiqa.co.kr/movie/mov_m2_wide.mp4" alt="">
+    </div>
+</div>
+<!--두번째 동영상 끝-->
+
+<!--다섯번째 문구 단락 시작-->
+<div class="fifth-message con flex">
+    <div class="fifth-message1 shop">
+        <div>ETIQA AIRWAY MASK<br>Advance / Progressive / Be natural</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="fifth-message2 flex flex-grow-1"></div>
+    <div class="fifth-message3">전에 없던, 편안함</div>
+    <div class="fifth-message4">
+    에어밸브를 통한 날숨의 해방. 인체공학적 디자인으로 탄생한<br>
+    가장 이상적인 핏. 에티카 에어웨이 어드밴스 마스크는 기존에<br>
+    제공해왔던 '깨끗한 숨'에 '편안함'을 더해 당신의 더 나은 삶을<br>
+    위한 솔루션을 제공합니다.
+    </div>
+</div>
+<!--다섯번째 문구 단락 끝-->
+
+<!--세번째 동영상 시작-->
+<div class="main-video3 con flex flex-jc-c">
+    <div class="video-box">
+    <video src="https://www.etiqa.co.kr/movie/mov_m1_wide.mp4" alt="">
+    </div>
+</div>
+<!--세번째 동영상 끝-->
+
+<!--여섯번째 문구 단락 시작-->
+<div class="sixth-message con flex">
+    <div class="sixth-message1 shop">
+        <div>ETIQA BASIC MASK<br>Comfortable Breathing Ware</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="sixth-message2 flex flex-grow-1"></div>
+    <div class="sixth-message3">차별화된 기본</div>
+    <div class="sixth-message4">
+    보다 까다로운 기준, 엄격한 테스트 에티카 베이직 마스크는 돔<br>
+    형태의 입체구조를 통한 편안한 호흡감과 부드러운 원단으로<br>
+    착용감을 높여 수많은 마스크들 중에서도 가장 베이직하면서도<br>
+    차별화된 솔루션을 제공합니다.
+    </div>
+</div>
+<!--여섯번째 문구 단락 끝-->
+
+<!--메인이미지4 시작-->
+<div class="main-img4 con flex flex-jc-c">
+    <div class="img-box">
+    <img src="https://tjswjd2990.github.io/img1/pf/etiqa/bg_sc7.png" alt="">
+    </div>
+</div>
+<!--메인이미지4 끝-->
+
+<!--일곱번째 문구 단락 시작-->
+<div class="seventh-message con flex">
+    <div class="seventh-message1 shop">
+        <div>ETIQA BASIC MASK<br>Kids</div>
+        <a href="#"><div class="shop-btn flex flex-ai-c"><div class="text">SHOP</div></div></a>
+        
+    </div>
+    <div class="seventh-message2 flex flex-grow-1"></div>
+    <div class="seventh-message3">우리 아이, 첫 번째 숨케어</div>
+    <div class="seventh-message4">
+    편안한 호흡감, 부드러운 착용감<br>
+    초미세먼지로 가득한 세상 속, 에티카 에어웨이 키즈 마스크는<br>
+    편안함을 바탕으로 우리 아이들의 건강한 숨 생활을 위한<br>
+    솔루션을 제공합니다.
+    </div>
+</div>
+<!--일곱번째 문구 단락 끝-->
+
+<!--이미지 나열 시작-->
+<div class="img-list con line-height-0">
+    <img class="inline-block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_inner.png" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_sanitizer.png" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_airway.png" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_kids.png" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_basic.png" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_fasion.png" alt="">
+    <video class="inline-block"  src="https://www.etiqa.co.kr/movie/banner03.mp4" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_brandstory.png" alt="">
+    <video class="inline-block"  src="https://www.etiqa.co.kr/movie/banner01.mp4" alt="">
+    <img class="inline-block"  src="https://tjswjd2990.github.io/img1/pf/etiqa/img_welove.png" alt="">
+</div>
+<!--이미지 나열 끝-->
+
 </body>
 </html>
