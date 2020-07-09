@@ -332,8 +332,9 @@ html {
   }
   
   .con {
-    margin-left:60px;
-    margin-right:60px;
+    min-width: 1366px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   
 
@@ -345,28 +346,35 @@ body{
 /*탑바 시작*/
 
 /*로고*/
-.top-bar > .logo-bar > .logo{
+.wrap > .logo{
     position: fixed;
+    top: 100px;
+    left: 100px;
     width: 122px;
     height: 26px;
     background: url(https://tjswjd2990.github.io/img1/pf/etiqa/sp_ico.svg) 0 -739px no-repeat;
-    margin : 100px 0 0 100px;
     background-size: 500px auto;
+    z-index: 200;
 }
 
 /*메뉴박스 시작*/
-.top-bar > .menu-box-1 > ul > li{
-    margin:100px 0 0 0;
+.menu-box-1 {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu-box-1 > ul > li{
     position: relative;
 }
-.top-bar > .menu-box-1 > ul > li > a{
+.menu-box-1 > ul > li > a{
     padding:0 30px;
     color:white;
     font-weight: bold;
     font-size:17px;
     position: relative;
 }
-.top-bar > .menu-box-1 > ul > li > a::after{
+.menu-box-1 > ul > li > a::after{
     position: absolute;
     content: "";
     background-color:white;
@@ -393,20 +401,20 @@ width:88px;
 
 
 /*2차메뉴*/
-.top-bar > .menu-box-1 > ul ul{
+.menu-box-1 > ul ul{
     display:none;
     position: absolute;
     top:100%;
     left: 0;
     width:100%;
 }
-.top-bar > .menu-box-1 > ul > li:hover > ul{
+.menu-box-1 > ul > li:hover > ul{
     display:block;
 }
-.top-bar > .menu-box-1 > ul ul > li{
-    margin:30px;
+.menu-box-1 > ul ul > li{
+    margin:25px;
 }
-.top-bar > .menu-box-1 > ul ul > li > a{
+.menu-box-1 > ul ul > li > a{
     font-size:12px;
     color:white;
     font-weight: bold;
@@ -416,40 +424,48 @@ width:88px;
 /*메뉴박스 끝*/
 
 /*메뉴아이콘 시작*/
-.top-bar > .menu-icon > .icon {
+.menu-icon {
     position: fixed;
-    left:auto;
-    right:120px;
+    top: 88px;
+    right:88px;
+    width: 50px;
+    height: 50px;
+    transition: transform .2s;
+    z-index: 200;
 }
-.top-bar > .menu-icon > .icon > div{
-    margin:110px 0 0 0;
+.menu-icon > div{
     position: absolute;
-    top:0px;
-    background-color:white;
-    width:29px;
+    top:50%;
+    left: 50%;
+    width: 26px;
     height: 4px;
-    transition: transform 0.5s;
+    transform: translate(-50%, -50%);
+    background-color:white;
 }
-.top-bar > .menu-icon > .icon > div:last-child{
-    transform: rotate(90deg);
+.menu-icon > div:last-child{
+  transform: translate(-50%, -50%) rotate(90deg);
 }
-.top-bar > .menu-icon:hover > .icon > div:last-child{
-    transform: rotate(180deg);
-    transition: 0.4s;
-}
-.top-bar > .menu-icon:hover > .icon > div{
-    transform: rotate(90deg);
-    transition: 0.4s;
+.menu-icon:hover {
+  transform: rotate(90deg);
 }
 /*메뉴아이콘 끝*/
 
 /*메인이미지1 시작*/
 .main-img1{
-  margin-top:105px;
+  margin-top:280px;
 }
-.main-img1 > .img-box > .img{
-  width:1800px;
+.main-img1 > .img-box{
+  position: relative;
   height: 400px;
+  overflow: hidden;
+}
+.main-img1 > .img-box > img{
+  position: absolute;
+  min-width: 1800px;
+  min-height: 400px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 /*메인이미지1 끝*/
 
@@ -457,6 +473,9 @@ width:88px;
 .first-message{
   margin-top:100px;
   color:white;
+}
+.first-message > div {
+  white-space: nowrap;
 }
 .first-message > .first-message1{
   font-size:18px;
@@ -501,12 +520,18 @@ width:88px;
 .main-img2{
   margin-top:105px;
 }
-
-/*이거 물어보기*/
+.main-img2 > .img-box{
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
 .main-img2 > .img-box > img{
+  position: absolute;
   min-width: 1800px;
   min-height: 400px;
-  overflow: hidden;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 /*메인이미지2 끝*/
 
@@ -514,6 +539,9 @@ width:88px;
 .second-message{
   margin-top:100px;
   color:white;
+}
+.second-message > div {
+  white-space: nowrap;
 }
 .second-message > .second-message1{
   font-size:18px;
@@ -614,10 +642,18 @@ width:88px;
 .main-img3{
   margin-top:105px;
 }
-/*이것도 물어보기2*/
-.main-img3 > .img-box > .img{
-  width:1800px;
+.main-img3 > .img-box{
+  overflow: hidden;
+  position: relative;
   height: 400px;
+}
+.main-img3 > .img-box > img{
+  position: absolute;
+  min-width: 1800px;
+  min-height: 400px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 /*메인이미지3 끝*/
 
@@ -774,9 +810,18 @@ width:88px;
 .main-img4{
   margin-top:105px;
 }
-.main-img4 > .img-box > .img{
-  width:1800px;
+.main-img4 > .img-box{
+  overflow: hidden;
+  position: relative;
   height: 400px;
+}
+.main-img4 > .img-box > img{
+  position: absolute;
+  min-width:1800px;
+  min-height: 400px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 /*메인이미지4 끝*/
 
@@ -824,9 +869,33 @@ width:88px;
 /*일곱번째 문구 단락 끝*/
 
 /*이미지 나열 시작*/
-.img-list > img, .img-list > video{
-  width:861.5px;
-  height: 861.5px;
-  margin:10px;
+.img-list > ul{
+  flex-wrap: wrap;
+  margin-top: 300px;
 }
+.img-list > ul > li {
+  position: relative;
+  width: calc(50% - 30px);
+  padding:0;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom:60px;
+  /*box-sizing은 width 값에 padding,border의 값이 포함된다.*/
+}
+.img-list > ul > li:nth-child(2n + 1) {
+  margin-right:60px;
+}
+.img-list > ul > li::after {
+  content:"";
+  padding-top:100%;
+  display: block;
+}
+.img-list > ul > li > img , .img-list > ul > li > video{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*이미지 나열 끝*/
