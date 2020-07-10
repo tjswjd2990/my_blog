@@ -108,9 +108,11 @@
         <!--첫번째 동영상 시작-->
         <div class="main-video1 flex flex-jc-c">
             <div class="video-box">
-                <video src="https://www.etiqa.co.kr/movie/mov_m3_wide.mp4" alt="">
+                <video oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                    <source src="https://www.etiqa.co.kr/movie/mov_m3_wide.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
+        </div>     
         <!--첫번째 동영상 끝-->
 
         <!--세번째 문구 단락 시작-->
@@ -171,9 +173,11 @@
         <!--두번째 동영상 시작-->
         <div class="main-video2 flex flex-jc-c">
             <div class="video-box">
-                <video src="https://www.etiqa.co.kr/movie/mov_m2_wide.mp4" alt="">
+                <video oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                    <source src="https://www.etiqa.co.kr/movie/mov_m2_wide.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
+        </div>     
         <!--두번째 동영상 끝-->
 
         <!--다섯번째 문구 단락 시작-->
@@ -201,9 +205,11 @@
         <!--세번째 동영상 시작-->
         <div class="main-video3 flex flex-jc-c">
             <div class="video-box">
-                <video src="https://www.etiqa.co.kr/movie/mov_m1_wide.mp4" alt="">
+                <video oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                    <source src="https://www.etiqa.co.kr/movie/mov_m1_wide.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
+        </div>        
         <!--세번째 동영상 끝-->
 
         <!--여섯번째 문구 단락 시작-->
@@ -280,13 +286,17 @@
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_fashion.png" alt="">
                 </li>
                 <li>
-                    <video class="block" src="https://www.etiqa.co.kr/movie/banner03.mp4" alt=""></video>
+                <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                    <source src="https://www.etiqa.co.kr/movie/banner03.mp4" type="video/mp4">
+                </video>
                 </li>
                 <li>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_brandstory.png" alt="">
                 </li>
                 <li>
-                    <video class="block" src="https://www.etiqa.co.kr/movie/banner01.mp4" alt=""></video>
+                <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                    <source src="https://www.etiqa.co.kr/movie/banner01.mp4" type="video/mp4">
+                </video>
                 </li>
                 <li>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_welove.png" alt="">

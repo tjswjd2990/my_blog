@@ -610,6 +610,7 @@ label[for] {
   left:0;
 }
 .bbox > .box2{
+  position: relative;
   width:50%;
   height: 100%;
   right:0;
@@ -619,26 +620,34 @@ label[for] {
   background-repeat: no-repeat;
   background-position: center;
 }
-.bbox{
-  position: relative;
-}
-.bbox > .sns-list{
+.bbox > .box2 > .sns-list{
   position: absolute;
+  top: 50%;
   transform: rotate(90deg);
-  top: 48%;
-  left:365px;
+  left:-355px;
 }
-.bbox > .sns-list > li:hover > a{
+
+.bbox > .box2 > .sns-list > li{
+  position: relative;
+  width: 170px;
+  height: 50px;
+}
+.bbox > .box2 > .sns-list > li > a{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.bbox > .box2 > .sns-list > li:hover > a{
   font-size:36px;
   left:-20px;
 }
-
-.bbox > .sns-list > li > a {
+.bbox > .box2 > .sns-list > li > a {
   font-family: "Playfair Display", serif;
   color: black;
   font-size:30px;
   padding:0 20px;
 }
+
 /*메인이미지 끝*/
 
 /*메인문구 시작*/

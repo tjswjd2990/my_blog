@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+
+
+
+
 html {
     /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
     font-family: "Roboto", "Noto Sans KR", sans-serif;
@@ -346,6 +353,7 @@ body{
 /*탑바 시작*/
 
 /*로고*/
+
 .wrap > .logo{
     position: fixed;
     top: 100px;
@@ -359,6 +367,7 @@ body{
 
 /*메뉴박스 시작*/
 .menu-box-1 {
+  font-family: 'Inter', sans-serif;
   position: absolute;
   top: 110px;
   left: 50%;
@@ -366,24 +375,28 @@ body{
 }
 .menu-box-1 > ul > li{
     position: relative;
+    margin: 0 35px;
 }
 .menu-box-1 > ul > li > a{
-    padding:0 30px;
     color:white;
-    font-weight: bold;
-    font-size:17px;
+    font-size:16px;
     position: relative;
+    font-weight: bold;
 }
 .menu-box-1 > ul > li > a::after{
     position: absolute;
     content: "";
     background-color:white;
     top:100%;
-    width:100px;
-    left:30px;
+    width:0;
+    left:0;
     height: 3px;
-    display:none;
-    transition:0.3s;
+    visibility: hidden;
+    transition: width 0.3s;
+}
+.menu-box-1 > ul > li:hover > a::after{
+  visibility: visible;
+  width:100%;
 }
 /*
 
@@ -402,17 +415,18 @@ width:88px;
 
 /*2차메뉴*/
 .menu-box-1 > ul ul{
-    display:none;
     position: absolute;
-    top:100%;
-    left: 0;
-    width:100%;
+    top:0;
+    left: -10px;
+    visibility: hidden;
+    transition: top 0.3s;
 }
 .menu-box-1 > ul > li:hover > ul{
-    display:block;
+  top:100%;
+  visibility:visible; 
 }
 .menu-box-1 > ul ul > li{
-    margin:25px;
+  padding: 10px 9px;
 }
 .menu-box-1 > ul ul > li > a{
     font-size:12px;
@@ -471,14 +485,16 @@ width:88px;
 
 /*첫번째 문구 단락 시작*/
 .first-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .first-message > div {
   white-space: nowrap;
 }
 .first-message > .first-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .first-message > .first-message1 > a > .shop-btn{
   margin-top:30px;
@@ -489,10 +505,11 @@ width:88px;
   border-radius:50px;
 }
 .first-message > .first-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .first-message > .first-message1 > a > .shop-btn:hover{
   background-color:black;
@@ -502,8 +519,10 @@ width:88px;
   color:white;
 }
 .first-message > .first-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 
 .first-message > .first-message4{
@@ -518,7 +537,7 @@ width:88px;
 
 /*메인이미지2 시작*/
 .main-img2{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-img2 > .img-box{
   overflow: hidden;
@@ -537,14 +556,16 @@ width:88px;
 
 /*두번째 문구 단락 시작*/
 .second-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .second-message > div {
   white-space: nowrap;
 }
 .second-message > .second-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .second-message > .second-message1 > a > .shop-btn{
   margin-top:30px;
@@ -555,10 +576,11 @@ width:88px;
   border-radius:50px;
 }
 .second-message > .second-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .second-message > .second-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -568,8 +590,10 @@ width:88px;
   color:white;
 }
 .second-message > .second-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 
 .second-message > .second-message4{
@@ -586,21 +610,22 @@ width:88px;
 
 /*첫번째 비디오 시작*/
 .main-video1{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-video1 > .video-box > .video{
-  width:1800px;
   height: 400px;
 }
 /*첫번째 비디오 끝*/
 
 /*세번째 문구 단락 시작*/
 .third-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .third-message > .third-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .third-message > .third-message1 > a > .shop-btn{
   margin-top:30px;
@@ -611,10 +636,11 @@ width:88px;
   border-radius:50px;
 }
 .third-message > .third-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .third-message > .third-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -624,8 +650,10 @@ width:88px;
   color:white;
 }
 .third-message > .third-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 
 .third-message > .third-message4{
@@ -640,7 +668,7 @@ width:88px;
 
 /*메인이미지3 시작*/
 .main-img3{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-img3 > .img-box{
   overflow: hidden;
@@ -659,11 +687,13 @@ width:88px;
 
 /*네번째 문구 단락 시작*/
 .forth-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .forth-message > .forth-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .forth-message > .forth-message1 > a > .shop-btn{
   margin-top:30px;
@@ -674,10 +704,11 @@ width:88px;
   border-radius:50px;
 }
 .forth-message > .forth-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .forth-message > .forth-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -687,8 +718,10 @@ width:88px;
   color:white;
 }
 .forth-message > .forth-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 .forth-message > .forth-message4{
   font-size:16px;
@@ -702,21 +735,22 @@ width:88px;
 
 /*두번째 동영상 시작*/
 .main-video2{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-video2 > .video-box > .video{
-  width:1800px;
   height: 400px;
 }
 /*두번째 동영상 끝*/
 
 /*다섯번째 문구 단락 시작*/
 .fifth-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .fifth-message > .fifth-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .fifth-message > .fifth-message1 > a > .shop-btn{
   margin-top:30px;
@@ -727,10 +761,11 @@ width:88px;
   border-radius:50px;
 }
 .fifth-message > .fifth-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .fifth-message > .fifth-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -740,8 +775,10 @@ width:88px;
   color:white;
 }
 .fifth-message > .fifth-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 .fifth-message > .fifth-message4{
   font-size:16px;
@@ -755,21 +792,22 @@ width:88px;
 
 /*세번째 동영상 시작*/
 .main-video3{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-video3 > .video-box > .video{
-  width:1800px;
   height: 400px;
 }
 /*세번째 동영상 끝*/
 
 /*여섯번째 문구 단락 시작*/
 .sixth-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .sixth-message > .sixth-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .sixth-message > .sixth-message1 > a > .shop-btn{
   margin-top:30px;
@@ -780,10 +818,11 @@ width:88px;
   border-radius:50px;
 }
 .sixth-message > .sixth-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .sixth-message > .sixth-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -793,8 +832,10 @@ width:88px;
   color:white;
 }
 .sixth-message > .sixth-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 .sixth-message > .sixth-message4{
   font-size:16px;
@@ -808,7 +849,7 @@ width:88px;
 
 /*메인이미지4 시작*/
 .main-img4{
-  margin-top:105px;
+  margin-top:70px;
 }
 .main-img4 > .img-box{
   overflow: hidden;
@@ -827,11 +868,13 @@ width:88px;
 
 /*일곱번째 문구 단락 시작*/
 .seventh-message{
-  margin-top:100px;
+  margin-top:80px;
   color:white;
 }
 .seventh-message > .seventh-message1{
+  font-family: 'Inter', sans-serif;
   font-size:18px;
+  font-weight: bold;
 }
 .seventh-message > .seventh-message1 > a > .shop-btn{
   margin-top:30px;
@@ -842,10 +885,11 @@ width:88px;
   border-radius:50px;
 }
 .seventh-message > .seventh-message1 > a > .shop-btn > .text{
+  font-family: 'Inter', sans-serif;
   color:black;
   margin-left:auto;
   margin-right:auto;
-  font-size:20px;
+  font-size:18px;
 }
 .seventh-message > .seventh-message1 >  a > .shop-btn:hover{
   background-color:black;
@@ -855,8 +899,10 @@ width:88px;
   color:white;
 }
 .seventh-message > .seventh-message3{
-  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-size:19px;
   color:white;
+  font-weight: bold;
 }
 .seventh-message > .seventh-message4{
   font-size:16px;
@@ -871,7 +917,7 @@ width:88px;
 /*이미지 나열 시작*/
 .img-list > ul{
   flex-wrap: wrap;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .img-list > ul > li {
   position: relative;
