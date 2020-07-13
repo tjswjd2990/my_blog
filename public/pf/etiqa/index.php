@@ -45,14 +45,13 @@
         <div class="cart">
             <div class="cart-cover img-box">
                 <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop2.png" alt="">
-                <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop3.png" alt="">
             </div>
         </div>
         <!--탑바 끝-->
 
         <!--메인이미지1 시작-->
         <div class="main-img1">
-            <div class="img-box">
+            <div class="cart-cover img-box">
                 <img src="https://tjswjd2990.github.io/img1/pf/etiqa/bg_sc10.png" alt="">
             </div>
         </div>
@@ -353,6 +352,22 @@
             </ul>
         </nav>
         <div class="second-bar con"></div>
+        <div class="company-box con">
+            <nav class="sns-box">
+                <ul class="flex">
+                    <li><a href="#">FACEBOOK.</a></li>
+                    <li><a href="#">INSTAGRAM.</a></li>
+                    <li><a href="#">YOUTUBE.</a></li>
+                    <li><a href="#">BLOG.</a></li>
+                    <li><a href="#">POST.</a></li>
+                </ul>
+            </nav>
+            <div class="company-logo-box">
+                <div class="logo"></div>
+                <div>Copyright ⓒ 2019 Filt Corporation All rights reserved.</div>
+            </div>
+            <div class="award-box"></div>
+        </div>
     </div>
 
     

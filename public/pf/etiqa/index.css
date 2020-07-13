@@ -477,30 +477,15 @@ width:88px;
   border-radius: 50%;
   background-color:white;
   box-shadow: 0 6px 6px 0 rgba(0,0,0,0.05);
+  cursor: pointer;
 }
 .cart > .cart-cover > img{
   top:25%;
   left:25%;
 }
-.cart > .cart-cover > img:first-child{
-  visibility: visible;
-}
-.cart > .cart-cover > img:last-child{
-  visibility: hidden;
-}
 .cart > .cart-cover:hover{
   background-color:black;
 }
-.cart > .cart-cover:hover > img:first-child{
-  visibility: hidden;
-}
-.cart > .cart-cover:hover > img:last-child{
-  visibility: visible;
-}
-
-
-
-
 /*메인이미지1 시작*/
 .main-img1{
   margin-top:280px;
@@ -1040,5 +1025,16 @@ width:88px;
 .foot-bar > .second-bar{
   background-color:white;
   height: 5px;
+}
+.company-box{
+  padding:100px 10px;
+}
+.company-box > .sns-box > ul > li > a{
+  font-size:13px;
+  font-weight: bold;
+  padding:10px;
+}
+.company-box > .company-logo-box > .logo{
+  
 }
 /*풋바 끝*/
