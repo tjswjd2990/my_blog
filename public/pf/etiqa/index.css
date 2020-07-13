@@ -428,10 +428,12 @@ width:88px;
 .menu-box-1 > ul ul > li{
   padding: 10px 9px;
 }
+.menu-box-1 > ul ul > li:first-child{
+  margin-top:18px;
+}
 .menu-box-1 > ul ul > li > a{
     font-size:12px;
     color:white;
-    font-weight: bold;
 }
 
 
@@ -1034,7 +1036,30 @@ width:88px;
   font-weight: bold;
   padding:10px;
 }
-.company-box > .company-logo-box > .logo{
-  
+.company-box > .company-award-box > .company-logo-box{
+  padding:20px 10px;
+}
+.company-box > .company-award-box > .company-logo-box > .logo{
+  background:url(https://tjswjd2990.github.io/img1/pf/etiqa/img_logo72.png) 0 0 no-repeat;
+  width: 70px;
+}
+.company-box > .company-award-box > .company-logo-box > .company{
+  font-family: 'Inter', sans-serif;
+  font-size:12px;
+  margin-left:20px;
+}
+.company-box > .company-award-box > .award-box{
+  margin-top:-27px;
+  margin-left:20px;
+}
+.company-box > .company-award-box > .award-box > .img-box{
+  padding:10px;
+  width: 100px;
+  height: 40px;
+}
+.foot-bar > .third-bar{
+  background-color:white;
+  height: 5px;
+  margin-bottom: 100px;
 }
 /*풋바 끝*/

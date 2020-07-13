@@ -362,24 +362,20 @@
                     <li><a href="#">POST.</a></li>
                 </ul>
             </nav>
-            <div class="company-logo-box">
-                <div class="logo"></div>
-                <div>Copyright ⓒ 2019 Filt Corporation All rights reserved.</div>
+            <div class="company-award-box flex">
+                <div class="company-logo-box flex">
+                    <div class="logo flex flex-jc-c flex-ai-c"></div>
+                    <div class="company">Copyright ⓒ 2019 Filt Corporation All rights reserved.</div>
+                </div>
+                <div class="award-box flex">
+                    <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_gda_w.png" alt=""></div>
+                    <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_if_w.png" alt=""></div>
+                    <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_josun_w.png" alt=""></div>
+                </div>
             </div>
-            <div class="award-box"></div>
         </div>
+        <div class="third-bar con"></div>
     </div>
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-asdfasdf
-asdfsdafsdf
-    <br><br>
-    <br>
-
     <!--풋바 끝-->
 </body>
 
