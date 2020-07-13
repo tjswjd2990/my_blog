@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
 
 
 
@@ -463,6 +463,43 @@ width:88px;
   transform: rotate(90deg);
 }
 /*메뉴아이콘 끝*/
+
+/*장바구니 아이콘*/
+.cart{
+  position: fixed;
+  top:84%;
+  left:91.5%;
+  z-index: 200;
+}
+.cart > .cart-cover{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:white;
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.05);
+}
+.cart > .cart-cover > img{
+  top:25%;
+  left:25%;
+}
+.cart > .cart-cover > img:first-child{
+  visibility: visible;
+}
+.cart > .cart-cover > img:last-child{
+  visibility: hidden;
+}
+.cart > .cart-cover:hover{
+  background-color:black;
+}
+.cart > .cart-cover:hover > img:first-child{
+  visibility: hidden;
+}
+.cart > .cart-cover:hover > img:last-child{
+  visibility: visible;
+}
+
+
+
 
 /*메인이미지1 시작*/
 .main-img1{
@@ -943,5 +980,65 @@ width:88px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.img-list > ul > li > .img-text{
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: .8px;
+  color:white;
+  top:27px;
+  left:40px;
+  z-index: 190;
+}
+.img-list > ul > li > .img-text-two{
+  color:#777;
+}
+.img-list > ul > li > .img-text-four{
+  color:#FDD434;
+}
+.img-list > ul > li > .img-text-six{
+  color:black;
+}
 /*이미지 나열 끝*/
+
+/*풋바 시작*/
+.foot-bar{
+  color:white;
+}
+.foot-bar > .first-bar{
+  background-color:white;
+  height: 5px;
+  margin-top:140px;
+}
+.foot-bar > .foot-menu-box{
+  margin-top:70px;
+  margin-bottom:70px;
+}
+.foot-bar > .foot-menu-box > ul{
+  padding:0 30px;
+}
+.foot-bar > .foot-menu-box > ul > li > a, 
+.foot-bar > .foot-menu-box > ul > .mini-menu-box > li > a{
+  color:white;
+  font-size:20px;
+  font-weight: bold;
+  letter-spacing: .3px;
+  padding-right:120px;
+}
+.foot-bar > .foot-menu-box > ul ul > li{
+  margin:10px 0;
+}
+.foot-bar > .foot-menu-box > ul ul > li > a{
+  font-size: 13px;
+  font-weight: bold;
+}
+.foot-bar > .foot-menu-box > ul > .mini-menu-box > li:last-child{
+  margin:20px 0;
+}
+.foot-bar > .second-bar{
+  background-color:white;
+  height: 5px;
+}
+/*풋바 끝*/

@@ -41,6 +41,13 @@
             <div></div>
             <div></div>
         </a>
+
+        <div class="cart">
+            <div class="cart-cover img-box">
+                <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop2.png" alt="">
+                <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop3.png" alt="">
+            </div>
+        </div>
         <!--탑바 끝-->
 
         <!--메인이미지1 시작-->
@@ -268,43 +275,97 @@
         <div class="img-list line-height-0">
             <ul class="flex">
                 <li>
+                    <div class="img-text img-text-one">ETIQA<br>INNER<br>MASK</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_inner.png" alt="">
                 </li>
                 <li>
+                    <div class="img-text img-text-two">ETIQA<br>PURE HAND<br>SANITIZER GEL</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_sanitizer.png" alt="">
                 </li>
                 <li>
+                    <div class="img-text img-text-three">ETIQA<br>AIRWAY<br>MASK<br>Advance/Progressive/Be natural</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_airway.png" alt="">
                 </li>
                 <li>
+                    <div class="img-text img-text-four">ETIQA<br>AIRWAY<br>MASK<br>Kids</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_kids.png" alt="">
                 </li>
                 <li>
+                    <div class="img-text img-text-five">ETIQA<br>BASIC<br>MASK<br>Comfortable Breathing Ware</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_basic.png" alt="">
                 </li>
                 <li>
+                    <div class="img-text img-text-six">ETIQA<br>STYLE<br>MASK<br>BE CREATE YOUR AREA</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_fashion.png" alt="">
                 </li>
                 <li>
-                <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
-                    <source src="https://www.etiqa.co.kr/movie/banner03.mp4" type="video/mp4">
-                </video>
+                    <div class="img-text img-text-seven">ETIQA<br>MASK<br>CASE</div>
+                    <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                        <source src="https://www.etiqa.co.kr/movie/banner03.mp4" type="video/mp4">
+                    </video>
                 </li>
                 <li>
+                    <div class="img-text img-text-eight">ETIQA<br>BRAND<br>STORY</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_brandstory.png" alt="">
                 </li>
                 <li>
-                <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
-                    <source src="https://www.etiqa.co.kr/movie/banner01.mp4" type="video/mp4">
-                </video>
+                    <div class="img-text img-text-nine">ETIQA<br>STORE</div>
+                    <video class="block" oncontextmenu="return false;" id="myVideo" width="1800" autoplay muted>
+                        <source src="https://www.etiqa.co.kr/movie/banner01.mp4" type="video/mp4">
+                    </video>
                 </li>
                 <li>
+                    <div class="img-text img-text-ten">WE<br>LOVE<br>ETIQA</div>
                     <img class="block" src="https://tjswjd2990.github.io/img1/pf/etiqa/img_welove.png" alt="">
                 </li>
             </ul>
         </div>
         <!--이미지 나열 끝-->
     </div>
+    <!--풋바 시작-->
+    <div class="foot-bar">
+        <div class="first-bar con"></div>
+        <nav class="foot-menu-box">
+            <ul class="con flex">
+                    <li><a>PRODUCT</a>
+                        <ul>
+                            <li><a href="#">BASIC</a></li>
+                            <li><a href="#">AIRWAY</a></li>
+                            <li><a href="#">COTTON</a></li>
+                            <li><a href="#">KIDS</a></li>
+                            <li><a href="#">STYLE</a></li>
+                            <li><a href="#">INNER</a></li>
+                            <li><a href="#">SANITIZER</a></li>
+                            <li><a href="#">CASE</a></li>
+                        </ul>
+                    </li>
+                    <li><a>FEATURE</a>
+                        <ul>
+                            <li><a href="#">SHIN MINA</a></li>
+                            <li><a href="#">KIM DAMI</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#">BRAND STORY</a></li>
+                <div class="mini-menu-box">
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ETIQA STORE</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="second-bar con"></div>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+asdfasdf
+asdfsdafsdf
+    <br><br>
+    <br>
+
+    <!--풋바 끝-->
 </body>
 
 </html>
