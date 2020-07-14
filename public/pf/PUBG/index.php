@@ -15,14 +15,18 @@
     <title>PUBG</title>
 </head>
 <body>
+<!--
 <div class="top-bar">
-<div class="logo-box">
-<div class="logo">
-<img src="https://d33wubrfki0l68.cloudfront.net/cc2f9575c7accaa319393b433924b510ff64c474/408bc/static/assets/img/global-pcs-logo.png" alt="">
-</div>
-</div>
+    <div class="logo-box">
+        <div class="logo">
+            <img src="https://d33wubrfki0l68.cloudfront.net/cc2f9575c7accaa319393b433924b510ff64c474/408bc/static/assets/img/global-pcs-logo.png" alt="">
+        </div>
+    </div>
 <div>2</div>
 <div>3</div>
+</div>
+-->
+<div class="img-slide">
 </div>
 </body>
 </html>
