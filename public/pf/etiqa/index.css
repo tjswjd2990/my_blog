@@ -474,6 +474,7 @@ width:88px;
   z-index: 200;
 }
 .cart > .cart-cover{
+  position: relative;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -482,11 +483,25 @@ width:88px;
   cursor: pointer;
 }
 .cart > .cart-cover > img{
-  top:25%;
-  left:25%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.cart > .cart-cover > img:first-child{
+  visibility: visible;
+}
+.cart > .cart-cover > img:last-child{
+  visibility: hidden;
 }
 .cart > .cart-cover:hover{
   background-color:black;
+}
+.cart > .cart-cover:hover > img:first-child{
+  visibility: hidden;
+}
+.cart > .cart-cover:hover > img:last-child{
+  visibility: visible;
 }
 /*메인이미지1 시작*/
 .main-img1{

@@ -45,6 +45,7 @@
         <div class="cart">
             <div class="cart-cover img-box">
                 <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop2.png" alt="">
+                <img src="https://tjswjd2990.github.io/img1/pf/etiqa/ico_shop3.png" alt="">
             </div>
         </div>
         <!--탑바 끝-->
