@@ -1,4 +1,4 @@
-$(function(){
+$(function ImgSlider__Init(){
     $('.img-slider > .owl-carousel').owlCarousel({
         items: 1,
         nav: true,
@@ -12,4 +12,4 @@ $(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:true
     });
-})
+});
