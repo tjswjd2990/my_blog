@@ -86,9 +86,11 @@
 <!--첫번째 레이아웃 시작-->
 
 <!--첫번째 레이아웃 - 메인뉴스 시작-->
-<div class="layout">
-    <h2 class="feat-news">FEATURED NEWS</h2>
-    <div class="view-all">View All</div>
+<div class="first-layout">
+    <div class="text-align-center relative con">
+        <h2 class="feat-news">FEATURED NEWS</h2>
+        <a href="#" class="view absolute-right absolute-middle">View All</a>
+    </div>
 </div>
 <!--첫번째 레이아웃 - 메인뉴스 끝-->
 

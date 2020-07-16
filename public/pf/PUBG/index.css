@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap');
+
+
 
 
 
@@ -7,7 +11,7 @@
 
 html {
     /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
-    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    font-family: "Arimo", "Noto Sans KR",  sans-serif;
   }
   
   /* 노말라이즈 */
@@ -236,7 +240,7 @@ html {
   
   .table-row.row::after {
     display:inline;
-    clear:non;
+    clear:both;
   }
   
   .table-row > .cell {
@@ -371,26 +375,43 @@ html {
   font-stretch: wider;
   position: relative;
 }
+.top-bar > .menu-box-1 > ul > li > a::before{
+  content:"";
+  position: absolute;
+  top:100%;
+  left:50%;
+  width:0;
+  height: 2px;
+  background-color:#df0024;
+  visibility: hidden;
+}
 .top-bar > .menu-box-1 > ul > li > a::after{
   content:"";
   position: absolute;
   top:100%;
-  left:0;
+  right:50%;
   width:0;
   height: 2px;
   background-color:#df0024;
+  visibility: hidden;
+}
+.top-bar > .menu-box-1 > ul > li:hover > a::before{
+  width:50%;
+  transition : .3s;
+  visibility: visible;
 }
 .top-bar > .menu-box-1 > ul > li:hover > a::after{
-  width:100%;
+  width:50%;
   transition : .3s;
+  visibility: visible;
 }
-.top-bar > .menu-box-1 > ul > li:hover:nth-child(2) > a::after{
+.top-bar > .menu-box-1 > ul > li:nth-child(2) > a::after,.top-bar > .menu-box-1 > ul > li:nth-child(2) > a::before{
   background-color:#0085c7;
 }
-.top-bar > .menu-box-1 > ul > li:hover:nth-child(3) > a::after{
+.top-bar > .menu-box-1 > ul > li:nth-child(3) > a::after,.top-bar > .menu-box-1 > ul > li:nth-child(3) > a::before{
   background-color:#0da447;
 }
-.top-bar > .menu-box-1 > ul > li:hover:last-child > a::after{
+.top-bar > .menu-box-1 > ul > li:last-child > a::after,.top-bar > .menu-box-1 > ul > li:last-child > a::before{
   background-color:#f4c300;
 }
 .top-bar > .lan > .lan-icon > svg{
@@ -401,9 +422,6 @@ html {
 /*탑바 끝*/
 
 /*상단 이미지 슬라이더 시작*/
-body{
-  background-color:black;
-}
 
 /*상단 이미지 슬라이더 - 이미지*/
 .img-slider .item{
@@ -447,7 +465,7 @@ body{
   z-index:10;
   left:0;
   top:50%;
-  transform:translateY(-50%);
+  transform: translateY(-50%);
   background-color:rgba(255, 255, 255, 0.2);
   width:50px;
   height:150px;
@@ -459,7 +477,7 @@ body{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.1) 100%);
 }
 .img-slider > .nav-icon > button.owl-prev{
-  transform: translateY(-50%) rotate(180deg);
+  transform: trnaslatey(-50%) rotate(180deg);
 }
 .img-slider > .nav-icon > button:last-child {
   left:auto;
@@ -467,54 +485,52 @@ body{
 }
 .img-slider > .owl-carousel.owl-theme > .owl-stage-outer > .owl-stage > .owl-item > div.item > .img-text-box{
   position:absolute;
-  top:50%;
-  transform:translatey(-50%);
+  top:30%;
   left:20px;
   right:20px;
   text-align:center;
   color:white;
 }
 .img-slider > .owl-carousel.owl-theme > .owl-stage-outer > .owl-stage > .owl-item > div.item > .img-text-box > .title{
-  font-size:3rem;
+  font-family: 'Yantramanav', sans-serif;
+  font-size:90px;
 }
 .img-slider > .owl-carousel.owl-theme > .owl-stage-outer > .owl-stage > .owl-item > div.item > .img-text-box > .area{
-  font-size:2rem;
+  font-size:23px;
+  margin-top:-80px;
+  letter-spacing: .5px;
 }
 .img-slider > .owl-carousel.owl-theme > .owl-stage-outer > .owl-stage > .owl-item > div.item > .img-text-box > .more{
   display:block;
-  font-size:17px;
-  padding:13px 10px;
+  font-size:19px;
   border:2px solid white;
   border-radius:50px;
-  width:200px;
-  height:25px;
+  width:250px;
+  padding:20px 0;
   margin-left:auto;
   margin-right:auto;
+  text-align: center;
+}
+.img-slider > .owl-carousel.owl-theme > .owl-stage-outer > .owl-stage > .owl-item > div.item > .img-text-box > .more:hover{
+  background-color:white;
+  color:black;
 }
 /*상단 이미지 슬라이더 끝*/
 
 /*첫번째 레이아웃 시작*/
-/*첫번 레이아웃 - 메인 뉴스 시작*/
-.layout{
-  width:1610px;
-  height: 100vh;
-  background-color:red;
-  margin-left:auto;
-  margin-right:auto;
+body{
+background-color: #191d22;
+}
+
+.first-layout{
   color:white;
-  position: relative;
-}
-.layout > .feat-news{
-  font-size:20px;
-  text-align: center;
-}
-.layout > .view-all{
-  position: absolute;
-  top:0;
-  right:0;
-  font-size:12px;
 }
 
-/*첫번 레이아웃 - 메인 뉴스 끝*/
+.first-layout > .con{
+  max-width:1000px;
+}
+/*첫번째 레이아웃 - 메인 뉴스 시작*/
 
-/*첫번재 레이아웃 끝*/
+/*첫번째 레이아웃 - 메인 뉴스 끝*/
+
+/*첫번째 레이아웃 끝*/
