@@ -84,18 +84,34 @@
 <!--상단 이미지 슬라이더 끝-->
 
 <!--첫번째 레이아웃 시작-->
-
-<!--첫번째 레이아웃 - 메인뉴스 시작-->
 <div class="first-layout">
     <div class="text-align-center relative con">
         <h2 class="feat-news">FEATURED NEWS</h2>
         <a href="#" class="view absolute-right absolute-middle">View All</a>
     </div>
 </div>
-<!--첫번째 레이아웃 - 메인뉴스 끝-->
-
 <!--첫번째 레이아웃 끝-->
 
-
+<!--두번째 레이아웃 시작-->
+<div class="second-layout con flex">
+    <div class="PCS-Box">
+        <div class="box-title-1">2020 PCS<br>STREAMING CHANNELS</div>
+        <div class="box-txt-1">Check out English broadcasts for all regions!</div>
+        <ul class="box-btn-1 flex flex-wrap-wrap">
+            <a href="#" class="Twitch flex flex-ai-c">Twitch</a>
+            <a href="#" class="YouTube-PUBG flex flex-ai-c">YouTube(PUBG)</a>
+            <a href="#" class="YouTube-Esports flex flex-ai-c">YouTube(Esports)</a>
+            <a href="#" class="More-Languages flex flex-ai-c">More-Languages</a>
+        </div>
+    </div>
+    <div class="PUBG-Box">
+        <div class="box-title-2">2020 PUBG<br>GLOBAL ESPORTS RULESE</div>
+        <div class="box-txt-2">Standard & Universal</div>
+        <div class="box-btn-2">
+            <div class="Download">Download</div>
+        </div>
+    </div>
+</div>
+<!--두번째 레이아웃 끝-->
 </body>
 </html>

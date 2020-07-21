@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 
 
 
@@ -320,7 +322,15 @@ html {
   * > .flex-as-e {
     align-self:flex-end;
   }
-  
+
+  * > .flex-wrap-wrap{
+    flex-wrap: wrap;
+  }
+
+  * > .flex-wrap-nowrap{
+    flex-wrap: nowrap;
+  }
+
   * > .flex-column-nowrap {
     flex-flow:column nowrap;
   }
@@ -529,8 +539,151 @@ background-color: #191d22;
 .first-layout > .con{
   max-width:1000px;
 }
-/*첫번째 레이아웃 - 메인 뉴스 시작*/
-
-/*첫번째 레이아웃 - 메인 뉴스 끝*/
-
 /*첫번째 레이아웃 끝*/
+
+/*두번째 레이아웃 시작*/
+.second-layout{
+  color:white;
+}
+.second-layout > .PCS-Box{
+  background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/sample_main_banner01.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:calc(100% / 2);
+  min-height: 500px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.second-layout > .PCS-Box >.box-title-1{
+  font-family: 'Yantramanav', sans-serif;
+  font-size:50px;
+  position: absolute;
+  top:25%;
+  left:7%;
+}
+.second-layout > .PCS-Box > .box-txt-1{
+  font-family: 'Montserrat', sans-serif;
+  font-size:18px;
+  font-weight: 400;
+  position: absolute;
+  top:52%;
+  left:7%;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
+}
+.second-layout > .PCS-Box > .box-btn-1{
+  position: absolute;
+  top:60%;
+  left:7%;
+  width:500px;
+  height: 140px;
+  border:2px solid red;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .Twitch{
+  border:2px solid white;
+  margin-right:8px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
+  width:190px;
+  height: 55px;
+  padding-left:15px;
+  position: relative;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .Twitch:hover{
+  background-color:white;
+  color:black;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .Twitch::after{
+  content:">";
+  position: absolute;
+  top:50%;
+  right:15px;
+  transform:translateY(-50%);
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG{
+  border:2px solid white;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
+  width:190px;
+  height: 55px;
+  padding-left:15px;
+  position: relative;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG:hover{
+  background-color:white;
+  color:black;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG::after{
+  content:">";
+  position: absolute;
+  top:50%;
+  right:15px;
+  transform:translateY(-50%);
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports{
+  border:2px solid white;
+  border-radius: 30px;
+  margin-right:8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
+  width:190px;
+  height: 55px;
+  padding-left:15px;
+  position: relative;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports:hover{
+  background-color:white;
+  color:black;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports::after{
+  content:">";
+  position: absolute;
+  top:50%;
+  right:15px;
+  transform:translateY(-50%);
+}
+.second-layout > .PCS-Box > .box-btn-1 > .More-Languages{
+  border:2px solid white;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
+  width:190px;
+  height: 55px;
+  padding-left:15px;
+  position: relative;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .More-Languages:hover{
+  background-color:white;
+  color:black;
+}
+.second-layout > .PCS-Box > .box-btn-1 > .More-Languages::after{
+  content:">";
+  position: absolute;
+  top:50%;
+  right:15px;
+  transform:translateY(-50%);
+}
+.second-layout > .PUBG-Box{
+  background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/sample_main_banner02.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:calc(100% / 2);
+  min-height: 500px;
+  position: relative;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+/*두번째 레이아웃 끝*/
