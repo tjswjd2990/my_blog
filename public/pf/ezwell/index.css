@@ -4,12 +4,11 @@ html {
   }
   
   /* 노말라이즈 */
-  body, ul, li, h1 {
+  body, ul, li, h1, h2{
+    list-style: none;
     margin:0;
-    padding:0;
-    list-style:none;
-  }
-  
+    padding: 0;
+  } 
   a {
     color:inherit;
     text-decoration:none;
@@ -341,38 +340,25 @@ html {
     width:1370px;
   }
   /* 고정형 .con 끝 */
-  
-  /* 반응형 타입 1 .con 시작 */
-  /*
-  .con {
-    max-width:1370px;
-  }
-  */
-  /* 반응형 타입 1 .con 끝 */
-  
-  /* 반응형 타입 2(넓을때만 반응형) .con 시작 */
-  /*
-  .con-min-width {
-    min-width:1370px;
-  }
-  
-  .con {
-    margin-left:50px;
-    margin-right:50px;
-  }
-  */
-  /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
-
   /*커스텀*/
 .con{
     max-width:1370px;
 }
 /*탑바 시작*/
-/*탑바 - 로고*/
 .top-bar{
-    
+  position: fixed;
+  width:100%;
 }
+/*탑바 - 로고*/
 
+/*탑바 - 메뉴바*/
 
-
+/*메뉴박스 시작*/
+.menu-box-1 > ul > li{
+  border:2px solid red;
+}
 /*탑바 끝*/
+
+/*메인 슬라이드 시작*/
+
+/*메인 슬라이드 끝*/

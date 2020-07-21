@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
     <script src="index.js"></script>
+
+
     <title>민정 ezwell</title>
 </head>
+
 <body>
 <!--탑바 시작-->
 <div class="top-bar flex">
-    <div class="logo">
-        <img src="https://tjswjd2990.github.io/img1/pf/ezwell/logo.png" alt="">
-    </div>
-    <div></div>
+    <nav class="menu-box-1">
+       <ul class="flex">
+           <li><a href="#">COMPANY</a></li>
+           <li><a href="#">BUSINESS</a></li>
+           <li><a href="#">IR</a></li>
+           <li><a href="#">CSR</a></li>
+           <li><a href="#">SUPPORT</a></li>
+       </ul>
+   </nav>
 </div>
 <!--탑바 끝-->
+
+<!--메인 슬라이드 시작-->
+
+<!--메인 슬라이드 끝-->
 </body>
 </html>
