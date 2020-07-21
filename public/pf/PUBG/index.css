@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600;700;900&display=swap');
+
 
 
 
@@ -544,6 +546,7 @@ background-color: #191d22;
 /*두번째 레이아웃 시작*/
 .second-layout{
   color:white;
+  margin-bottom:180px;
 }
 .second-layout > .PCS-Box{
   background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/sample_main_banner01.jpg);
@@ -554,16 +557,17 @@ background-color: #191d22;
   min-height: 500px;
   position: relative;
   box-sizing: border-box;
+  box-shadow :0 35px 50px -23px #000;
 }
 
-.second-layout > .PCS-Box >.box-title-1{
+.second-layout > div >.box-title-1{
   font-family: 'Yantramanav', sans-serif;
   font-size:50px;
   position: absolute;
   top:25%;
   left:7%;
 }
-.second-layout > .PCS-Box > .box-txt-1{
+.second-layout > div > .box-txt-1{
   font-family: 'Montserrat', sans-serif;
   font-size:18px;
   font-weight: 400;
@@ -573,117 +577,175 @@ background-color: #191d22;
   font-stretch: ultra-expanded;
   letter-spacing: .8px;
 }
-.second-layout > .PCS-Box > .box-btn-1{
+.second-layout > div > .box-btn-1{
   position: absolute;
   top:60%;
   left:7%;
   width:500px;
   height: 140px;
-  border:2px solid red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .8px;
 }
-.second-layout > .PCS-Box > .box-btn-1 > .Twitch{
-  border:2px solid white;
+.second-layout > div > .box-btn-1 > li{
+  position: relative;
+  width:190px;
+  height: 55px;
   margin-right:8px;
   border-radius: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-stretch: ultra-expanded;
-  letter-spacing: .8px;
-  width:190px;
-  height: 55px;
-  padding-left:15px;
-  position: relative;
-}
-.second-layout > .PCS-Box > .box-btn-1 > .Twitch:hover{
-  background-color:white;
-  color:black;
-}
-.second-layout > .PCS-Box > .box-btn-1 > .Twitch::after{
-  content:">";
-  position: absolute;
-  top:50%;
-  right:15px;
-  transform:translateY(-50%);
-}
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG{
   border:2px solid white;
-  border-radius: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-stretch: ultra-expanded;
-  letter-spacing: .8px;
-  width:190px;
-  height: 55px;
-  padding-left:15px;
-  position: relative;
+  overflow: hidden;
 }
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG:hover{
+.second-layout > div > .box-btn-1 > li:hover{
   background-color:white;
   color:black;
 }
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-PUBG::after{
+.second-layout > div > .box-btn-1 > li::after{
   content:">";
   position: absolute;
   top:50%;
   right:15px;
   transform:translateY(-50%);
 }
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports{
-  border:2px solid white;
-  border-radius: 30px;
-  margin-right:8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-stretch: ultra-expanded;
-  letter-spacing: .8px;
-  width:190px;
-  height: 55px;
+.second-layout > div > .box-btn-1 > li > a{
+  width: 100%;
+  height: 100%;
   padding-left:15px;
-  position: relative;
+  box-sizing: border-box;
 }
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports:hover{
-  background-color:white;
-  color:black;
-}
-.second-layout > .PCS-Box > .box-btn-1 > .YouTube-Esports::after{
-  content:">";
-  position: absolute;
-  top:50%;
-  right:15px;
-  transform:translateY(-50%);
-}
-.second-layout > .PCS-Box > .box-btn-1 > .More-Languages{
-  border:2px solid white;
-  border-radius: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-stretch: ultra-expanded;
-  letter-spacing: .8px;
-  width:190px;
-  height: 55px;
-  padding-left:15px;
-  position: relative;
-}
-.second-layout > .PCS-Box > .box-btn-1 > .More-Languages:hover{
-  background-color:white;
-  color:black;
-}
-.second-layout > .PCS-Box > .box-btn-1 > .More-Languages::after{
-  content:">";
-  position: absolute;
-  top:50%;
-  right:15px;
-  transform:translateY(-50%);
-}
+
 .second-layout > .PUBG-Box{
   background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/sample_main_banner02.jpg);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  width:calc(100% / 2);
+  width: calc(100% / 2);
   min-height: 500px;
   position: relative;
-  border: 2px solid green;
   box-sizing: border-box;
+  box-shadow :0 35px 50px -23px #000;
+}
+
+/*두번째 레이아웃 끝*/
+.second-layout > .PUBG-Box > .box-btn-1 > li{
+  position: relative;
+  width:230px;
+  height: 55px;
+  margin-right:0px;
+  border-radius: 30px;
+  border:2px solid white;
+  overflow: hidden;
+}
+
+.second-layout > .PUBG-Box > .box-btn-1 > li::after{
+  content: "";
+  display: none;
+}
+
+.second-layout > .PUBG-Box > .box-btn-1 > li > a{
+  padding: 0;
+  justify-content: center;
 }
 /*두번째 레이아웃 끝*/
+
+/*풋바 시작*/
+.foot-bar{
+  margin-top:-20px;
+  width:inherit;
+  background-color:black;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 0;
+}
+/*풋바 - sns 라인*/
+.foot-bar > .sns-line{
+  width:1820px;
+  height: 90px;
+  top:-145px;
+  position: relative;
+}
+
+.foot-bar > .sns-line > .sns-icon{
+  position: absolute;
+  top:50%;
+  transform:translatey(-50%);
+  left:0;
+  margin-left:110px;
+}
+.foot-bar > .sns-line > .sns-icon > a > svg:hover > path{
+  fill:#707070;
+}
+.foot-bar > .sns-line > .careers-partners{
+  font-family: 'Yantramanav', sans-serif;
+  font-size:20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform:translatey(-50%);
+  margin-right:110px;
+  color:white;
+}
+.foot-bar > .sns-line > .careers-partners > .careers{
+  margin-right: 35px;
+}
+.foot-bar > .sns-line > .careers-partners > .careers:hover{
+  color:#707070;
+}
+.foot-bar > .sns-line > .careers-partners > .careers::after{
+  content: "";
+  position: absolute;
+  top:2px;
+  left:47%;
+  background-color:#335573;
+  width:1px;
+  height: 20px;
+}
+.foot-bar > .sns-line > .careers-partners > .partners:hover{
+  color:#707070;
+}
+/*풋바 - 하단작업*/
+.foot-bar > .company{
+  color:white;
+  justify-content: space-around;
+  width: 80vw;
+}
+.foot-bar > .company > .foot-txt > .cateitem{
+  margin-left:20px;
+}
+.foot-bar > .company > .foot-txt > .cateitem > ul > li > a{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:14px;
+  display: block;
+  padding-right:35px;
+  font-weight: 700;
+  margin-top:-7px;
+  margin-bottom:7px;
+}
+.foot-bar > .company > .foot-txt > .cateitem > .text-1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:14px;
+  font-weight: 200;
+  font-stretch: ultra-expanded;
+  color:#838383;
+  margin-bottom:7px;
+}
+.foot-bar > .company > .foot-txt > .cateitem > .text-2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:14px;
+  font-weight: 200;
+  font-stretch: ultra-expanded;
+  color:#838383;
+}
+.foot-bar > .company > .foot-txt > .cateitem > .text-2 > a:hover{
+  color:white;
+}
+.foot-bar > .company > .t-mark{
+  margin-right:0;
+}
+.foot-bar > .company > .t-mark > img{
+  width:125px;
+  height: 59px;
+}
+/*풋바 끝*/
