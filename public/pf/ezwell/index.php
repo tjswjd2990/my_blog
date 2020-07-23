@@ -36,11 +36,11 @@
 
 <!--메인 슬라이드 시작-->
   <!-- Swiper -->
-  <div class="swiper-container">
+  <div class="swiper-container main-slider-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img01.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img02.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img03.jpg)"></div>
+      <div class="swiper-slide main-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img01.jpg)"></div>
+      <div class="swiper-slide main-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img02.jpg)"></div>
+      <div class="swiper-slide main-slide" style="background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/main-slider-img03.jpg)"></div>
     </div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
