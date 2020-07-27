@@ -1,370 +1,493 @@
 html {
-    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
-    font-family: "Roboto", "Noto Sans KR", sans-serif;
-  }
-  
-  /* 노말라이즈 */
-  body, ul, li, h1, h2{
-    list-style: none;
-    margin:0;
-    padding: 0;
-  } 
-  a {
-    color:inherit;
-    text-decoration:none;
-  }
-  
-  label[for] {
-    cursor:pointer;
-    user-select:none;
-  }
-  
-  /* 라이브러리 */
-  .block {
-    display:block;
-  }
-  
-  .inline-block {
-    display:inline-block;
-  }
-  
-  .absolute-left {
-    position:absolute;
-    left:0;
-  }
-  
-  .absolute-right {
-    position:absolute;
-    right:0;
-  }
-  
-  .absolute-bottom {
-    position:absolute;
-    bottom:0;
-  }
-  
-  .absolute-top {
-    position:absolute;
-    top:0;
-  }
-  
-  .absolute-center {
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-  }
-  
-  .absolute-middle {
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-  }
-  
-  .absolute-middle.absolute-center {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-  }
-  
-  .relative {
-    position:relative;
-  }
-  
-  .cell {
-    float:left;
-    box-sizing:border-box;
-  }
-  
-  .cell-right {
-    float:right;
-    box-sizing:border-box;
-  }
-  
-  .row::after {
-    content:"";
-    display:block;
-    clear:both;
-  }
-  
-  .clear-both {
-    clear:both;
-  }
-  
-  .img-box > img {
-    width:100%;
-    display:block;
-  }
-  
-  .con {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  
-  .margin-0-auto {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  
-  .text-align-center {
-    text-align:center;
-  }
-  
-  .text-align-right {
-    text-align:right;
-  }
-  
-  .line-height-0 {
-    line-height:0;
-  }
-  
-  .line-height-0 > * {
-    line-height:normal;
-  }
-  
-  .width-30px {
-    width:30px;
-  }
-  
-  .width-35px {
-    width:35px;
-  }
-  
-  .width-40px {
-    width:35px;
-  }
-  
-  .width-45px {
-    width:35px;
-  }
-  
-  .width-50px {
-    width:50px;
-  }
-  
-  .width-80px {
-    width:80px;
-  }
-  
-  .width-100px {
-    width:100px;
-  }
-  
-  .width-100p {
-    width:100%;
-  }
-  
-  .width-60p {
-    width:60%;
-  }
-  
-  .width-55p {
-    width:55%;
-  }
-  
-  .width-50p {
-    width:50%;
-  }
-  
-  .width-45p {
-    width:45%;
-  }
-  
-  .width-40p {
-    width:40%;
-  }
-  
-  .width-30p {
-    width:30%;
-  }
-  
-  .width-35p {
-    width:35%;
-  }
-  
-  .width-100p-except-30px {
-    width:calc(100% - 30px);
-  }
-  
-  .width-100p-except-35px {
-    width:calc(100% - 35px);
-  }
-  
-  .width-100p-except-40px {
-    width:calc(100% - 40px);
-  }
-  
-  .width-100p-except-50px {
-    width:calc(100% - 50px);
-  }
-  
-  .width-100p-except-80px {
-    width:calc(100% - 80px);
-  }
-  
-  .width-100p-except-100px {
-    width:calc(100% - 100px);
-  }
-  
-  .height-100p {
-    height:100%;
-  }
-  
-  .height-50p {
-    height:50%;
-  }
-  
-  .border-box {
-    box-sizing:border-box;
-  }
-  
-  .font-size-dot-8rem {
-    font-size:.8rem;
-  }
-  
-  .table-row {
-    display:table;
-  }
-  
-  .table-row.row::after {
-    display:inline;
-    clear:non;
-  }
-  
-  .table-row > .cell {
-    float:none;
-    display:table-cell;
-  }
-  
-  .border-red {
-    border:10px solid red;
-  }
-  
-  .border-green {
-    border:10px solid green;
-  }
-  
-  .border-blue {
-    border:10px solid blue;
-  }
-  
-  .border-gold {
-    border:10px solid gold;
-  }
-  
-  .border-pink {
-    border:10px solid pink;
-  }
-  
-  /* 라이브러리 - flex */
-  * > .flex {
-    display:flex;
-  }
-  
-  * > .flex-grow-1 {
-    flex-grow:1;
-  }
-  
-  * > .flex-jc-c {
-    justify-content:center;
-  }
-  
-  * > .flex-jc-s {
-    justify-content:flex-start;
-  }
-  
-  * > .flex-jc-e {
-    justify-content:flex-end;
-  }
-  
-  * > .flex-jc-sb {
-    justify-content:space-between;
-  }
-  
-  * > .flex-ai-c {
-    align-items:center;
-  }
-  
-  * > .flex-ai-s {
-    align-items:flex-start;
-  }
-  
-  * > .flex-ai-e {
-    align-items:flex-end;
-  }
-  
-  * > .flex-as-s {
-    align-self:stretch;
-  }
-  
-  * > .flex-as-c {
-    align-self:center;
-  }
-  
-  * > .flex-as-s {
-    align-self:flex-start;
-  }
-  
-  * > .flex-as-e {
-    align-self:flex-end;
-  }
-  
-  * > .flex-column-nowrap {
-    flex-flow:column nowrap;
-  }
-  
-  * > .flex-column-wrap {
-    flex-flow:column wrap;
-  }
-  
-  * > .flex-row-wrap {
-    flex-flow:row wrap;
-  }
-  
-  .flex-ch-basis-0 > * {
-    flex-basis:0;
-  }
-  
-  * > .flex-1-0-0 {
-    flex:1 0 0;
-  }
-  
-  /* 커스텀 */
-  
-  /* 고정형 .con 시작 */
-  .con-min-width {
-    min-width:1370px;
-  }
-  
-  .con {
-    width:1370px;
-  }
-  /* 고정형 .con 끝 */
-  /*커스텀*/
-.con{
-    max-width:1370px;
+  /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
-/*탑바 시작*/
-.top-bar{
-  position: fixed;
+
+/* 노말라이즈 */
+body, ul, li, h1 {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+label[for] {
+  cursor:pointer;
+  user-select:none;
+}
+
+/* 라이브러리 */
+.block {
+  display:block;
+}
+
+.inline-block {
+  display:inline-block;
+}
+
+.absolute-left {
+  position:absolute;
+  left:0;
+}
+
+.absolute-right {
+  position:absolute;
+  right:0;
+}
+
+.absolute-bottom {
+  position:absolute;
+  bottom:0;
+}
+
+.absolute-top {
+  position:absolute;
+  top:0;
+}
+
+.absolute-center {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.absolute-middle {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+
+.relative {
+  position:relative;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+
+.cell-right {
+  float:right;
+  box-sizing:border-box;
+}
+
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.clear-both {
+  clear:both;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.margin-0-auto {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.text-align-center {
+  text-align:center;
+}
+
+.text-align-right {
+  text-align:right;
+}
+
+.line-height-0 {
+  line-height:0;
+}
+
+.line-height-0 > * {
+  line-height:normal;
+}
+
+.width-30px {
+  width:30px;
+}
+
+.width-35px {
+  width:35px;
+}
+
+.width-40px {
+  width:35px;
+}
+
+.width-45px {
+  width:35px;
+}
+
+.width-50px {
+  width:50px;
+}
+
+.width-80px {
+  width:80px;
+}
+
+.width-100px {
+  width:100px;
+}
+
+.width-100p {
   width:100%;
 }
-/*탑바 - 로고*/
-.top-bar > .logo{
-  background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/logo.png);
-  width:134px;
-  height: 35px;
-  overflow: hidden;
+
+.width-60p {
+  width:60%;
 }
-/*탑바 - 메뉴바*/
 
-/*메뉴박스 시작*/
+.width-55p {
+  width:55%;
+}
 
+.width-50p {
+  width:50%;
+}
+
+.width-45p {
+  width:45%;
+}
+
+.width-40p {
+  width:40%;
+}
+
+.width-30p {
+  width:30%;
+}
+
+.width-35p {
+  width:35%;
+}
+
+.width-100p-except-30px {
+  width:calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+  width:calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+  width:calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+  width:calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+  width:calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+  width:calc(100% - 100px);
+}
+
+.height-100p {
+  height:100%;
+}
+
+.height-50p {
+  height:50%;
+}
+
+.border-box {
+  box-sizing:border-box;
+}
+
+.font-size-dot-8rem {
+  font-size:.8rem;
+}
+
+.table-row {
+  display:table;
+}
+
+.table-row.row::after {
+  display:inline;
+  clear:non;
+}
+
+.table-row > .cell {
+  float:none;
+  display:table-cell;
+}
+
+.border-red {
+  border:10px solid red;
+}
+
+.border-green {
+  border:10px solid green;
+}
+
+.border-blue {
+  border:10px solid blue;
+}
+
+.border-gold {
+  border:10px solid gold;
+}
+
+.border-pink {
+  border:10px solid pink;
+}
+
+/* 라이브러리 - flex */
+* > .flex {
+  display:flex;
+}
+
+* > .flex-grow-1 {
+  flex-grow:1;
+}
+
+* > .flex-jc-c {
+  justify-content:center;
+}
+
+* > .flex-jc-s {
+  justify-content:flex-start;
+}
+
+* > .flex-jc-e {
+  justify-content:flex-end;
+}
+
+* > .flex-jc-sb {
+  justify-content:space-between;
+}
+
+* > .flex-ai-c {
+  align-items:center;
+}
+
+* > .flex-ai-s {
+  align-items:flex-start;
+}
+
+* > .flex-ai-e {
+  align-items:flex-end;
+}
+
+* > .flex-as-s {
+  align-self:stretch;
+}
+
+* > .flex-as-c {
+  align-self:center;
+}
+
+* > .flex-as-s {
+  align-self:flex-start;
+}
+
+* > .flex-as-e {
+  align-self:flex-end;
+}
+
+* > .flex-column-nowrap {
+  flex-flow:column nowrap;
+}
+
+* > .flex-column-wrap {
+  flex-flow:column wrap;
+}
+
+* > .flex-row-wrap {
+  flex-flow:row wrap;
+}
+
+.flex-ch-basis-0 > * {
+  flex-basis:0;
+}
+
+* > .flex-1-0-0 {
+  flex:1 0 0;
+}
+
+/* 커스텀 */
+
+/* 고정형 .con 시작 */
+.con-min-width {
+  min-width:1370px;
+}
+
+.con {
+  width:1370px;
+}
+
+/*스크롤리파이 */
+
+
+/*탑바 시작*/
+.top-bar{
+    width:100%;
+    min-height:90px;
+    position:fixed;
+    top:0;
+    left:0;
+    border-bottom-color:rgba(255, 255, 255, 0.5);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    z-index:10;
+}
+.top-bar > .menu-box-1{
+    margin-left:-100px;
+    z-index:1;
+}
+.top-bar > .menu-box-1::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    min-width:1920px;
+    background-color:white;
+    height:90px;
+    visibility:hidden;
+    box-sizing:border-box;
+    border-bottom:2px;
+    border-bottom-color:rgba(255, 255, 255, 0.5);
+    z-index:-1;
+}
+.top-bar > .menu-box-1:hover::before{
+    visibility:visible;
+}
+.top-bar > .menu-box-1::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;/*left:0, right:0으로 간격을 넓힌다. 유령화상태기 때문에 가능*/
+    height:700px;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    /*일부러 부모인 menu-box-1에 relative 안준건지??*/
+}
+.top-bar > .menu-box-1:hover::after{
+  display:block;
+}
+.top-bar > .menu-box-1 > ul{
+    z-index:1;
+}
+.top-bar > .menu-box-1 > ul > li{
+    padding:0 60px;
+    position:relative;
+    z-index:1;
+    cursor:pointer
+}
+.top-bar > .menu-box-1:hover > ul > li > a{
+    color:black;
+    z-index:1;
+}
+.top-bar > .menu-box-1 > ul > li > a{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    position:relative;
+}
+/*글자색깔 및 움직이는 막대*/
+.top-bar > .menu-box-1 > ul > li:hover > a{
+    color:#295ebe;
+}
+.top-bar > .menu-box-1 > ul > li > a::before{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:50%;
+    width:0;
+    height:3px;
+    background-color:#295ebe;
+    visibility:hidden;
+    box-sizing:border-box;
+}
+.top-bar > .menu-box-1 > ul > li > a::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    right:50%;
+    width:0;
+    height:3px;
+    background-color:#295ebe;
+    visibility:hidden;
+    box-sizing:border-box;
+}
+.top-bar > .menu-box-1 > ul > li:hover > a::before,.top-bar > .menu-box-1 > ul > li:hover > a::after{
+    width:50%;
+    visibility:visible;
+    transition:.6s;
+}
+/*2차 메뉴 시작*/
+.top-bar > .menu-box-1 > ul ul{
+    position:absolute;
+    width:100%;
+    top:100%;
+    left:0;
+    display:none;
+}
+.top-bar > .menu-box-1 > ul:hover > li > ul{
+    display:block;
+}
+.top-bar > .menu-box-1 > ul ul > li{
+    text-align:center;
+    padding:10px 10px;
+}
+.top-bar > .menu-box-1 > ul ul > li:first-child{
+    padding-top:40px;
+}
+.top-bar > .menu-box-1 > ul ul > li > a{
+    font-weight:bold;
+    display:block;
+}
+.top-bar > .menu-box-1 > ul ul > li > a:hover{
+    color:#295ebe;
+}
+
+/*로고-로고에 hover효과가 들어가지 않았는데 nav:hover에 의해 로고 색깔이 변하니까 .menu-box-1에 div라는 동생을 두고 order로 -1을 줘서 '동생이지만 맨 앞에 위치'하게 할 예정*/
+
+.top-bar > .menu-box-1 ~ .logo{
+    background-image:url(https://tjswjd2990.github.io/img1/pf/ezwell/logo.png);
+    background-repeat:no-repeat;
+    width:130px;
+    height:35px;
+    order:-1;
+    margin-top:27px;
+    margin-left:100px;
+    z-index:1;
+}
+/*'~'은 동생선택자*/
+.top-bar > .menu-box-1:hover ~.logo{
+    background-position:0 -44px;
+}
+/*동생선택자(~를 했을때 .top-bar > .logo가 아니라 그냥 .logo라고 표기해야 하는지?)*/
 /*탑바 끝*/
 
-/*메인 슬라이드 시작*/
-html,
-body {
+/*메인슬라이드 시작*/
+html,body,.home {
   position: relative;
   height: 100%;
 }
@@ -390,5 +513,89 @@ body {
   display:flex;
 	align-items:center;
 	justify-content:center;
+    
 }
-/*메인 슬라이드 끝*/
+.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-next::after,.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-prev::after{
+    font-size:23px;
+    font-weight:bold;
+    color:#fff;
+}
+.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-next,.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-prev{
+    width: 40px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.2);
+    margin-top:-40px
+}
+.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-next{
+    right:0;
+}
+.panel.home > .inner > .swiper-container.main-slider-container.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal > .swiper-button-prev{
+    left:0;
+}
+
+/*메인슬라이드 끝*/
+.panel1 {
+    background: #ec8200;
+    background: hsl(28, 100%, 52%);
+}
+
+.panel2 {
+    background: #64a0d4;
+    background: hsl(200, 60%, 55%);
+}
+
+.panel3 {
+    background: #e14456;
+    background: hsl(350, 92%, 59%);
+}
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    color: white;
+    position: relative;
+    padding: 4px;
+}
+
+.pagination a.active:after {
+    box-shadow: inset 0 0 0 5px;
+}
+
+.pagination a .hover-text {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    -webkit-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+}
