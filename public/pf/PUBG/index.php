@@ -101,6 +101,60 @@
             <h2 class="feat-news">FEATURED NEWS</h2>
             <a href="#" class="view absolute-right absolute-middle">View All</a>
         </div>
+        <div class="box-1 con flex flex-jc-c">
+            <ul class="flex flex-jc-sb">
+                <li>
+                    <a href="#" class="block relative">
+                        <div class="abs-full flex flex-column-nowrap">
+                            <!--왜 abs-full이 필요?-->
+                            <!--block에 대고 내용물을 입력하면 내용물의 크기에 밀려서 부모의 크기가 덩달아 변화함
+                        그래서 abs-full을 이용해 앱솔루트화 시키고 거기에 내용물을 입력해서 원하는 크기에서
+                        변화하지 않은 채로 작업가능-->
+                            <div class="img-box"
+                                style="background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/observationsfromERANGEL_header-image.jpg);">
+                            </div>
+                            <div class="txt-box flex-grow-1">
+                                <div class="one">Pcs1</div>
+                                <div class="two">Up Your Game on Erangel, Observe the PCS1 Pros</div>
+                                <div class="triangle"><img
+                                        src="https://tjswjd2990.github.io/img1/pf/PUBG/ico_news_arrow.png" alt=""></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block relative">
+                        <div class="abs-full flex flex-column-nowrap">
+                            <div class="img-box"
+                                style="background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/meet_the_champions_featured-750x422.jpg);">
+                            </div>
+                            <div class="txt-box flex-grow-1">
+                                <div class="one">General/Pcs1/Peps+</div>
+                                <div class="two">Meet the PCS1 Champions!</div>
+                                <div class="triangle"><img
+                                        src="https://tjswjd2990.github.io/img1/pf/PUBG/ico_news_arrow.png" alt=""></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block relative">
+                        <div class="abs-full flex flex-column-nowrap">
+                            <div class="img-box"
+                                style="background-image:url(https://tjswjd2990.github.io/img1/pf/PUBG/final-recap-1.png);">
+                            </div>
+                            <div class="txt-box flex-grow-1">
+                                <div class="one">General/Pcs1</div>
+                                <div class="two">Four PUBG Continental Series 1<br>Champions Emerge:Qconfirm, TSM,
+                                    Infantry, and STK</div>
+                                <div class="triangle"><img
+                                        src="https://tjswjd2990.github.io/img1/pf/PUBG/ico_news_arrow.png" alt=""></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!--첫번째 레이아웃 끝-->
 
