@@ -21,14 +21,13 @@
 </head>
 <body>
 <!--탑바 시작-->
-<div class="top-bar con flex flex-ai-c">
-    <div class="border-bottom flex flex-ai-c">
-        <nav class="menu-box-1 flex-grow-1">
-            <ul class="flex">
-                <li><a class="block" href="#">Models</a></li>
-                <li><a class="block" href="#">Used Car</a></li>
-                <li><a class="block" href="#">Services</a></li>
-                <li><a class="block" href="#">Discover</a></li>
+<div class="top-bar con flex">
+        <nav class="menu-box-1 flex-grow-1 ">
+            <ul class="flex height-100p">
+                <li class="flex"><a class="block" href="#">Models</a></li>
+                <li class="flex"><a class="block" href="#">Used Car</a></li>
+                <li class="flex"><a class="block" href="#">Services</a></li>
+                <li class="flex"><a class="block" href="#">Discover</a></li>
             </ul>
         </nav>
         <div class="locator flex flex-ai-c">
@@ -37,19 +36,23 @@
         <div class="search flex flex-ai-c">
             <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
         </div>
-    </div>
     <div class="logo">
         <img src="https://tjswjd2990.github.io/img1/pf/BMW/BMW_White_Logo.svg" alt="">
         <img src="https://tjswjd2990.github.io.img1/pf/BMW/BMW_Grey_Logo.svg" alt="">
     </div>
-    <div class="caption">Sheer Driving Pleasure</div>
 </div>
 <!--탑바 끝-->
 
 <!--메인이미지 슬라이드 시작-->
 <div class="main-slide flex flex-jc-c">
     <div class="slick-items">
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide1.jpg" alt=""></div>
+        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide1.jpg" alt="">
+        <div class="btn-box">
+            <div class="txt-1">즐거움엔 거리없다.</div>
+            <div class="txt-2">BMW KOREA</div>
+            <a class="btn" href="#">영상 자세히보기</a>
+        </div>
+    </div>
         <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide2.jpg" alt=""></div>
         <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide3.jpg" alt=""></div>
         <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide4.jpg" alt=""></div>

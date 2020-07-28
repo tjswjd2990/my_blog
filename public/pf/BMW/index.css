@@ -359,51 +359,70 @@ label[for] {
     width: 100%;
     z-index: 3;
     color:white;
-
 }
-.top-bar > .border-bottom{
-    width:100%;
-    border-bottom: solid;
-    border-bottom-color: rgba(255,255,255,.5);
-    border-bottom-width:1px;
+.top-bar::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left:0;
+    width: calc(100% - 40px);
+    background-color:rgba(255,255,255,.5);
+    height: 1px;
+    z-index: 3;
 }
-
-.top-bar > .border-bottom>.menu-box-1>ul>li>a {
-    padding: 30px 20px;
-}
-.top-bar > .border-bottom>.locator>.locator-icon>i,
-.top-bar > .border-bottom>.search>.search-icon>i,
-.top-bar>.logo {
+.top-bar > .menu-box-1 > ul > li > a {
     padding: 40px 20px;
-}
-.top-bar > .border-bottom>.search>.search-icon>i{
-    padding-right:0;
-}
-.top-bar > .border-bottom>.locator>.locator-icon>i {
-    font-size: 20px;
-}
-
-.top-bar > .border-bottom>.search>.search-icon>i {
-    font-size: 20px;
-}
-.top-bar>.logo {
     position: relative;
-    padding-left:60px;
+}
+.top-bar > .menu-box-1 > ul > li:hover > a::after{
+    content:"";
+    position: absolute;
+    bottom:1.5px; /*top:100%가 아님*/
+    left:0;
+    width:100%;
+    height: 3px;
+    background-color:#0653b6;
+}
+.top-bar > .locator >.locator-icon > i,
+.top-bar > .search >.search-icon > i,
+.top-bar > .logo {
+    padding: 40px 20px;
+    position: relative;
+}
+.top-bar > .locator:hover > .locator-icon > i::after,
+.top-bar > .search:hover > .search-icon > i::after{
+    content:"";
+    position: absolute;
+    bottom:1.5px;
+    left:0;
+    width:100%;
+    height: 3px;
+    background-color:#0653b6;
+}
+.top-bar > .locator > .locator-icon > i {
+    font-size: 20px;
 }
 
-.top-bar>.logo > img {
+.top-bar > .search > .search-icon > i {
+    font-size: 20px;
+}
+.top-bar > .logo {
+    position: relative;
+}
+
+.top-bar >.logo > img {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     padding-left:20px;
 }
 
-.top-bar>.logo>img:first-child {
+.top-bar > .logo > img:first-child {
     visibility: visible;
 }
 
-.top-bar>.logo>img:last-child {
+.top-bar > .logo > img:last-child {
     visibility: hidden;
 }
 .top-bar > .caption{
@@ -419,21 +438,29 @@ label[for] {
 
 .main-slide>.slick-items {
     justify-content: center;
-}
-
-.main-slide>.slick-items {
     width: 1680px;
     box-sizing: border-box;
 }
 
-.main-slide>.con>.img-box {
+.main-slide>.slick-items>.img-box > img {
     box-sizing: border-box;
 }
-
-.main-slide>.con>.img-box > img {
-    box-sizing: border-box;
+/*슬라이드 좌우버튼*/
+.main-slide .btn-prev, .main-slide .btn-next{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:50%;
+    height: 100%;
 }
-.main-slide .btn-prev, .main-slide .btn-next .icon-case {
+.main-slide .btn-prev{
+    z-index: 1;
+}
+.main-slide .btn-next{
+    left:auto;
+    right:0;
+}
+.main-slide .btn-prev .icon-case, .main-slide .btn-next .icon-case {
     background-color: rgba(255,255,255,.5);
     position: absolute;
     left:0;
@@ -443,7 +470,7 @@ label[for] {
     height: 40px;
     visibility: hidden;
 }
-.main-slide:hover .btn-prev, .main-slide:hover .btn-next{
+.main-slide:hover .btn-prev .icon-case, .main-slide:hover .btn-next .icon-case{
     visibility: visible;
 }
 .main-slide .btn-prev i, .main-slide .btn-next i{
@@ -454,17 +481,39 @@ label[for] {
     transform: translatey(-50%,-50%);
     color:rgba(0,0,0,.6);
 }
-.main-slide .btn-next > i{
+.main-slide .btn-next i{
     left:auto;
     right:25%;
-    transform:translatex(-25%);
+    transform:translateX(-25%);
 }
 .main-slide .btn-next > .icon-case{
     left:auto;
     right:0;
 }
-.main-slide .btn-prev{
+.main-slide .btn-prev .icon-case{
     z-index: 1;
 }
 
+/*슬라이드 안 버튼박스*/
+.main-slide > .slick-items .slick-slide .img-box{
+    position: relative;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box{
+    position: absolute;
+    top:15%;
+    left:5%;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box > .txt-1{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box > .txt-2{
+    color:white;
+    font-size:25px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box > .btn{
+    background-color:#0653b6;
+    padding:15px 100px;
+}
 /*메인 이미지 슬라이드 끝*/
