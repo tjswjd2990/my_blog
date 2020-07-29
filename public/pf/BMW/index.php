@@ -45,23 +45,72 @@
 
 <!--메인이미지 슬라이드 시작-->
 <div class="main-slide flex flex-jc-c">
-    <div class="slick-items">
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide1.jpg" alt="">
-        <div class="btn-box">
-            <div class="txt-1">즐거움엔 거리없다.</div>
-            <div class="txt-2">BMW KOREA</div>
-            <a class="btn" href="#">영상 자세히보기</a>
-        </div>
+  <div class="slick-items slick-slider">
+    <div class="img-box">
+      <div class="btn-box btn-box-1">
+        <div class="txt-1">즐거움엔 거리없다.</div>
+        <div class="txt-2">BMW KOREA</div>
+        <a class="btn" href="#">영상 자세히보기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide1.jpg" alt="">
     </div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide2.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide3.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide4.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide5.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide6.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide7.jpg" alt=""></div>
-        <div class="img-box"><img src="https://tjswjd2990.github.io/img1/pf/BMW/slide8.jpg" alt=""></div>
+    <div class="img-box">
+      <div class="btn-box btn-box-2">
+        <div class="txt">THE X5 M, THE X6 M</div>
+        <a class="btn-1" href="#">THE X5 M 바로가기</a>
+        <a class="btn-2" href="#">THE X6 M 바로가기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide2.jpg" alt="">
     </div>
-</div>
+    <div class="img-box">
+      <div class="btn-box btn-box-3">
+        <div class="txt-1">BMW eDRIVE</div>
+        <div class="txt-2">THE NEXT HYBRID</div>
+        <a class="btn" href="#">바로가기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide3.jpg" alt="">
+    </div>
+    <div class="img-box">
+      <div class="btn-box btn-box-4">
+        <div class="txt">THE M8 GRAN COUPÉ</div>
+        <a class="btn-1" href="#">바로가기</a>
+        <a class="btn-2" href="#">BMW 럭셔리 클래스</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide4.jpg" alt="">
+    </div>
+    <div class="img-box">
+      <div class="btn-box btn-box-5">
+        <div class="txt-1">즐거움엔 거리없다.</div>
+        <div class="txt-2">BMW KOREA</div>
+        <a class="btn" href="#">영상 자세히보기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide5.jpg" alt="">
+    </div>
+    <div class="img-box">
+      <div class="btn-box btn-box-6">
+        <div class="txt-1">즐거움엔 거리없다.</div>
+        <div class="txt-2">BMW KOREA</div>
+        <a class="btn" href="#">영상 자세히보기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide6.jpg" alt="">
+    </div>
+    <div class="img-box">
+      <div class="btn-box btn-box-7">
+        <div class="txt-1">즐거움엔 거리없다.</div>
+        <div class="txt-2">BMW KOREA</div>
+        <a class="btn" href="#">영상 자세히보기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide7.jpg" alt="">
+    </div>
+    <div class="img-box">
+      <div class="btn-box btn-box-8">
+        <div class="txt-1">즐거움엔 거리없다.</div>
+        <div class="txt-2">BMW KOREA</div>
+        <a class="btn" href="#">영상 자세히보기</a>
+      </div>
+      <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide8.jpg" alt="">
+    </div>
+
 <!--메인이미지 슬라이드 끝-->
 
 

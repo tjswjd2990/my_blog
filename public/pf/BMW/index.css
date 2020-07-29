@@ -357,7 +357,7 @@ label[for] {
     left: 50%;
     transform: translatex(-50%);
     width: 100%;
-    z-index: 3;
+    z-index: 10;
     color:white;
 }
 .top-bar::after{
@@ -446,22 +446,12 @@ label[for] {
     box-sizing: border-box;
 }
 /*슬라이드 좌우버튼*/
-.main-slide .btn-prev, .main-slide .btn-next{
-    position: absolute;
-    top:0;
-    left: 0;
-    width:50%;
-    height: 100%;
-}
-.main-slide .btn-prev{
-    z-index: 1;
-}
 .main-slide .btn-next{
     left:auto;
     right:0;
 }
 .main-slide .btn-prev .icon-case, .main-slide .btn-next .icon-case {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(170, 170, 170,.8);
     position: absolute;
     left:0;
     top:50%;
@@ -470,6 +460,11 @@ label[for] {
     height: 40px;
     visibility: hidden;
 }
+.main-slide .btn-prev .icon-case:hover, .main-slide .btn-next .icon-case:hover{
+    background-color:rgba(239, 239, 239,.8);
+    cursor: pointer;
+}
+
 .main-slide:hover .btn-prev .icon-case, .main-slide:hover .btn-next .icon-case{
     visibility: visible;
 }
@@ -493,27 +488,129 @@ label[for] {
 .main-slide .btn-prev .icon-case{
     z-index: 1;
 }
-
 /*슬라이드 안 버튼박스*/
 .main-slide > .slick-items .slick-slide .img-box{
     position: relative;
+    z-index: 100;
 }
-.main-slide > .slick-items .slick-slide .img-box > .btn-box{
+.main-slide > .slick-items .slick-slide .img-box .btn-box{
     position: absolute;
     top:15%;
     left:5%;
+    z-index: 100;
 }
-.main-slide > .slick-items .slick-slide .img-box > .btn-box > .txt-1{
+
+/*1번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-1 > .txt-1{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:10px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-1 > .txt-2{
+    color:white;
+    font-size:25px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-1 > .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-1 > .btn:hover{
+    background-color:#0653b6;
+}
+/*2번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-2 > .txt{
     color:white;
     font-size:52px;
     letter-spacing: 3px;
 }
-.main-slide > .slick-items .slick-slide .img-box > .btn-box > .txt-2{
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-2 > .btn-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:10px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-2 > .btn-1:hover{
+    background-color:#0653b6;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-2 > .btn-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4d4d4d;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:10px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-2 > .btn-2:hover{
+    background-color:#262626;
+}
+/*3번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-3 > .txt-1{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:20px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-3 > .txt-2{
     color:white;
     font-size:25px;
 }
-.main-slide > .slick-items .slick-slide .img-box > .btn-box > .btn{
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-3 > .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-3 > .btn:hover{
     background-color:#0653b6;
-    padding:15px 100px;
+}
+/*4번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .txt{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:70px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .btn-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .btn-1:hover{
+    background-color:#0653b6;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .btn-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4d4d4d;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:10px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .btn-2:hover{
+    background-color:#262626;
 }
 /*메인 이미지 슬라이드 끝*/
