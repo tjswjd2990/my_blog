@@ -385,7 +385,7 @@ label[for] {
 }
 .top-bar > .locator >.locator-icon > i,
 .top-bar > .search >.search-icon > i,
-.top-bar > .logo {
+.top-bar .logo {
     padding: 40px 20px;
     position: relative;
 }
@@ -406,11 +406,11 @@ label[for] {
 .top-bar > .search > .search-icon > i {
     font-size: 20px;
 }
-.top-bar > .logo {
+.top-bar .logo {
     position: relative;
 }
 
-.top-bar >.logo > img {
+.top-bar .logo img {
     position: absolute;
     top: 50%;
     left: 70%;
@@ -418,20 +418,14 @@ label[for] {
     padding-left:20px;
 }
 
-.top-bar > .logo > img:first-child {
+.top-bar > .logo img:first-child {
     visibility: visible;
 }
 
-.top-bar > .logo > img:last-child {
+.top-bar > .logo img:last-child {
     visibility: hidden;
 }
-.top-bar > .caption{
-    color:white;
-    position: absolute;
-    top:100%;
-    right:80px;
-    margin-top:5px;
-}
+
 /*탑바 끝*/
 
 /*메인 이미지 슬라이드 시작*/
@@ -613,4 +607,125 @@ label[for] {
 .main-slide > .slick-items .slick-slide .img-box > .btn-box-4 > .btn-2:hover{
     background-color:#262626;
 }
+/*5번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-5 > .txt{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:70px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-5 > .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-5 > .btn-1:hover{
+    background-color:#0653b6;
+}
+/*6번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-6 > .txt{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:70px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-6 > .btn-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-6 > .btn-1:hover{
+    background-color:#0653b6;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-6 > .btn-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4d4d4d;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:10px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-6 > .btn-2:hover{
+    background-color:#262626;
+}
+/*7번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-7 > .txt-1{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:20px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-7 > .txt-2{
+    color:white;
+    font-size:25px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-7 > .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-7 > .btn:hover{
+    background-color:#0653b6;
+}
+/*8번 이미지 버튼설정*/
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-8 > .txt{
+    color:white;
+    font-size:52px;
+    letter-spacing: 3px;
+    margin-top:70px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-8 > .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c69d4;
+    width:280px;
+    height: 50px;
+    color:white;
+    margin-top:7px;
+}
+.main-slide > .slick-items .slick-slide .img-box > .btn-box-8 > .btn:hover{
+    background-color:#0653b6;
+}
 /*메인 이미지 슬라이드 끝*/
+
+
+
+/*탑바 - 2차메뉴 시작*/
+.top-bar > .menu-box-1 ul li{
+    position: relative;
+}
+.top-bar .menu-box-1 ul .models{
+        position:absolute;
+        top:100%;
+        left:0;
+        height:0;
+        background-color:black;
+        width:calc(100vw - 120px);
+        color:white;
+        overflow:auto;
+        transition :.5s;
+        display: none;
+}
+.top-bar .menu-box-1 ul li:hover .models{
+    display: block;
+    height:80vh;
+}
+/*탑바 - 2차메뉴 끝*/

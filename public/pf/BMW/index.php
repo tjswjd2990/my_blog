@@ -24,10 +24,19 @@
 <div class="top-bar con flex">
         <nav class="menu-box-1 flex-grow-1 ">
             <ul class="flex height-100p">
-                <li class="flex"><a class="block" href="#">Models</a></li>
-                <li class="flex"><a class="block" href="#">Used Car</a></li>
-                <li class="flex"><a class="block" href="#">Services</a></li>
-                <li class="flex"><a class="block" href="#">Discover</a></li>
+                <li class="flex">
+                  <a class="block" href="#">Models</a>
+                  <div class="models">dkdkdkdk</div>
+              </li>
+                <li class="flex"><a class="block" href="#">Used Car</a>
+                  <div class="used-car"></div>
+              </li>
+                <li class="flex"><a class="block" href="#">Services</a>
+                  <div class="services"></div>
+              </li>
+                <li class="flex"><a class="block" href="#">Discover</a>
+                  <div class="discover"></div>
+              </li>
             </ul>
         </nav>
         <div class="locator flex flex-ai-c">
@@ -37,9 +46,11 @@
             <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
         </div>
     <div class="logo">
+      <a href="#">
         <img src="https://tjswjd2990.github.io/img1/pf/BMW/BMW_White_Logo.svg" alt="">
         <img src="https://tjswjd2990.github.io.img1/pf/BMW/BMW_Grey_Logo.svg" alt="">
-    </div>
+      </a>
+      </div>
 </div>
 <!--탑바 끝-->
 
@@ -80,33 +91,31 @@
     </div>
     <div class="img-box">
       <div class="btn-box btn-box-5">
-        <div class="txt-1">즐거움엔 거리없다.</div>
-        <div class="txt-2">BMW KOREA</div>
-        <a class="btn" href="#">영상 자세히보기</a>
+        <div class="txt">THE 1</div>
+        <a class="btn" href="#">바로가기</a>
       </div>
       <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide5.jpg" alt="">
     </div>
     <div class="img-box">
       <div class="btn-box btn-box-6">
-        <div class="txt-1">즐거움엔 거리없다.</div>
-        <div class="txt-2">BMW KOREA</div>
-        <a class="btn" href="#">영상 자세히보기</a>
+        <div class="txt">THE 7</div>
+        <a class="btn-1" href="#">바로가기</a>
+        <a class="btn-2" href="#">BMW 럭셔리 클래스</a>
       </div>
       <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide6.jpg" alt="">
     </div>
     <div class="img-box">
       <div class="btn-box btn-box-7">
-        <div class="txt-1">즐거움엔 거리없다.</div>
-        <div class="txt-2">BMW KOREA</div>
-        <a class="btn" href="#">영상 자세히보기</a>
+        <div class="txt-1">BMW SHOP ONLINE.</div>
+        <div class="txt-2">클릭, 더욱 쉬워진 BMW 구매.</div>
+        <a class="btn" href="#">바로가기</a>
       </div>
       <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide7.jpg" alt="">
     </div>
     <div class="img-box">
       <div class="btn-box btn-box-8">
-        <div class="txt-1">즐거움엔 거리없다.</div>
-        <div class="txt-2">BMW KOREA</div>
-        <a class="btn" href="#">영상 자세히보기</a>
+        <div class="txt">THE 2 GRAN COUPÉ</div>
+        <a class="btn" href="#">바로가기</a>
       </div>
       <img src="https://tjswjd2990.github.io/img1/pf/BMW/slide8.jpg" alt="">
     </div>
