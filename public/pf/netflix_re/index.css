@@ -349,17 +349,17 @@ body{
 }
 
 /*첫번째 페이지 시작*/
-.main > .video-box {
+.first > .video-box {
     width: 100%;
     height: 100%;
 }
-.main > .video-box > video{
+.first > .video-box > video{
     object-fit: cover;
     margin-top: -6vh;
     width: 100%;
     opacity: 70%;
 }
-.main > .btm-box {
+.btm-box {
     position: absolute;
     width: 100%;
     height: 80%;
@@ -367,7 +367,7 @@ body{
     bottom: 0;
     background: linear-gradient(to bottom, transparent, black);
 }
-.main > .scroll_down{
+.scroll_down{
     position: absolute;
     bottom:60px;
     left:50%;
@@ -375,37 +375,139 @@ body{
     align-items: center;
     transform: translateX(-50%);
 }
-.main > .scroll_down > .line{
+.scroll_down > .line{
     width:1px;
     height: 50px;
     background-color:rgba(255,255,255,.5);
 }
-.main > .scroll_down > .scroll_text{
+.scroll_down > .scroll_text{
     font-size:13px;
     color:rgba(255,255,255,.5);
     padding-top:25px;
 }
-.main > .login_box{
+.first > .login_box{
     position: absolute;
     top:50px;
     left:50px;
     font-size:20px;
     font-weight: bold;
 }
-.main > .login_box > .login{
+.first > .login_box > .login{
     padding:0 10px;
     color:white;
     margin-top:3px;
 }
-.main > .login_box > .membership{
+.first > .login_box > .membership{
     padding:0 10px;
     color:red;
 }
-.main > .login_box > .service{
+.first > .login_box > .service{
     padding:0 10px;
     color:white;
 }
 #fp-nav.fp-right > ul > li > a.active > span{
     background-color:white;
 }
+
+.main_text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.main_text > .unlimited{
+    color:rgba(255,255,255,.5);
+    font-size:40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.main_text > .main_logo{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+.main_text > .free{
+    color:white;
+    font-size:30px;
+}
+.main_text > .free:hover{
+    color:red;
+}
 /*첫번째 페이지 끝*/
+
+/*두번째 페이지 시작*/
+.second{
+    background-image:url(https://tjswjd2990.github.io/img1/pf/netflix_re/gradient.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.second > .device{
+    position: absolute;
+    top:30%;
+    left:15%;
+    z-index: 2;
+}
+.second > .device-video{
+    position: absolute;
+    top:33%;
+    left:20%;
+}
+.second > .device-video > video{
+    width:382px;
+}
+.second > .second-main-text{
+    position: absolute;
+    top:33%;
+    left:55%;
+    color:white;
+}
+.second > .second-main-text > .one{
+    font-size:40px;
+}
+.second > .second-main-text > .one > .first-text{
+    margin-bottom: 10px;
+}
+.second > .second-main-text > .two{
+    margin-top:30px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.second > .second-main-text > .two > .third-text{
+    margin-bottom: 10px;
+}
+.second > .second-main-text > .small-free{
+    color:red;
+    font-size:20px;
+    font-weight: bold;
+}
+.login_box{
+    position: absolute;
+    top:50px;
+    right:50px;
+    font-size:20px;
+    font-weight: bold;
+}
+.login_box > .login{
+    padding:0 10px;
+    color:white;
+    margin-top:3px;
+}
+.login_box > .membership{
+    padding:0 10px;
+    color:red;
+}
+.login_box > .service{
+    padding:0 10px;
+    color:white;
+}
+.nlogo{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+/*두번째 페이지 끝*/
