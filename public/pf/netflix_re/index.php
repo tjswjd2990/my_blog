@@ -71,7 +71,6 @@
                 <a href="#" class="membership">멤버십 가입</a>
                 <a href="#" class="service">고객센터</a>
             </div>
-            <div class="btm-box"></div>
             <div class="scroll_down flex">
                 <div class="line"></div>
                 <div class="scroll_text">Scroll Down</div>
@@ -81,7 +80,35 @@
             </div>
         </div>
     <!--두번째 페이지 끝-->
-        <div class="section">내용3</div>
+    <!--세번째 페이지 시작-->
+        <div class="section third">
+            <div class="background3 flex">
+                <div class="umbrella"><div class="bg-img"></div></div>
+                <div class="berlin"><div class="bg-img"></div></div>
+                <div class="kingdom"><div class="bg-img"></div></div>
+            </div>
+            <div class="nlogo img-box">
+                <img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+            </div>
+            <div class="scroll_down flex">
+                <div class="line"></div>
+                <div class="scroll_text">Scroll Down</div>
+            </div>
+            <div class="login_box flex">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="membership">멤버십 가입</a>
+                <a href="#" class="service">고객센터</a>
+            </div>
+            <div class="third-text-box">
+                <div class="original-text">Netflix 오리지널</div>
+                <div class="ex">오직 넷플릭스에서만 볼 수 있다!<br>
+    놀랍도록 재미있는 오리지널 프로그램을 만나세요.<br>
+    영화와 TV 프로그램, 거기에 스페셜까지!<br>
+    회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
+                <a href="#" class="small-free">Free start for 30 days →</a>
+            </div>        
+        </div>
+    <!--세번째 페이지 끝-->
         <div class="section">내용4</div>
     </div>
 </body>

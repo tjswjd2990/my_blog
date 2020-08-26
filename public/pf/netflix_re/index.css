@@ -485,29 +485,107 @@ body{
     font-size:20px;
     font-weight: bold;
 }
-.login_box{
+.second > .login_box{
     position: absolute;
     top:50px;
     right:50px;
     font-size:20px;
     font-weight: bold;
 }
-.login_box > .login{
+.second > .login_box > .login{
     padding:0 10px;
     color:white;
     margin-top:3px;
 }
-.login_box > .membership{
+.second > .login_box > .membership{
     padding:0 10px;
     color:red;
 }
-.login_box > .service{
+.second > .login_box > .service{
     padding:0 10px;
     color:white;
 }
-.nlogo{
+.second > .nlogo{
     position: absolute;
     top:50px;
     left:50px;
 }
 /*두번째 페이지 끝*/
+
+/*세번째 페이지 시작*/
+.third {
+    background-color: #000;
+}
+.third > .background3{
+    height: 100%;
+}
+.third > .background3 > div{
+    width:calc(100% / 3);
+    height: 100%;
+    overflow: hidden;
+}
+.third > .background3 > div > .bg-img{
+    height: 110%;
+    opacity: 0.4;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third > .background3 > div:nth-child(1) > .bg-img{
+    background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/kingdom.png);
+}
+.third > .background3 > div:nth-child(2) > .bg-img{
+    background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/berlin.png);
+}
+.third > .background3 > div:nth-child(3) > .bg-img{
+    background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/umbrella.png);
+}
+.third > .login_box{
+    position: absolute;
+    top:50px;
+    right:50px;
+    font-size:20px;
+    font-weight: bold;
+}
+.third > .login_box > .login{
+    padding:0 10px;
+    color:white;
+    margin-top:3px;
+}
+.third > .login_box > .membership{
+    padding:0 10px;
+    color:red;
+}
+.third > .login_box > .service{
+    padding:0 10px;
+    color:white;
+}
+.third > .nlogo{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+.third > .third-text-box{
+    position: absolute;
+    color:white;
+    top:35%;
+    left:20%;
+    z-index: 2;
+}
+.third > .third-text-box > .original-text{
+    font-weight: bold;
+    font-size:60px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+.third > .third-text-box > .ex{
+    font-size:20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.third > .third-text-box > .small-free{
+    color:red;
+    font-size:20px;
+    font-weight: bold;
+}
+/*세번째 페이지 끝*/
