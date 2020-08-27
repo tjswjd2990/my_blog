@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
 html {
     /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
     font-family: "Roboto", "Noto Sans KR", sans-serif;
@@ -574,14 +576,14 @@ body{
 }
 .third > .third-text-box > .original-text{
     font-weight: bold;
-    font-size:60px;
-    margin-bottom: 20px;
+    font-size:70px;
+    margin-bottom: 40px;
     letter-spacing: 4px;
 }
 .third > .third-text-box > .ex{
     font-size:20px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    line-height: 45px;
+    margin-bottom: 40px;
 }
 .third > .third-text-box > .small-free{
     color:red;
@@ -589,3 +591,95 @@ body{
     font-weight: bold;
 }
 /*세번째 페이지 끝*/
+
+/*네번째 페이지 시작*/
+.forth{
+    position: relative;
+}
+.forth > .login_box{
+    position: absolute;
+    top:50px;
+    right:50px;
+    font-size:20px;
+    font-weight: bold;
+}
+.forth > .login_box > .login{
+    padding:0 10px;
+    color:white;
+    margin-top:3px;
+}
+.forth > .login_box > .membership{
+    padding:0 10px;
+    color:red;
+}
+.forth > .login_box > .service{
+    padding:0 10px;
+    color:white;
+}
+.forth > .nlogo{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+.forth > .mobile{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform:translate(-50%, -10%);
+    width:462.05px;
+    height: 346.11px;
+} 
+.forth > .forth-netflix{
+    color:red;
+    font-size:60px;
+    font-weight: bold;
+    position: absolute;
+    top:43%;
+    left:45%;
+    transform: translate(-45%,-43%);
+    z-index:2;
+}
+.forth > .forth-free{
+    color:white;
+    font-size:50px;
+    position: absolute;
+    top:42.5%;
+    right:36%;
+    transform: translate(-36%,-42.5%);
+    z-index:2;
+}
+.forth > .forth-ex{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-55%);
+    color:white;
+    font-size:20px;
+    line-height: 40px;
+    text-align: center;
+}
+.forth > .small-free{
+    font-family: 'Kalam', cursive;
+    position: absolute;
+    bottom:20%;
+    left:50%;
+    transform:translate(-50%,-20%);
+    font-size:60px;
+    color:red;
+    animation: animated-text 1.3s steps(29, end) 1.3s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+    border-right: solid 3px red;
+    white-space: nowrap;
+    overflow: hidden;    
+    }
+    
+    @keyframes animated-text{
+    from{width: 0;}
+    to{width: 600px;}
+    }
+    
+    
+    @keyframes animated-cursor{
+    from{border-right-color: solid 3px red;}
+    to{border-right-color: transparent;}
+}
+/*네번째 페이지 끝*/

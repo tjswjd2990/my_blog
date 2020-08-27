@@ -109,7 +109,23 @@
             </div>        
         </div>
     <!--세번째 페이지 끝-->
-        <div class="section">내용4</div>
+    <!--네번째 페이지 시작-->
+        <div class="section forth">
+            <div class="nlogo img-box">
+                <img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+            </div>
+            <div class="login_box flex">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="membership">멤버십 가입</a>
+                <a href="#" class="service">고객센터</a>
+            </div>
+            <img class="mobile" src="http://tjswjd2990.github.io/img1/pf/netflix_re/mobile.jpg">
+            <div class="forth-netflix">Netflix</div>
+            <div class="forth-free">무료이용</div>
+            <div class="forth-ex">Netflix에서는 무료 이용 자격이 있는 고객에게 한 달 무료 서비스를 제공합니다.<br>무료 이용을 통해 Netflix의 모든 TV 프로그램과 영화를 시청해 볼 수 있습니다.</div>
+            <a href="#" class="small-free">Free start for 30 days</a>
+            </div>
+        </div>
     </div>
 </body>
 
