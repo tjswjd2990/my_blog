@@ -30,11 +30,9 @@
                     <source src="https://tjswjd2990.github.io/img1/pf/netflix_re/main_video.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="main_text">
                 <div class="unlimited">영화, TV 프로그램을 무제한으로!</div>
                 <img class="main_logo" src="https://tjswjd2990.github.io/img1/pf/netflix_re/netflix_logo.png">
                 <a href="#" class="block free">Free start for 30 days →</a>
-            </div>
             <div class="login_box flex">
                 <a href="#" class="login">Login</a>
                 <a href="#" class="membership">멤버십 가입</a>
@@ -55,17 +53,11 @@
                     <source src="https://tjswjd2990.github.io/img1/pf/netflix_re/device.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="second-main-text">
-                <div class="one">
-                    <div class="first-text">다양한 디바이스에서</div>
-                    <div class="second-text">마음껏 즐길 수 있는 자유</div>
-                </div>
-                <div class="two">
-                    <div class="third-text">각종 영화와 TV 프로그램을 스마트폰, 태블릿,</div>
-                    <div class="forth-text">노트북, TV에서 추가요금 없이 무제한 스트리밍!</div>
-                </div>
-                <a href="#" class="small-free">Free start for 30 days →</a>
-            </div>
+            <div class="first-text">다양한 디바이스에서</div>
+            <div class="second-text">마음껏 즐길 수 있는 자유</div>
+            <div class="third-text">각종 영화와 TV 프로그램을 스마트폰, 태블릿,</div>
+            <div class="forth-text">노트북, TV에서 추가요금 없이 무제한 스트리밍!</div>
+            <a href="#" class="small-free">Free start for 30 days →</a>
             <div class="login_box flex">
                 <a href="#" class="login">Login</a>
                 <a href="#" class="membership">멤버십 가입</a>
@@ -75,8 +67,8 @@
                 <div class="line"></div>
                 <div class="scroll_text">Scroll Down</div>
             </div>
-            <div class="nlogo img-box">
-                <img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+            <div class="nlogo img-box" data-menuanchor="anchor1">
+               <a href="#anchor1"><img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt=""></a>
             </div>
         </div>
     <!--두번째 페이지 끝-->
@@ -87,8 +79,8 @@
                 <div class="berlin"><div class="bg-img"></div></div>
                 <div class="kingdom"><div class="bg-img"></div></div>
             </div>
-            <div class="nlogo img-box">
-                <img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+            <div class="nlogo img-box" data-menuanchor="anchor1">
+               <a href="#anchor1"><img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt=""></a>
             </div>
             <div class="scroll_down flex">
                 <div class="line"></div>
@@ -99,20 +91,26 @@
                 <a href="#" class="membership">멤버십 가입</a>
                 <a href="#" class="service">고객센터</a>
             </div>
-            <div class="third-text-box">
-                <div class="original-text">Netflix 오리지널</div>
-                <div class="ex">오직 넷플릭스에서만 볼 수 있다!<br>
-    놀랍도록 재미있는 오리지널 프로그램을 만나세요.<br>
-    영화와 TV 프로그램, 거기에 스페셜까지!<br>
-    회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
-                <a href="#" class="small-free">Free start for 30 days →</a>
-            </div>        
+            <div class="original-n">N</div>
+            <div class="original-e">e</div>
+            <div class="original-t">t</div>
+            <div class="original-f">f</div>
+            <div class="original-l">l</div>
+            <div class="original-i">i</div>
+            <div class="original-x">x</div>
+            <div class="original">오리지널</div>
+
+            <div class="ex1">오직 넷플릭스에서만 볼 수 있다!</div>
+            <div class="ex2">놀랍도록 재미있는 오리지널 프로그램을 만나세요.</div>
+            <div class="ex3">영화와 TV 프로그램, 거기에 스페셜까지!</div>
+            <div class="ex4">회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
+            <a href="#" class="small-free">Free start for 30 days →</a>
         </div>
     <!--세번째 페이지 끝-->
     <!--네번째 페이지 시작-->
         <div class="section forth">
-            <div class="nlogo img-box">
-                <img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+            <div class="nlogo img-box" data-menuanchor="anchor1">
+               <a href="#anchor1"><img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt=""></a>
             </div>
             <div class="login_box flex">
                 <a href="#" class="login">Login</a>
@@ -124,6 +122,8 @@
             <div class="forth-free">무료이용</div>
             <div class="forth-ex">Netflix에서는 무료 이용 자격이 있는 고객에게 한 달 무료 서비스를 제공합니다.<br>무료 이용을 통해 Netflix의 모든 TV 프로그램과 영화를 시청해 볼 수 있습니다.</div>
             <a href="#" class="small-free">Free start for 30 days</a>
+            <div class="back flex" data-menuanchor="anchor1" style="color:white; font-size:17px;">
+                <a href="#anchor1"><div class="backto">Back to First page</div></a>
             </div>
         </div>
     </div>

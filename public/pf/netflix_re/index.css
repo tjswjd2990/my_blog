@@ -349,6 +349,11 @@ label[for] {
 body{
     background-color:black;
 }
+/*풀페이지 관련*/
+#fp-nav.fp-right > ul > li > a.active > span{
+    background-color:white;
+}
+
 
 /*첫번째 페이지 시작*/
 .first > .video-box {
@@ -407,36 +412,66 @@ body{
     padding:0 10px;
     color:white;
 }
-#fp-nav.fp-right > ul > li > a.active > span{
-    background-color:white;
-}
 
-.main_text{
+/*텍스트 애니메이션 효과 시작*/
+
+.unlimited {
     position: absolute;
-    top:50%;
+    top:-10%;
     left:50%;
-    transform:translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-}
-.main_text > .unlimited{
+    transform:translate(-50%,-10%);
     color:rgba(255,255,255,.5);
     font-size:40px;
-    text-align: center;
-    margin-bottom: 10px;
+    z-index: 2;
+    transition: 1s;
+    opacity: 0;
 }
-.main_text > .main_logo{
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 10px;
+.unlimited.active{
+    transition: top .9s, opacity 4s ;
+    opacity: 1;
+    top:37%;
+    left:50%;
+    transform:translate(-50%,-37%);
 }
-.main_text > .free{
+.main_logo{
+    position: absolute;
+    top:-15%;
+    left:50%;
+    transform:translate(-50%,-15%);
+    z-index: 2;
+    transition:1.3s;
+    opacity: 0;
+}
+.main_logo.active{
+    transition: top 1.1s, opacity 5s ;
+    opacity: 1;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.free{
+    position: absolute;
+    top:62%;
+    left:-10%;
+    transform:translate(-10%,-62%);
+    z-index: 2;
     color:white;
     font-size:30px;
+    transition:1s;
+    opacity: 0;
 }
-.main_text > .free:hover{
+.free.active{
+    transition: left 1s opacity 3s;
+    opacity: 1;
+    top:62%;
+    left:50%;
+    transform:translate(-50%,-62%);
+}
+.free:hover{
     color:red;
 }
+/*텍스트 애니메이션 효과 끝*/
+
 /*첫번째 페이지 끝*/
 
 /*두번째 페이지 시작*/
@@ -451,8 +486,16 @@ body{
 .second > .device{
     position: absolute;
     top:30%;
-    left:15%;
+    left:-10%;
     z-index: 2;
+    transition:1s;
+    opacity: 0;
+}
+.second > .device.active{
+    transition: left 1s opacity 1s;
+    opacity: 1;
+    top:30%;
+    left:15%;
 }
 .second > .device-video{
     position: absolute;
@@ -462,30 +505,81 @@ body{
 .second > .device-video > video{
     width:382px;
 }
-.second > .second-main-text{
+.second > .first-text{
     position: absolute;
+    top:-10%;
+    left:55%;
+    font-size:40px;
+    color:white;
+    transition:1s;
+    opacity: 0;
+}
+.second > .first-text.active{
+    transition:top .5s opacity 3s;
+    opacity:1;
     top:33%;
     left:55%;
-    color:white;
 }
-.second > .second-main-text > .one{
+.second > .second-text{
+    position: absolute;
+    top:-10%;
+    left:55%;
     font-size:40px;
+    color:white;
+    transition:1s;
+    opacity: 0;
 }
-.second > .second-main-text > .one > .first-text{
-    margin-bottom: 10px;
+.second > .second-text.active{
+    transition:top .5s opacity 3s;
+    opacity:1;
+    top:40%;
+    left:55%;
 }
-.second > .second-main-text > .two{
-    margin-top:30px;
+.second > .third-text{
+    position: absolute;
+    top:-10%;
+    left:55%;
     font-size: 20px;
-    margin-bottom: 50px;
+    color:white;
+    transition:1s;
+    opacity: 0;
 }
-.second > .second-main-text > .two > .third-text{
-    margin-bottom: 10px;
+.second > .third-text.active{
+    transition:top .5s opacity 3s;
+    opacity:1;
+    top:50%;
+    left:55%;
 }
-.second > .second-main-text > .small-free{
+.second > .forth-text{
+    position: absolute;
+    top:-10%;
+    left:55%;
+    font-size: 20px;
+    color:white;
+    transition:1s;
+    opacity: 0;
+}
+.second > .forth-text.active{
+    transition:top .5s opacity 3s;
+    opacity:1;
+    top:55%;
+    left:55%;
+}
+.second > .small-free{
+    position : absolute;
+    top:63%;
+    left:-10%;
     color:red;
     font-size:20px;
     font-weight: bold;
+    transition:1s;
+    opacity: 0;
+}
+.second > .small-free.active{
+    transition:top .5s opacity 3s;
+    opacity:1;
+    top:63%;
+    left:55%;
 }
 .second > .login_box{
     position: absolute;
@@ -567,28 +661,218 @@ body{
     top:50px;
     left:50px;
 }
-.third > .third-text-box{
+.third > .original-n{
     position: absolute;
     color:white;
-    top:35%;
+    top:-10%;
     left:20%;
     z-index: 2;
-}
-.third > .third-text-box > .original-text{
     font-weight: bold;
     font-size:70px;
-    margin-bottom: 40px;
-    letter-spacing: 4px;
+    transition:1s;
+    opacity: 0;
 }
-.third > .third-text-box > .ex{
+.third > .original-n.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:20%;
+}
+.third > .original-e{
+    position: absolute;
+    color:white;
+    top:110%;
+    left:22.7%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-e.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:22.7%;
+}
+.third > .original-t{
+    position: absolute;
+    color:white;
+    top:-10%;
+    left:24.9%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-t.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:24.9%;
+}
+.third > .original-f{
+    position: absolute;
+    color:white;
+    top:110%;
+    left:26.4%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-f.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:26.4%;
+}
+.third > .original-l{
+    position: absolute;
+    color:white;
+    top:-10%;
+    left:28%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-l.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:28%;
+}
+.third > .original-i{
+    position: absolute;
+    color:white;
+    top:110%;
+    left:29.15%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-i.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:29.15%;
+}
+.third > .original-x{
+    position: absolute;
+    color:white;
+    top:-10%;
+    left:30.3%;
+    z-index: 2;
+    font-weight: bold;
+    font-size:70px;
+    transition:1s;
+    opacity: 0;
+}
+.third > .original-x.active{
+    transition: top 7s opacity 3s;
+    opacity: 1;
+    top:35%;
+    left:30.3%;
+}
+.third > .original{
+    position: absolute;
+    top:33.9%;
+    left:110%;
+    font-size: 70px;
+    font-weight: bold;
+    z-index: 2;
+    transition:1s;
+    opacity:0;
+    color:white;
+}
+.third > .original.active{
+    transition: left 7s opacity 3s;
+    opacity: 1;
+    top:33.9%;
+    left:33.5%;
+}
+
+.third > .ex1{
+    position: absolute;
+    top:46.5%;
+    left:20%;
+    color:white;
     font-size:20px;
-    line-height: 45px;
-    margin-bottom: 40px;
+    transition:3s;
+    opacity: 0;
 }
-.third > .third-text-box > .small-free{
+.third > .ex1.active{
+    transition: left 3s opacity 3s;
+    opacity:1;
+    top:46.5%;
+    left:20%;
+}
+.third > .ex2{
+    position: absolute;
+    top:50.8%;
+    left:20%;
+    color:white;
+    font-size:20px;
+    transition:4s;
+    opacity: 0;
+}
+.third > .ex2.active{
+    transition: left 4s opacity 4s 2s;
+    opacity:1;
+    top:50.8%;
+    left:20%;
+}
+.third > .ex3{
+    position: absolute;
+    top:55.1%;
+    left:20%;
+    color:white;
+    font-size:20px;
+    transition:5s;
+    opacity: 0;
+}
+.third > .ex3.active{
+    transition: left 5s opacity 5s 3s;
+    opacity:1;
+    top:55.1%;
+    left:20%;
+}
+.third > .ex4{
+    position: absolute;
+    top:59.4%;
+    left:20%;
+    color:white;
+    font-size:20px;
+    transition:6s;
+    opacity: 0;
+}
+.third > .ex4.active{
+    transition: left 6s opacity 6s 4s;
+    opacity:1;
+    top:59.4%;
+    left:20%;
+}
+.third > .small-free{
+    position: absolute;
+    top:65%;
+    left:-10%;
     color:red;
     font-size:20px;
     font-weight: bold;
+    transition: 1.5s;
+    opacity: 0;
+}
+.third > .small-free.active{
+    transition: left 1.5s opacity 2s;
+    opacity: 1;
+    top:65%;
+    left:20%;
 }
 /*세번째 페이지 끝*/
 
@@ -623,31 +907,59 @@ body{
 }
 .forth > .mobile{
     position: absolute;
+    top:-10%;
+    left:50%;
+    transform:translate(-50%, 10%);
+    width:462.05px;
+    height: 346.11px;
+    transition:2.3s;
+    opacity:0;
+} 
+.forth > .mobile.active{
+    transition: top 2.3s opacity 3s;
+    opacity: 1;
     top:10%;
     left:50%;
     transform:translate(-50%, -10%);
-    width:462.05px;
-    height: 346.11px;
-} 
+}
 .forth > .forth-netflix{
     color:red;
     font-size:60px;
     font-weight: bold;
     position: absolute;
     top:43%;
-    left:45%;
-    transform: translate(-45%,-43%);
+    left:-10%;
+    transform:translate(10%,-43%);
     z-index:2;
+    transition:1s;
+    opacity: 0;
+}
+.forth > .forth-netflix.active{
+    transition:left 1.5s opacity 2s;
+    opacity: 1;
+    top:43%;
+    left:45%;
+    transform:translate(-45%,-43%);
 }
 .forth > .forth-free{
     color:white;
     font-size:50px;
     position: absolute;
     top:42.5%;
-    right:36%;
-    transform: translate(-36%,-42.5%);
+    right:-10%;
+    transform:translate(10%,-42.5%);
     z-index:2;
+    transition:1s;
+    opacity: 0;
 }
+.forth > .forth-free.active{
+    transition:right 1.5s opacity 2s;
+    opacity: 1;
+    top:42.5%;
+    right:36%;
+    transform:translate(-36%,-42.5%);
+}
+
 .forth > .forth-ex{
     position: absolute;
     top:55%;
@@ -681,5 +993,17 @@ body{
     @keyframes animated-cursor{
     from{border-right-color: solid 3px red;}
     to{border-right-color: transparent;}
+}
+.forth > .back{
+    position: absolute;
+    bottom:60px;
+    left:50%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.forth > .back > .backto{
+    font-size:17px;
 }
 /*네번째 페이지 끝*/
