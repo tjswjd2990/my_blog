@@ -15,8 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 
-    <link rel="stylesheet" href="/pf/netflix_re/index.css">
-    <script src="/pf/netflix_re/index.js"></script>
+    <link rel="stylesheet" href="../pf/netflix_re/index.css">
+    <script src="../pf/netflix_re/index.js"></script>
 
     <title>netfilx_re</title>
 </head>
@@ -26,7 +26,7 @@
         <!--첫번째 페이지 시작-->
         <div class="section first">
             <div class="video-box">
-                <video oncontextmenu="return false;" id="myVideo" autoplay muted loop>
+                <video oncontextmenu="return false;" id="myVideo" data-autoplay muted loop>
                     <source src="https://tjswjd2990.github.io/img1/pf/netflix_re/main_video.mp4" type="video/mp4">
                 </video>
             </div>
@@ -49,7 +49,7 @@
         <div class="section second">
             <img src="https://tjswjd2990.github.io/img1/pf/netflix_re/device.png" class="device">
             <div class="device-video">
-                <video oncontextmenu="return false;" id="myVideo" autoplay muted loop>
+                <video oncontextmenu="return false;" id="myVideo" data-autoplay muted loop>
                     <source src="https://tjswjd2990.github.io/img1/pf/netflix_re/device.mp4" type="video/mp4">
                 </video>
             </div>

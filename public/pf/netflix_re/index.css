@@ -346,26 +346,30 @@ label[for] {
 
 /* 반응형 타입 1 .con 끝 */
 
-body{
-    background-color:black;
+body {
+    background-color: black;
 }
+
 /*풀페이지 관련*/
-#fp-nav.fp-right > ul > li > a.active > span{
-    background-color:white;
+#fp-nav.fp-right>ul>li>a.active>span {
+    background-color: white;
 }
 
 
 /*첫번째 페이지 시작*/
-.first > .video-box {
+.first>.video-box {
     width: 100%;
     height: 100%;
 }
-.first > .video-box > video{
+
+.first>.video-box>video {
     object-fit: cover;
-    margin-top: -6vh;
+    margin-top: -10vw;
+    height: calc(100% + 20vw);
     width: 100%;
     opacity: 70%;
 }
+
 .btm-box {
     position: absolute;
     width: 100%;
@@ -374,636 +378,732 @@ body{
     bottom: 0;
     background: linear-gradient(to bottom, transparent, black);
 }
-.scroll_down{
+
+.scroll_down {
     position: absolute;
-    bottom:60px;
-    left:50%;
+    bottom: 60px;
+    left: 50%;
     flex-direction: column;
     align-items: center;
     transform: translateX(-50%);
 }
-.scroll_down > .line{
-    width:1px;
+
+.scroll_down>.line {
+    width: 1px;
     height: 50px;
-    background-color:rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
 }
-.scroll_down > .scroll_text{
-    font-size:13px;
-    color:rgba(255,255,255,.5);
-    padding-top:25px;
+
+.scroll_down>.scroll_text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .5);
+    padding-top: 25px;
 }
-.first > .login_box{
+
+.first>.login_box {
     position: absolute;
-    top:50px;
-    left:50px;
-    font-size:20px;
+    top: 50px;
+    left: 50px;
+    font-size: 20px;
     font-weight: bold;
 }
-.first > .login_box > .login{
-    padding:0 10px;
-    color:white;
-    margin-top:3px;
+
+.first>.login_box>.login {
+    padding: 0 10px;
+    color: white;
+    margin-top: 3px;
 }
-.first > .login_box > .membership{
-    padding:0 10px;
-    color:red;
+
+.first>.login_box>.membership {
+    padding: 0 10px;
+    color: red;
 }
-.first > .login_box > .service{
-    padding:0 10px;
-    color:white;
+
+.first>.login_box>.service {
+    padding: 0 10px;
+    color: white;
 }
 
 /*텍스트 애니메이션 효과 시작*/
 
 .unlimited {
     position: absolute;
-    top:-10%;
-    left:50%;
-    transform:translate(-50%,-10%);
-    color:rgba(255,255,255,.5);
-    font-size:40px;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: rgba(255, 255, 255, .5);
+    font-size: 40px;
     z-index: 2;
     transition: 1s;
     opacity: 0;
 }
-.unlimited.active{
-    transition: top .9s, opacity 4s ;
+
+.fp-section.active .unlimited {
+    transition: top .9s, opacity 4s;
     opacity: 1;
-    top:37%;
-    left:50%;
-    transform:translate(-50%,-37%);
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -37%);
 }
-.main_logo{
+
+.main_logo {
     position: absolute;
-    top:-15%;
-    left:50%;
-    transform:translate(-50%,-15%);
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
     z-index: 2;
-    transition:1.3s;
+    transition: 1.3s;
     opacity: 0;
 }
-.main_logo.active{
-    transition: top 1.1s, opacity 5s ;
+
+.fp-section.active .main_logo {
+    transition: top 1.1s, opacity 5s;
     opacity: 1;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.free{
+
+.free {
     position: absolute;
-    top:62%;
-    left:-10%;
-    transform:translate(-10%,-62%);
+    top: 62%;
+    left: -10%;
+    transform: translate(-10%, -62%);
     z-index: 2;
-    color:white;
-    font-size:30px;
-    transition:1s;
+    color: white;
+    font-size: 30px;
+    transition: 1s;
     opacity: 0;
 }
-.free.active{
+
+.fp-section.active .free {
     transition: left 1s opacity 3s;
     opacity: 1;
-    top:62%;
-    left:50%;
-    transform:translate(-50%,-62%);
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -62%);
 }
-.free:hover{
-    color:red;
+
+.free:hover {
+    color: red;
 }
+
 /*텍스트 애니메이션 효과 끝*/
 
 /*첫번째 페이지 끝*/
 
 /*두번째 페이지 시작*/
-.second{
-    background-image:url(https://tjswjd2990.github.io/img1/pf/netflix_re/gradient.png);
+.second {
+    background-image: url(https://tjswjd2990.github.io/img1/pf/netflix_re/gradient.png);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
 }
-.second > .device{
+
+.second>.device {
     position: absolute;
-    top:30%;
-    left:-10%;
+    top: 30%;
+    left: -10%;
     z-index: 2;
-    transition:1s;
+    transition: 1s;
     opacity: 0;
 }
-.second > .device.active{
+
+.second.fp-section.active >.device {
     transition: left 1s opacity 1s;
     opacity: 1;
-    top:30%;
-    left:15%;
+    top: 30%;
+    left: 15%;
 }
-.second > .device-video{
+
+.second>.device-video {
     position: absolute;
-    top:33%;
-    left:20%;
+    top: 33%;
+    left: 20%;
 }
-.second > .device-video > video{
-    width:382px;
+
+.second>.device-video>video {
+    width: 382px;
 }
-.second > .first-text{
+
+.second>.first-text {
     position: absolute;
-    top:-10%;
-    left:55%;
-    font-size:40px;
-    color:white;
-    transition:1s;
+    top: -10%;
+    left: 55%;
+    font-size: 40px;
+    color: white;
+    transition: 1s;
     opacity: 0;
 }
-.second > .first-text.active{
-    transition:top .5s opacity 3s;
-    opacity:1;
-    top:33%;
-    left:55%;
+
+.second.fp-section.active>.first-text {
+    transition: top .5s opacity 3s;
+    opacity: 1;
+    top: 33%;
+    left: 55%;
 }
-.second > .second-text{
+
+.second>.second-text {
     position: absolute;
-    top:-10%;
-    left:55%;
-    font-size:40px;
-    color:white;
-    transition:1s;
+    top: -10%;
+    left: 55%;
+    font-size: 40px;
+    color: white;
+    transition: 1s;
     opacity: 0;
 }
-.second > .second-text.active{
-    transition:top .5s opacity 3s;
-    opacity:1;
-    top:40%;
-    left:55%;
+
+.second.fp-section.active>.second-text {
+    transition: top .5s opacity 3s;
+    opacity: 1;
+    top: 40%;
+    left: 55%;
 }
-.second > .third-text{
+
+.second>.third-text {
     position: absolute;
-    top:-10%;
-    left:55%;
+    top: -10%;
+    left: 55%;
     font-size: 20px;
-    color:white;
-    transition:1s;
+    color: white;
+    transition: 1s;
     opacity: 0;
 }
-.second > .third-text.active{
-    transition:top .5s opacity 3s;
-    opacity:1;
-    top:50%;
-    left:55%;
+
+.second.fp-section.active>.third-text {
+    transition: top .5s opacity 3s;
+    opacity: 1;
+    top: 50%;
+    left: 55%;
 }
-.second > .forth-text{
+
+.second>.forth-text {
     position: absolute;
-    top:-10%;
-    left:55%;
+    top: -10%;
+    left: 55%;
     font-size: 20px;
-    color:white;
-    transition:1s;
+    color: white;
+    transition: 1s;
     opacity: 0;
 }
-.second > .forth-text.active{
-    transition:top .5s opacity 3s;
-    opacity:1;
-    top:55%;
-    left:55%;
+
+.second.fp-section.active>.forth-text {
+    transition: top .5s opacity 3s;
+    opacity: 1;
+    top: 55%;
+    left: 55%;
 }
-.second > .small-free{
-    position : absolute;
-    top:63%;
-    left:-10%;
-    color:red;
-    font-size:20px;
+
+.second>.small-free {
+    position: absolute;
+    top: 63%;
+    left: -10%;
+    color: red;
+    font-size: 20px;
     font-weight: bold;
-    transition:1s;
+    transition: 1s;
     opacity: 0;
 }
-.second > .small-free.active{
-    transition:top .5s opacity 3s;
-    opacity:1;
-    top:63%;
-    left:55%;
+
+.second.fp-section.active>.small-free {
+    transition: top .5s opacity 3s;
+    opacity: 1;
+    top: 63%;
+    left: 55%;
 }
-.second > .login_box{
+
+.second>.login_box {
     position: absolute;
-    top:50px;
-    right:50px;
-    font-size:20px;
+    top: 50px;
+    right: 50px;
+    font-size: 20px;
     font-weight: bold;
 }
-.second > .login_box > .login{
-    padding:0 10px;
-    color:white;
-    margin-top:3px;
+
+.second>.login_box>.login {
+    padding: 0 10px;
+    color: white;
+    margin-top: 3px;
 }
-.second > .login_box > .membership{
-    padding:0 10px;
-    color:red;
+
+.second>.login_box>.membership {
+    padding: 0 10px;
+    color: red;
 }
-.second > .login_box > .service{
-    padding:0 10px;
-    color:white;
+
+.second>.login_box>.service {
+    padding: 0 10px;
+    color: white;
 }
-.second > .nlogo{
+
+.second>.nlogo {
     position: absolute;
-    top:50px;
-    left:50px;
+    top: 50px;
+    left: 50px;
 }
+
 /*두번째 페이지 끝*/
 
 /*세번째 페이지 시작*/
 .third {
     background-color: #000;
 }
-.third > .background3{
+
+.third>.background3 {
     height: 100%;
 }
-.third > .background3 > div{
-    width:calc(100% / 3);
+
+.third>.background3>div {
+    width: calc(100% / 3);
     height: 100%;
     overflow: hidden;
 }
-.third > .background3 > div > .bg-img{
+
+.third>.background3>div>.bg-img {
     height: 110%;
     opacity: 0.4;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.third > .background3 > div:nth-child(1) > .bg-img{
+
+.third>.background3>div:nth-child(1)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/kingdom.png);
 }
-.third > .background3 > div:nth-child(2) > .bg-img{
+
+.third>.background3>div:nth-child(2)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/berlin.png);
 }
-.third > .background3 > div:nth-child(3) > .bg-img{
+
+.third>.background3>div:nth-child(3)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/umbrella.png);
 }
-.third > .login_box{
+
+.third>.login_box {
     position: absolute;
-    top:50px;
-    right:50px;
-    font-size:20px;
+    top: 50px;
+    right: 50px;
+    font-size: 20px;
     font-weight: bold;
 }
-.third > .login_box > .login{
-    padding:0 10px;
-    color:white;
-    margin-top:3px;
+
+.third>.login_box>.login {
+    padding: 0 10px;
+    color: white;
+    margin-top: 3px;
 }
-.third > .login_box > .membership{
-    padding:0 10px;
-    color:red;
+
+.third>.login_box>.membership {
+    padding: 0 10px;
+    color: red;
 }
-.third > .login_box > .service{
-    padding:0 10px;
-    color:white;
+
+.third>.login_box>.service {
+    padding: 0 10px;
+    color: white;
 }
-.third > .nlogo{
+
+.third>.nlogo {
     position: absolute;
-    top:50px;
-    left:50px;
+    top: 50px;
+    left: 50px;
 }
-.third > .original-n{
+
+.third>.original-n {
     position: absolute;
-    color:white;
-    top:-10%;
-    left:20%;
+    color: white;
+    top: -10%;
+    left: 20%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-n.active{
+
+.third.active>.original-n {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:20%;
+    top: 35%;
+    left: 20%;
 }
-.third > .original-e{
+
+.third>.original-e {
     position: absolute;
-    color:white;
-    top:110%;
-    left:22.7%;
+    color: white;
+    top: 110%;
+    left: 22.7%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-e.active{
+
+.third.active>.original-e {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:22.7%;
+    top: 35%;
+    left: 22.7%;
 }
-.third > .original-t{
+
+.third>.original-t {
     position: absolute;
-    color:white;
-    top:-10%;
-    left:24.9%;
+    color: white;
+    top: -10%;
+    left: 24.9%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-t.active{
+
+.third.active>.original-t {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:24.9%;
+    top: 35%;
+    left: 24.9%;
 }
-.third > .original-f{
+
+.third>.original-f {
     position: absolute;
-    color:white;
-    top:110%;
-    left:26.4%;
+    color: white;
+    top: 110%;
+    left: 26.4%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-f.active{
+
+.third.active>.original-f {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:26.4%;
+    top: 35%;
+    left: 26.4%;
 }
-.third > .original-l{
+
+.third>.original-l {
     position: absolute;
-    color:white;
-    top:-10%;
-    left:28%;
+    color: white;
+    top: -10%;
+    left: 28%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-l.active{
+
+.third.active>.original-l {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:28%;
+    top: 35%;
+    left: 28%;
 }
-.third > .original-i{
+
+.third>.original-i {
     position: absolute;
-    color:white;
-    top:110%;
-    left:29.15%;
+    color: white;
+    top: 110%;
+    left: 29.15%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-i.active{
+
+.third.active>.original-i {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:29.15%;
+    top: 35%;
+    left: 29.15%;
 }
-.third > .original-x{
+
+.third>.original-x {
     position: absolute;
-    color:white;
-    top:-10%;
-    left:30.3%;
+    color: white;
+    top: -10%;
+    left: 30.3%;
     z-index: 2;
     font-weight: bold;
-    font-size:70px;
-    transition:1s;
+    font-size: 70px;
+    transition: 1s;
     opacity: 0;
 }
-.third > .original-x.active{
+
+.third.active>.original-x {
     transition: top 7s opacity 3s;
     opacity: 1;
-    top:35%;
-    left:30.3%;
+    top: 35%;
+    left: 30.3%;
 }
-.third > .original{
+
+.third>.original {
     position: absolute;
-    top:33.9%;
-    left:110%;
+    top: 33.9%;
+    left: 110%;
     font-size: 70px;
     font-weight: bold;
     z-index: 2;
-    transition:1s;
-    opacity:0;
-    color:white;
-}
-.third > .original.active{
-    transition: left 7s opacity 3s;
-    opacity: 1;
-    top:33.9%;
-    left:33.5%;
+    transition: 1s;
+    opacity: 0;
+    color: white;
 }
 
-.third > .ex1{
+.third.active>.original {
+    transition: left 7s opacity 3s;
+    opacity: 1;
+    top: 33.9%;
+    left: 33.5%;
+}
+
+.third>.ex1 {
     position: absolute;
-    top:46.5%;
-    left:20%;
-    color:white;
-    font-size:20px;
-    transition:3s;
+    top: 46.5%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+    transition: 3s;
     opacity: 0;
 }
-.third > .ex1.active{
+
+.third.active>.ex1 {
     transition: left 3s opacity 3s;
-    opacity:1;
-    top:46.5%;
-    left:20%;
+    opacity: 1;
+    top: 46.5%;
+    left: 20%;
 }
-.third > .ex2{
+
+.third>.ex2 {
     position: absolute;
-    top:50.8%;
-    left:20%;
-    color:white;
-    font-size:20px;
-    transition:4s;
+    top: 50.8%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+    transition: 4s;
     opacity: 0;
 }
-.third > .ex2.active{
+
+.third.active>.ex2 {
     transition: left 4s opacity 4s 2s;
-    opacity:1;
-    top:50.8%;
-    left:20%;
+    opacity: 1;
+    top: 50.8%;
+    left: 20%;
 }
-.third > .ex3{
+
+.third>.ex3 {
     position: absolute;
-    top:55.1%;
-    left:20%;
-    color:white;
-    font-size:20px;
-    transition:5s;
+    top: 55.1%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+    transition: 5s;
     opacity: 0;
 }
-.third > .ex3.active{
+
+.third.active>.ex3 {
     transition: left 5s opacity 5s 3s;
-    opacity:1;
-    top:55.1%;
-    left:20%;
+    opacity: 1;
+    top: 55.1%;
+    left: 20%;
 }
-.third > .ex4{
+
+.third>.ex4 {
     position: absolute;
-    top:59.4%;
-    left:20%;
-    color:white;
-    font-size:20px;
-    transition:6s;
+    top: 59.4%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+    transition: 6s;
     opacity: 0;
 }
-.third > .ex4.active{
+
+.third.active>.ex4 {
     transition: left 6s opacity 6s 4s;
-    opacity:1;
-    top:59.4%;
-    left:20%;
+    opacity: 1;
+    top: 59.4%;
+    left: 20%;
 }
-.third > .small-free{
+
+.third>.small-free {
     position: absolute;
-    top:65%;
-    left:-10%;
-    color:red;
-    font-size:20px;
+    top: 65%;
+    left: -10%;
+    color: red;
+    font-size: 20px;
     font-weight: bold;
     transition: 1.5s;
     opacity: 0;
 }
-.third > .small-free.active{
+
+.third.active>.small-free {
     transition: left 1.5s opacity 2s;
     opacity: 1;
-    top:65%;
-    left:20%;
+    top: 65%;
+    left: 20%;
 }
+
 /*세번째 페이지 끝*/
 
 /*네번째 페이지 시작*/
-.forth{
+.forth {
     position: relative;
 }
-.forth > .login_box{
+
+.forth>.login_box {
     position: absolute;
-    top:50px;
-    right:50px;
-    font-size:20px;
+    top: 50px;
+    right: 50px;
+    font-size: 20px;
     font-weight: bold;
-}
-.forth > .login_box > .login{
-    padding:0 10px;
-    color:white;
-    margin-top:3px;
-}
-.forth > .login_box > .membership{
-    padding:0 10px;
-    color:red;
-}
-.forth > .login_box > .service{
-    padding:0 10px;
-    color:white;
-}
-.forth > .nlogo{
-    position: absolute;
-    top:50px;
-    left:50px;
-}
-.forth > .mobile{
-    position: absolute;
-    top:-10%;
-    left:50%;
-    transform:translate(-50%, 10%);
-    width:462.05px;
-    height: 346.11px;
-    transition:2.3s;
-    opacity:0;
-} 
-.forth > .mobile.active{
-    transition: top 2.3s opacity 3s;
-    opacity: 1;
-    top:10%;
-    left:50%;
-    transform:translate(-50%, -10%);
-}
-.forth > .forth-netflix{
-    color:red;
-    font-size:60px;
-    font-weight: bold;
-    position: absolute;
-    top:43%;
-    left:-10%;
-    transform:translate(10%,-43%);
-    z-index:2;
-    transition:1s;
-    opacity: 0;
-}
-.forth > .forth-netflix.active{
-    transition:left 1.5s opacity 2s;
-    opacity: 1;
-    top:43%;
-    left:45%;
-    transform:translate(-45%,-43%);
-}
-.forth > .forth-free{
-    color:white;
-    font-size:50px;
-    position: absolute;
-    top:42.5%;
-    right:-10%;
-    transform:translate(10%,-42.5%);
-    z-index:2;
-    transition:1s;
-    opacity: 0;
-}
-.forth > .forth-free.active{
-    transition:right 1.5s opacity 2s;
-    opacity: 1;
-    top:42.5%;
-    right:36%;
-    transform:translate(-36%,-42.5%);
 }
 
-.forth > .forth-ex{
+.forth>.login_box>.login {
+    padding: 0 10px;
+    color: white;
+    margin-top: 3px;
+}
+
+.forth>.login_box>.membership {
+    padding: 0 10px;
+    color: red;
+}
+
+.forth>.login_box>.service {
+    padding: 0 10px;
+    color: white;
+}
+
+.forth>.nlogo {
     position: absolute;
-    top:55%;
-    left:50%;
-    transform:translate(-50%,-55%);
-    color:white;
-    font-size:20px;
+    top: 50px;
+    left: 50px;
+}
+
+.forth>.mobile {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 462.05px;
+    height: 346.11px;
+    transition: 2.3s;
+    opacity: 0;
+}
+
+.forth>.mobile.active {
+    transition: top 2.3s opacity 3s;
+    opacity: 1;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.forth>.forth-netflix {
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top: 43%;
+    left: -10%;
+    transform: translate(10%, -43%);
+    z-index: 2;
+    transition: 1s;
+    opacity: 0;
+}
+
+.forth>.forth-netflix.active {
+    transition: left 1.5s opacity 2s;
+    opacity: 1;
+    top: 43%;
+    left: 45%;
+    transform: translate(-45%, -43%);
+}
+
+.forth>.forth-free {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 42.5%;
+    right: -10%;
+    transform: translate(10%, -42.5%);
+    z-index: 2;
+    transition: 1s;
+    opacity: 0;
+}
+
+.forth>.forth-free.active {
+    transition: right 1.5s opacity 2s;
+    opacity: 1;
+    top: 42.5%;
+    right: 36%;
+    transform: translate(-36%, -42.5%);
+}
+
+.forth>.forth-ex {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    color: white;
+    font-size: 20px;
     line-height: 40px;
     text-align: center;
 }
-.forth > .small-free{
+
+.forth>.small-free {
     font-family: 'Kalam', cursive;
     position: absolute;
-    bottom:20%;
-    left:50%;
-    transform:translate(-50%,-20%);
-    font-size:60px;
-    color:red;
-    animation: animated-text 1.3s steps(29, end) 1.3s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 60px;
+    color: red;
+    animation: animated-text 1.3s steps(29, end) 1.3s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
     border-right: solid 3px red;
     white-space: nowrap;
-    overflow: hidden;    
-    }
-    
-    @keyframes animated-text{
-    from{width: 0;}
-    to{width: 600px;}
-    }
-    
-    
-    @keyframes animated-cursor{
-    from{border-right-color: solid 3px red;}
-    to{border-right-color: transparent;}
+    overflow: hidden;
 }
-.forth > .back{
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: solid 3px red;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.forth>.back {
     position: absolute;
-    bottom:60px;
-    left:50%;
+    bottom: 60px;
+    left: 50%;
     flex-direction: column;
     align-items: center;
     transform: translateX(-50%);
     z-index: 3;
 }
-.forth > .back > .backto{
-    font-size:17px;
+
+.forth>.back>.backto {
+    font-size: 17px;
 }
+
 /*네번째 페이지 끝*/
