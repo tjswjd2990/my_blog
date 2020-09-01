@@ -261,6 +261,9 @@ label[for] {
 .border-pink {
     border: 10px solid pink;
 }
+.bg-blue{
+    background-color:blue;
+}
 
 /* 라이브러리 - flex */
 *>.flex {
@@ -338,13 +341,18 @@ label[for] {
 /* 커스텀 */
 
 /* 고정형 .con 시작 */
+.con{
+    width:1750px;
+}
+
 .con-min-width {
-    min-width: 1200px;
+    min-width: 1400px;
 }
 
 /* 고정형 .con 끝 */
-
-/* 반응형 타입 1 .con 끝 */
+#fullpage > .section {
+    overflow:hidden;
+  }
 
 body {
     background-color: black;
@@ -501,15 +509,50 @@ body {
     height: 100vh;
     position: relative;
 }
-
-.second>.device {
+.second .top-bar{
     position: absolute;
-    top: 30%;
-    left: -10%;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
     z-index: 2;
-    transition: 1s;
-    opacity: 0;
 }
+.second .top-bar > .logo{
+    padding:20px 0;
+}
+.second .top-bar > .loginbox {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second .top-bar > .loginbox .login {
+    padding: 0 10px;
+    color: white;
+}
+
+.second .top-bar > .loginbox .membership {
+    padding: 0 10px;
+    color: red;
+}
+
+.second .top-bar > .loginbox .service {
+    padding: 0 10px;
+    color: white;
+}
+.second .video-box {
+    position:relative;
+    z-index:0;
+    margin-left:200px;
+}
+  
+.second .video-box > video {
+    position:absolute;
+    top:10%;
+    left:18.5%;
+    width:357px;
+    z-index: -1;
+  }
 
 .second.fp-section.active >.device {
     transition: left 1s opacity 1s;
@@ -518,17 +561,7 @@ body {
     left: 15%;
 }
 
-.second>.device-video {
-    position: absolute;
-    top: 33%;
-    left: 20%;
-}
-
-.second>.device-video>video {
-    width: 382px;
-}
-
-.second>.first-text {
+.second .first-text {
     position: absolute;
     top: -10%;
     left: 55%;
@@ -538,14 +571,14 @@ body {
     opacity: 0;
 }
 
-.second.fp-section.active>.first-text {
+.second.fp-section.active .first-text {
     transition: top .5s opacity 3s;
     opacity: 1;
     top: 33%;
     left: 55%;
 }
 
-.second>.second-text {
+.second .second-text {
     position: absolute;
     top: -10%;
     left: 55%;
@@ -555,14 +588,14 @@ body {
     opacity: 0;
 }
 
-.second.fp-section.active>.second-text {
+.second.fp-section.active .second-text {
     transition: top .5s opacity 3s;
     opacity: 1;
     top: 40%;
     left: 55%;
 }
 
-.second>.third-text {
+.second .third-text {
     position: absolute;
     top: -10%;
     left: 55%;
@@ -572,14 +605,14 @@ body {
     opacity: 0;
 }
 
-.second.fp-section.active>.third-text {
+.second.fp-section.active .third-text {
     transition: top .5s opacity 3s;
     opacity: 1;
     top: 50%;
     left: 55%;
 }
 
-.second>.forth-text {
+.second .forth-text {
     position: absolute;
     top: -10%;
     left: 55%;
@@ -589,14 +622,14 @@ body {
     opacity: 0;
 }
 
-.second.fp-section.active>.forth-text {
+.second.fp-section.active .forth-text {
     transition: top .5s opacity 3s;
     opacity: 1;
     top: 55%;
     left: 55%;
 }
 
-.second>.small-free {
+.second .small-free {
     position: absolute;
     top: 63%;
     left: -10%;
@@ -607,42 +640,39 @@ body {
     opacity: 0;
 }
 
-.second.fp-section.active>.small-free {
+.second.fp-section.active .small-free {
     transition: top .5s opacity 3s;
     opacity: 1;
     top: 63%;
     left: 55%;
 }
 
-.second>.login_box {
+
+.ico-scroll-down {
     position: absolute;
-    top: 50px;
-    right: 50px;
-    font-size: 20px;
-    font-weight: bold;
+    bottom: 60px;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: rgba(255, 255, 255, .5);
+    padding-top: 25px;
 }
 
-.second>.login_box>.login {
-    padding: 0 10px;
-    color: white;
-    margin-top: 3px;
+.ico-scroll-down > .line {
+    width: 1px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .5);
 }
 
-.second>.login_box>.membership {
-    padding: 0 10px;
-    color: red;
+.ico-scroll-down > .scroll_text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .5);
+    padding-top: 25px;
 }
 
-.second>.login_box>.service {
-    padding: 0 10px;
-    color: white;
-}
 
-.second>.nlogo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
 
 /*두번째 페이지 끝*/
 
@@ -651,17 +681,17 @@ body {
     background-color: #000;
 }
 
-.third>.background3 {
+.third> div >.background3 {
     height: 100%;
 }
 
-.third>.background3>div {
+.third> div > .background3>div {
     width: calc(100% / 3);
     height: 100%;
     overflow: hidden;
 }
 
-.third>.background3>div>.bg-img {
+.third> div > .background3>div>.bg-img {
     height: 110%;
     opacity: 0.4;
     background-position: center top;
@@ -669,182 +699,84 @@ body {
     background-size: cover;
 }
 
-.third>.background3>div:nth-child(1)>.bg-img {
+.third> div > .background3>div:nth-child(1)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/kingdom.png);
 }
 
-.third>.background3>div:nth-child(2)>.bg-img {
+.third> div > .background3>div:nth-child(2)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/berlin.png);
 }
 
-.third>.background3>div:nth-child(3)>.bg-img {
+.third> div > .background3>div:nth-child(3)>.bg-img {
     background-image: url(http://tjswjd2990.github.io/img1/pf/netflix_re/umbrella.png);
 }
 
-.third>.login_box {
+.third .top-bar{
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.third .top-bar > .logo{
+    padding:20px 0;
+}
+.third .top-bar > .loginbox {
     font-size: 20px;
     font-weight: bold;
 }
 
-.third>.login_box>.login {
+.third .top-bar > .loginbox .login {
     padding: 0 10px;
     color: white;
-    margin-top: 3px;
 }
 
-.third>.login_box>.membership {
+.third .top-bar > .loginbox .membership {
     padding: 0 10px;
     color: red;
 }
 
-.third>.login_box>.service {
+.third .top-bar > .loginbox .service {
     padding: 0 10px;
     color: white;
 }
-
-.third>.nlogo {
+.third > div > .half > .ani-1 {
     position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
-.third>.original-n {
-    position: absolute;
-    color: white;
-    top: -10%;
-    left: 20%;
+    top:0;
+    left:0;
     z-index: 2;
     font-weight: bold;
     font-size: 70px;
     transition: 1s;
-    opacity: 0;
 }
 
-.third.active>.original-n {
-    transition: top 7s opacity 3s;
+.third > div > .half > .ani-1 > span {
+    display:inline-block;
+    transition:transform 1s;
+}
+.third > div > .half > .ani-1 > span:nth-child(2n) {
+    background-color:red;
+    transform:translateY(-500px);
+}
+  
+.third > div > .half > .ani-1 > span:nth-child(2n + 1) {
+    background-color:blue;
+    transform:translateX(-500px);
+}
+  
+.fp-section.active .third > div > .half > .ani-1 > span:nth-child(2n) {
+    transform:translateX(0) translateY(0);
+    transition:opacity 3s;
     opacity: 1;
-    top: 35%;
-    left: 20%;
 }
-
-.third>.original-e {
-    position: absolute;
-    color: white;
-    top: 110%;
-    left: 22.7%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-e {
-    transition: top 7s opacity 3s;
+.fp-section.active .third > div > .half > .ani-1 > span:nth-child(2n + 1) {
+    transform:translateX(0) translateY(0);
+    transition:opacity 3s;
     opacity: 1;
-    top: 35%;
-    left: 22.7%;
 }
-
-.third>.original-t {
-    position: absolute;
-    color: white;
-    top: -10%;
-    left: 24.9%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-t {
-    transition: top 7s opacity 3s;
-    opacity: 1;
-    top: 35%;
-    left: 24.9%;
-}
-
-.third>.original-f {
-    position: absolute;
-    color: white;
-    top: 110%;
-    left: 26.4%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-f {
-    transition: top 7s opacity 3s;
-    opacity: 1;
-    top: 35%;
-    left: 26.4%;
-}
-
-.third>.original-l {
-    position: absolute;
-    color: white;
-    top: -10%;
-    left: 28%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-l {
-    transition: top 7s opacity 3s;
-    opacity: 1;
-    top: 35%;
-    left: 28%;
-}
-
-.third>.original-i {
-    position: absolute;
-    color: white;
-    top: 110%;
-    left: 29.15%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-i {
-    transition: top 7s opacity 3s;
-    opacity: 1;
-    top: 35%;
-    left: 29.15%;
-}
-
-.third>.original-x {
-    position: absolute;
-    color: white;
-    top: -10%;
-    left: 30.3%;
-    z-index: 2;
-    font-weight: bold;
-    font-size: 70px;
-    transition: 1s;
-    opacity: 0;
-}
-
-.third.active>.original-x {
-    transition: top 7s opacity 3s;
-    opacity: 1;
-    top: 35%;
-    left: 30.3%;
-}
-
-.third>.original {
+.third > div > .half > .original {
     position: absolute;
     top: 33.9%;
     left: 110%;
@@ -856,14 +788,14 @@ body {
     color: white;
 }
 
-.third.active>.original {
+.fp-section.active .original {
     transition: left 7s opacity 3s;
     opacity: 1;
     top: 33.9%;
     left: 33.5%;
 }
 
-.third>.ex1 {
+.third .ex1 {
     position: absolute;
     top: 46.5%;
     left: 20%;
@@ -873,14 +805,14 @@ body {
     opacity: 0;
 }
 
-.third.active>.ex1 {
+.third.active .ex1 {
     transition: left 3s opacity 3s;
     opacity: 1;
     top: 46.5%;
     left: 20%;
 }
 
-.third>.ex2 {
+.third .ex2 {
     position: absolute;
     top: 50.8%;
     left: 20%;
@@ -890,14 +822,14 @@ body {
     opacity: 0;
 }
 
-.third.active>.ex2 {
+.third.active .ex2 {
     transition: left 4s opacity 4s 2s;
     opacity: 1;
     top: 50.8%;
     left: 20%;
 }
 
-.third>.ex3 {
+.third .ex3 {
     position: absolute;
     top: 55.1%;
     left: 20%;
@@ -907,14 +839,14 @@ body {
     opacity: 0;
 }
 
-.third.active>.ex3 {
+.third.active .ex3 {
     transition: left 5s opacity 5s 3s;
     opacity: 1;
     top: 55.1%;
     left: 20%;
 }
 
-.third>.ex4 {
+.third .ex4 {
     position: absolute;
     top: 59.4%;
     left: 20%;
