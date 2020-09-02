@@ -19,6 +19,9 @@
         <li>
             <a href="/pf/design/hoody_sunshine_album_cover.png">후디sunshine앨범표지모작</a>
         </li>
+        <li>
+            <a href="/pf/netflix_re">넷플릭스 리뉴얼</a>
+        </li>
     </ul>
 </body>
 </html>
