@@ -85,18 +85,7 @@
         <!--두번째 페이지 끝-->
         <!--세번째 페이지 시작-->
         <div class="section third con-min-width">
-            <div class="con flex height-100p relative">
-                <div class="background3 flex width-100p">
-                    <div class="umbrella">
-                        <div class="bg-img"></div>
-                    </div>
-                    <div class="berlin">
-                        <div class="bg-img"></div>
-                    </div>
-                    <div class="kingdom">
-                        <div class="bg-img"></div>
-                    </div>
-                </div>
+            <div class="flex height-100p width-100p con relative">
                 <div class="top-bar">
                     <a href="#" class="logo">
                         <img src="https://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
@@ -107,37 +96,40 @@
                         <li><a href="#" class="flex flex-ai-c flex-jc-c service">고객센터</a></li>
                     </ul>
                 </div>
-                <div class="half flex flex-jc-c flex-ai-c">
-                <div class="ani-1 border-black">
-                    <span>N</span>
-                    <span>e</span>
-                    <span>t</span>
-                    <span>f</span>
-                    <span>l</span>
-                    <span>e</span>
-                    <span>x</span>
+                <div class="left-box flex-1-0-0 flex flex-jc-c flex-ai-c absolute-left height-100p width-50p">
+                    <div class="ani-1 flex">
+                        <span>N</span>
+                        <span>e</span>
+                        <span>t</span>
+                        <span>f</span>
+                        <span>l</span>
+                        <span>e</span>
+                        <span>x</span>
+                    </div>
+                    <div class="original">오리지널</div>
+                    <div class="ex1">오직 넷플릭스에서만 볼 수 있다!</div>
+                    <div class="ex2">놀랍도록 재미있는 오리지널 프로그램을 만나세요.</div>
+                    <div class="ex3">영화와 TV 프로그램, 거기에 스페셜까지!</div>
+                    <div class="ex4">회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
+                    <a href="#" class="small-free">Free start for 30 days →</a>
                 </div>
-                <div class="original">오리지널</div>
-                <div class="ex1">오직 넷플릭스에서만 볼 수 있다!</div>
-                <div class="ex2">놀랍도록 재미있는 오리지널 프로그램을 만나세요.</div>
-                <div class="ex3">영화와 TV 프로그램, 거기에 스페셜까지!</div>
-                <div class="ex4">회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
-                <!--
-                <a href="#" class="small-free">Free start for 30 days →</a>-->
+                <div class="absolute-right height-100p width-50p"></div>
             </div>
-                    <div></div>
-                </div>
-                
-            <!--세번째 페이지 끝-->
-            <!--네번째 페이지 시작-->
-            <div class="section forth con-min-width">
-                <div class="nlogo img-box" data-menuanchor="anchor1">
-                    <a href="#anchor1"><img src="http://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt=""></a>
-                </div>
-                <div class="login_box flex">
-                    <a href="#" class="login">Login</a>
-                    <a href="#" class="membership">멤버십 가입</a>
-                    <a href="#" class="service">고객센터</a>
+        </div>
+
+        <!--세번째 페이지 끝-->
+        <!--네번째 페이지 시작-->
+        <div class="section forth con con-min-width">
+            <div class="flex height-100p width-100p con relative">
+                <div class="top-bar">
+                    <a href="#" class="logo">
+                        <img src="https://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">
+                    </a>
+                    <ul class="flex loginbox flex-ai-c">
+                        <li><a href="#" class="flex flex-ai-c flex-jc-c login">Login</a></li>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-c membership">멤버십 가입</a></li>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-c service">고객센터</a></li>
+                    </ul>
                 </div>
                 <img class="mobile" src="http://tjswjd2990.github.io/img1/pf/netflix_re/mobile.jpg">
                 <div class="forth-netflix">Netflix</div>
@@ -152,6 +144,9 @@
                     </a>
                 </div>
             </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
