@@ -15,8 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 
-    <link rel="stylesheet" href="../pf/netflix_re/index.css">
-    <script src="../pf/netflix_re/index.js"></script>
+    <link rel="stylesheet" href="/pf/netflix_re/index.css">
+    <script src="/pf/netflix_re/index.js"></script>
 
     <title>netfilx_re</title>
 </head>
