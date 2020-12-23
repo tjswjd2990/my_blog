@@ -374,20 +374,21 @@ body {
     justify-content:center;
     font-size:1em;
     right:5%;
+    width:13%;
 }
 .login_box > .login{
     margin-top:3px;
     color:white;
-    padding:10px;
+    padding:2%;
 }
 .login_box > .membership{
     color:red;
-    padding:10px;
+    padding:2%;
 }
 
 .login_box > .service{
     color:white;
-    padding:10px;
+    padding:2%;
 }
 
 .scroll_down{
