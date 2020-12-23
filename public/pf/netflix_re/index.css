@@ -371,7 +371,7 @@ body {
 .login_box{
     position: absolute;
     top:3%;
-    right:3%;
+    left:3%;
     font-weight: bold;
     align-content: center;
     justify-content:center;
@@ -454,11 +454,6 @@ body {
 
 
 /*첫번째 페이지 시작*/
-.login_box.left-login{
-    position: absolute;
-    left:3%;
-    right:auto;
-}
 .btm-box {
     position: absolute;
     width: 100%;
