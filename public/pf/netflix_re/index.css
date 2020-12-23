@@ -340,16 +340,17 @@ label[for] {
 
 /* 커스텀 */
 
-/* 고정형 .con 시작 */
+/*반응형*/
 .con{
-    width:1700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.con{
+    max-width:1800px;
 }
 
-.con-min-width {
-    min-width: 1200px;
-}
+/*반응형 끝*/
 
-/* 고정형 .con 끝 */
 #fullpage > .section {
     overflow:hidden;
   }
@@ -370,7 +371,7 @@ body {
 .login_box{
     position: absolute;
     top:3%;
-    left:0;
+    left:5%;
     font-weight: bold;
     align-content: center;
     justify-content:center;
@@ -427,14 +428,18 @@ body {
 .scroll_down{
     position: absolute;
     bottom:5%;
-    left: 50%;
+    left:50%;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     transform: translateX(-50%);
     border:2px solid red;
-    height: 8%;
 }
 
 .scroll_down>.line {
-    width: 1%;
+    width: 1px;
     height: 60%;
     background-color: rgba(255, 255, 255, .5);
 }

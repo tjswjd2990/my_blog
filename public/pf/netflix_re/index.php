@@ -24,7 +24,7 @@
 <body>
     <div id="fullpage">
         <!--첫번째 페이지 시작-->
-        <div class="section first con-min-width">
+        <div class="section first con">
             <div class="unlimited">영화, TV 프로그램을 무제한으로!</div>
             <img class="main_logo" src="https://tjswjd2990.github.io/img1/pf/netflix_re/netflix_logo.png">
             <a href="#" class="block free">Free start for 30 days →</a>
@@ -35,8 +35,8 @@
             </div>
             <div class="btm-box"></div>
             <div class="scroll_down">
-                <div class="line block"></div>
-                <div class="scroll_text block">Scroll Down</div>
+                <div class="line"></div>
+                <div class="scroll_text">Scroll Down</div>
             </div>
         </div>
         <!--첫번째 페이지 끝-->
