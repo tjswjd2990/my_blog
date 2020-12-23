@@ -41,7 +41,7 @@
         </div>
         <!--첫번째 페이지 끝-->
         <!--두번째 페이지 시작-->
-        <div class="second section con-min-width">
+        <div class="second section con">
             <div class="con flex height-100p relative">
                 <div class="top-bar">
                     <a href="#" class="logo">
@@ -78,7 +78,7 @@
         </div>
         <!--두번째 페이지 끝-->
         <!--세번째 페이지 시작-->
-        <div class="section third con-min-width">
+        <div class="section third con">
             <div class="flex height-100p width-100p con relative">
                 <div class="top-bar">
                     <a href="#" class="logo">
@@ -112,7 +112,7 @@
 
         <!--세번째 페이지 끝-->
         <!--네번째 페이지 시작-->
-        <div class="section forth con con-min-width">
+        <div class="section forth con">
             <div class="flex height-100p width-100p con relative">
                 <div class="top-bar">
                     <a href="#" class="logo">
