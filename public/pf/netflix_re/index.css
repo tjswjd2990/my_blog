@@ -472,6 +472,12 @@ body {
     padding-top: 10%;
 }
 
+@media(max-width:600px){
+    .scroll_down>.scroll_text {
+        font-size: .5em;
+    }
+}
+
 
 /*공통적으로 들어가는 요소들 끝*/
 
