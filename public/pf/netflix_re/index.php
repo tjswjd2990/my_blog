@@ -25,11 +25,13 @@
     <div id="fullpage">
         <!--첫번째 페이지 시작-->
         <div class="section first con-min-width">
+            <!--
             <div class="video-box">
                 <video oncontextmenu="return false;" id="myVideo" data-autoplay muted loop>
                     <source src="https://tjswjd2990.github.io/img1/pf/netflix_re/main_video.mp4" type="video/mp4">
                 </video>
             </div>
+-->
             <div class="unlimited">영화, TV 프로그램을 무제한으로!</div>
             <img class="main_logo" src="https://tjswjd2990.github.io/img1/pf/netflix_re/netflix_logo.png">
             <a href="#" class="block free">Free start for 30 days →</a>
