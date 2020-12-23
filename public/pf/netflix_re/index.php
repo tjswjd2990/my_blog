@@ -79,7 +79,7 @@
         <!--두번째 페이지 끝-->
         <!--세번째 페이지 시작-->
         <div class="section third con">
-            <div class="flex height-100p width-100p con relative">
+            <div class="flex height-100p width-100p relative">
                 <div class="top-bar">
                     <a href="#" class="logo">
                         <img src="https://tjswjd2990.github.io/img1/pf/netflix_re/n.png" alt="">

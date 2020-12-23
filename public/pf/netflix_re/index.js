@@ -8,5 +8,3 @@ $(function () {
     navigationTooltips: ['main', 'device', 'original netflix', 'Last page']
   });
 });
-
-

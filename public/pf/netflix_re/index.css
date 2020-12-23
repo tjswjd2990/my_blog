@@ -370,37 +370,45 @@ body {
 .login_box{
     position: absolute;
     top:3%;
-    left:6%;
+    left:0;
     font-weight: bold;
     align-content: center;
     justify-content:center;
     white-space: nowrap;
     font-size:1.2em;
 }
-
 .login_box > .login{
     padding:10px;
-    margin-top:3px;
+    margin-top:2.6px;
     color:white;
 }
 .login_box > .membership{
     padding:10px;
     color:red;
 }
-
 .login_box > .service{
     padding:10px;
     color:white;
 }
+.login_box > .login:hover{
+    margin-top:3.9px;
+}
+.login_box > .membership:hover{
+    margin-top:1.3px;
+}
+.login_box > .service:hover{
+    margin-top:1.3px;
+}
 
-
-@media(max-width:1700px){
+@media(max-width:1800px){
     .login_box{
+        left:2%;
         font-size: 1.2em;
     }
 }
 @media(max-width:1500px){
     .login_box{
+        left:3%;
         font-size: 1.1em;
     }
     .login_box > .login{
@@ -416,6 +424,7 @@ body {
 }
 @media(max-width:1000px){
     .login_box{
+        left:4%;
         font-size: 1em;
     }
     .login_box > .login{
@@ -431,6 +440,7 @@ body {
 }
 @media(max-width:600px){
     .login_box{
+        left:5%;
         font-size: .67em;
     }
     .login_box > .login{
