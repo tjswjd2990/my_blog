@@ -375,16 +375,19 @@ body {
     justify-content:center;
 }
 .login_box > .login{
+    font-size:100%;
     margin-top:3px;
     color:white;
     padding:10px;
 }
 .login_box > .membership{
+    font-size:100%;
     color:red;
     padding:10px;
 }
 
 .login_box > .service{
+    font-size:100%;
     color:white;
     padding:10px;
 }
