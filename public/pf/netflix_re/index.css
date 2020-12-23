@@ -368,27 +368,25 @@ body {
 .login_box{
     position: absolute;
     top: 5%;
-    left: 5%;
-    width:10%;
-    font-size: 100%;
+    right: 5%;
     font-weight: bold;
-    border:3px solid red;
+    width:15%;
+    align-content: center;
+    justify-content:center;
 }
 .login_box > .login{
-    white-space: nowrap;
-    margin-top:1%;
-    padding:0 2%;
+    margin-top:3px;
     color:white;
+    padding:10px;
 }
 .login_box > .membership{
-    white-space: nowrap;
-    padding:0 2%;
     color:red;
+    padding:10px;
 }
 
 .login_box > .service{
-    white-space: nowrap;
     color:white;
+    padding:10px;
 }
 
 .scroll_down{
@@ -429,7 +427,10 @@ body {
     width: 100%;
     opacity: 70%;
 }
-
+.login_box.left-login{
+    left:5%;
+    right:auto;
+}
 .btm-box {
     position: absolute;
     width: 100%;
