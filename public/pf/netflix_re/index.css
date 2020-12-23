@@ -370,8 +370,8 @@ body {
 /*공통적으로 들어가는 요소들 - 로그인박스 */
 .login_box{
     position: absolute;
-    top:3%;
-    left:5%;
+    top:0;
+    left:0;
     font-weight: bold;
     align-content: center;
     justify-content:center;
