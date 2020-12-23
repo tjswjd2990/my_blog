@@ -379,45 +379,79 @@ body {
     .login_box{
         font-size: 1em;
     }
+    .login_box > .login{
+        padding:4%;
+    }
+    .login_box > .membership{
+        padding:4%;
+    }
+    .login_box > .service{
+        padding:4%;
+    }
 }
 @media(min-width:1299px) and (max-width:800px){
     .login_box{
         font-size: .9em;
+    }
+    .login_box > .login{
+        padding:3.5%;
+    }
+    .login_box > .membership{
+        padding:3.5%;
+    }
+    .login_box > .service{
+        padding:3.5%;
     }
 }
 @media(min-width:799px) and (max-width:500px){
     .login_box{
         font-size: .83em;
     }
+    .login_box > .login{
+        padding:3%;
+    }
+    .login_box > .membership{
+        padding:3%;
+    }
+    .login_box > .service{
+        padding:3%;
+    }
 }
 @media(max-width:499px){
     .login_box{
         font-size: .8em;
+    }
+    .login_box > .login{
+        padding:2%;
+    }
+    .login_box > .membership{
+        padding:2%;
+    }
+    .login_box > .service{
+        padding:2%;
     }
 }
 
 .login_box > .login{
     margin-top:3px;
     color:white;
-    padding:2%;
 }
 .login_box > .membership{
     color:red;
-    padding:2%;
 }
 
 .login_box > .service{
     color:white;
-    padding:2%;
 }
 
 .scroll_down{
     position: absolute;
-    bottom: 60px;
+    bottom:5%;
     left: 50%;
     flex-direction: column;
     align-items: center;
     transform: translateX(-50%);
+    border:2px solid red;
 }
 
 .scroll_down>.line {
