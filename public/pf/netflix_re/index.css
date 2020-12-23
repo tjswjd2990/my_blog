@@ -423,7 +423,7 @@ body {
 }
 @media(max-width:499px){
     .login_box{
-        font-size: .57em;
+        font-size: .63em;
     }
     .login_box > .login{
         padding:3px;
