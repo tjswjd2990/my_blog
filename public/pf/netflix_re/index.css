@@ -418,6 +418,7 @@ body {
 
 
 /*첫번째 페이지 시작*/
+/*
 .first>.video-box {
     width: 100%;
     height: 100%;
@@ -430,6 +431,7 @@ body {
     width: 100%;
     opacity: 70%;
 }
+*/
 .login_box.left-login{
     left:5%;
     right:auto;
