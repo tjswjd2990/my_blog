@@ -367,12 +367,13 @@ body {
 /*공통적으로 들어가는 요소들*/
 .login_box{
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top:3%;
+    left:0;
     font-weight: bold;
-    width:15%;
     align-content: center;
     justify-content:center;
+    font-size:1.1rem;
+    right:5%;
 }
 .login_box > .login{
     font-size:100%;
@@ -418,7 +419,6 @@ body {
 
 
 /*첫번째 페이지 시작*/
-
 .login_box.left-login{
     left:5%;
     right:auto;
