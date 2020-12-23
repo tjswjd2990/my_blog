@@ -365,6 +365,8 @@ body {
 
 
 /*공통적으로 들어가는 요소들*/
+
+/*공통적으로 들어가는 요소들 - 로그인박스 */
 .login_box{
     position: absolute;
     top:3%;
@@ -421,6 +423,7 @@ body {
     padding:4%;
 }
 
+/*공통적으로 들어가는 요소들 - 스크롤 박스 */
 .scroll_down{
     position: absolute;
     bottom:5%;
@@ -429,18 +432,19 @@ body {
     align-items: center;
     transform: translateX(-50%);
     border:2px solid red;
+    height: 8%;;
 }
 
 .scroll_down>.line {
-    width: 1px;
-    height: 50px;
+    width: 1%;
+    height: 60%;
     background-color: rgba(255, 255, 255, .5);
 }
 
 .scroll_down>.scroll_text {
-    font-size: 13px;
+    font-size: .8em;
     color: rgba(255, 255, 255, .5);
-    padding-top: 25px;
+    padding-top: 10%;
 }
 
 
