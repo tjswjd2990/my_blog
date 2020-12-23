@@ -34,9 +34,9 @@
                 <a href="#" class="service">고객센터</a>
             </div>
             <div class="btm-box"></div>
-            <div class="scroll_down flex">
-                <div class="line"></div>
-                <div class="scroll_text">Scroll Down</div>
+            <div class="scroll_down">
+                <div class="line block"></div>
+                <div class="scroll_text block">Scroll Down</div>
             </div>
         </div>
         <!--첫번째 페이지 끝-->

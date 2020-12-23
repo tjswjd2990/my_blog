@@ -428,11 +428,9 @@ body {
     position: absolute;
     bottom:5%;
     left: 50%;
-    flex-direction: column;
-    align-items: center;
     transform: translateX(-50%);
     border:2px solid red;
-    height: 8%;;
+    height: 8%;
 }
 
 .scroll_down>.line {
