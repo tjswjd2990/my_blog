@@ -364,6 +364,58 @@ body {
 }
 
 
+/*공통적으로 들어가는 요소들*/
+.login_box{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width:10%;
+    font-size: 100%;
+    font-weight: bold;
+    border:3px solid red;
+}
+.login_box > .login{
+    white-space: nowrap;
+    margin-top:1%;
+    padding:0 2%;
+    color:white;
+}
+.login_box > .membership{
+    white-space: nowrap;
+    padding:0 2%;
+    color:red;
+}
+
+.login_box > .service{
+    white-space: nowrap;
+    color:white;
+}
+
+.scroll_down{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.scroll_down>.line {
+    width: 1px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.scroll_down>.scroll_text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .5);
+    padding-top: 25px;
+}
+
+
+/*공통적으로 들어가는 요소들 끝*/
+
+
 /*첫번째 페이지 시작*/
 .first>.video-box {
     width: 100%;
@@ -386,52 +438,6 @@ body {
     bottom: 0;
     background: linear-gradient(to bottom, transparent, black);
 }
-
-.scroll_down {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(-50%);
-}
-
-.scroll_down>.line {
-    width: 1px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.scroll_down>.scroll_text {
-    font-size: 13px;
-    color: rgba(255, 255, 255, .5);
-    padding-top: 25px;
-}
-
-.first>.login_box {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.first>.login_box>.login {
-    padding: 0 10px;
-    color: white;
-    margin-top: 3px;
-}
-
-.first>.login_box>.membership {
-    padding: 0 10px;
-    color: red;
-}
-
-.first>.login_box>.service {
-    padding: 0 10px;
-    color: white;
-}
-
 /*텍스트 애니메이션 효과 시작*/
 
 .unlimited {

@@ -33,7 +33,7 @@
             <div class="unlimited">영화, TV 프로그램을 무제한으로!</div>
             <img class="main_logo" src="https://tjswjd2990.github.io/img1/pf/netflix_re/netflix_logo.png">
             <a href="#" class="block free">Free start for 30 days →</a>
-            <div class="login_box flex">
+            <div class="login_box left-login flex">
                 <a href="#" class="login">Login</a>
                 <a href="#" class="membership">멤버십 가입</a>
                 <a href="#" class="service">고객센터</a>
@@ -74,11 +74,10 @@
                             <div class="forth-text">노트북, TV에서 추가요금 없이 무제한 스트리밍!</div>
                             <a href="#" class="small-free">Free start for 30 days →</a>
                         </div>
-                    </div>
-                    <div class="ico-scroll-down absolute-bottom absolute-center flex">
-                        <div class="line"></div>
-                        <div class="scroll_text">Scroll Down</div>
-                    </div>
+                </div>
+                <div class="scroll_down flex">
+                    <div class="line"></div>
+                    <div class="scroll_text">Scroll Down</div>
                 </div>
             </div>
         </div>
@@ -113,7 +112,6 @@
                     <div class="ex4">회원님의 취향에 꼭 맞는 다양한 콘텐츠를 즐기세요.</div>
                     <a href="#" class="small-free">Free start for 30 days →</a>
                 </div>
-                <div class="absolute-right height-100p width-50p"></div>
             </div>
         </div>
 
