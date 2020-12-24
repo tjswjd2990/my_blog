@@ -370,7 +370,7 @@ body {
 .login_box{
     position: absolute;
     top:3%;
-    left:0;
+    left:2%;
     font-weight: bold;
     align-content: center;
     justify-content:center;
@@ -455,7 +455,6 @@ body {
         padding:3px;
     }
 }
-
 
 /*공통적으로 들어가는 요소들 - 스크롤 박스*/
 .scroll_down{
